@@ -1,52 +1,7 @@
-library(xslt)
-library(xml2)
-library(jsonld)
-library(rdflib)
-library(magrittr)
-library(jsonlite)
 
-#' Coerce xml nodes to a list.
-#'
-#' This turns an XML document (or node or nodeset) into the equivalent R
-#' list. Note that this is \code{as_list()}, not \code{as.list()}:
-#' \code{lapply()} automatically calls \code{as.list()} on its inputs, so
-#' we can't override the default.
-#'
-#' \code{as_list} currently only handles the four most common types of
-#' children that an element might have:
-#'
-#' \itemize{
-#'   \item Other elements, converted to lists.
-#'   \item Attributes, stored as R attributes. Attributes that have special meanings in R
-#'           (\code{\link{class}}, \code{\link{comment}}, \code{\link{dim}},
-#'           \code{\link{dimnames}}, \code{\link{names}}, \code{\link{row.names}} and
-#'           \code{\link{tsp}}) are escaped with '.'
-#'   \item Text, stored as a character vector.
-#' }
-#'
-#' @inheritParams xml_name
-#' @param ... Needed for compatibility with generic. Unused.
-#' @export
-#' @examples
-#' as_list(read_xml("<foo> a <b /><c><![CDATA[<d></d>]]></c></foo>"))
-#' as_list(read_xml("<foo> <bar><baz /></bar> </foo>"))
-#' as_list(read_xml("<foo id = 'a'></foo>"))
-#' as_list(read_xml("<foo><bar id='a'/><bar id='b'/></foo>"))
-as_list <- function(x, ns = character(), ...) {
-  UseMethod("as_list")
-}
-as_list.xml_missing <- function(x, ns = character(), ...) {
-  list()
-}
-as_list.xml_document <- function(x, ns = character(), ...) {
-  if (!inherits(x, "xml_node")) {
-    return(list())
-  }
-  out <- list(NextMethod())
-  names(out) <- xml_name(x)
-  out
-}
 
+## override xml2 method
+#' @importFrom xml2 xml_contents xml_name xml_attrs xml_type xml_text
 as_list.xml_node <- function(x, ns = character(), embed_attr=TRUE, ...) {
   contents <- xml_contents(x)
   if (length(contents) == 0) {
@@ -82,6 +37,7 @@ as_list.xml_node <- function(x, ns = character(), embed_attr=TRUE, ...) {
   out
 }
 
+## override xml2 method
 as_list.xml_nodeset <- function(x, ns = character(), ...) {
   out <- lapply(seq_along(x), function(i) as_list(x[[i]], ns = ns, ...))
 
@@ -95,6 +51,7 @@ as_list.xml_nodeset <- function(x, ns = character(), ...) {
 }
 
 ## regroup repeated element names into a node list
+#' @importFrom stats setNames
 regroup <- function(out){
 
   property <- names(out)
@@ -113,7 +70,6 @@ regroup <- function(out){
   }
   out
 }
-
 
 ld_attributes <- c("id", "type")
 special_jsonld_attrs <- function(x) {
@@ -141,20 +97,52 @@ r_attrs_to_xml <- function(x) {
 }
 
 
+
+
+
+#' xml_to_json
+#'
+#' @param x path to a nexml file
+#' @export
+#' @importFrom xml2 read_xml xml_find_all xml_remove as_list
+#' @importFrom jsonlite toJSON
+#' @examples
+#'
+#' ex <- system.file("extdata/example.xml", package = "nexld")
+#' xml_to_json(ex)
+#'
+#'
+#'
+xml_to_json <- function(x){
+  xml <- xml2::read_xml(x)
+  comments <- xml2::xml_find_all(xml, "//comment()")
+  xml2::xml_remove(comments)
+
+  json <- as_list(xml)
+
+  json <- c(list("@context" = list("@vocab" = "http://www.nexml.org/2009/")), json)
+  xmlns <- grepl("^xmlns", names(json))
+  json <- json[!xmlns]   # just drop namespaces for now, should be appended to context
+
+  toJSON(json, pretty=TRUE, auto_unbox=TRUE)
+
+}
+
+
+
 #download.file("https://raw.githubusercontent.com/ropensci/RNeXML/master/inst/examples/multitrees.xml", "example.xml")
-
-xml <- read_xml("example.xml")
-
-comments <- xml2::xml_find_all(xml, "//comment()")
-xml2::xml_remove(comments)
-
-## single node
-x <- xml_children(xml_children(xml)[[1]])
-as_list(x) %>% jsonlite::write_json("example.json", pretty=TRUE, auto_unbox=TRUE)
-
-## node set
-xml_children(xml)[[2]] %>% as_list() %>% jsonlite::write_json("example.json", pretty=TRUE, auto_unbox=TRUE)
-
-
-## whole document
-xml %>% as_list() %>% jsonlite::write_json("example.json", pretty=TRUE, auto_unbox=TRUE)
+#
+# xml <- read_xml("example.xml")
+# comments <- xml2::xml_find_all(xml, "//comment()")
+# xml2::xml_remove(comments)
+#
+# ## single node
+# x <- xml_children(xml_children(xml)[[1]])
+# as_list(x) %>% jsonlite::write_json("example.json", pretty=TRUE, auto_unbox=TRUE)
+#
+# ## node set
+# xml_children(xml)[[2]] %>% as_list() %>% jsonlite::write_json("example.json", pretty=TRUE, auto_unbox=TRUE)
+#
+#
+# ## whole document
+# xml %>% as_list() %>% jsonlite::write_json("example.json", pretty=TRUE, auto_unbox=TRUE)
