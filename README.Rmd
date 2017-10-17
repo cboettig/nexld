@@ -9,14 +9,14 @@ output: github_document
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>",
+  comment = NA,
   fig.path = "README-"
 )
 ```
 
 # nexld
 
-The goal of nexld is to ...
+The goal of nexld is to serialize NeXML xml data into JSON-LD.
 
 ## Installation
 
@@ -32,5 +32,8 @@ devtools::install_github("cboettig/nexld")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-## basic example code
+library(nexld)
+ex <- system.file("extdata/example.xml", package = "nexld")
+
+xml_to_json(ex)
 ```

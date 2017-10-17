@@ -3,10 +3,10 @@
 ## override xml2 method
 #' @importFrom xml2 xml_contents xml_name xml_attrs xml_type xml_text
 as_list.xml_node <- function(x, ns = character(), embed_attr=TRUE, ...) {
-  contents <- xml_contents(x)
+  contents <- xml2::xml_contents(x)
   if (length(contents) == 0) {
     # Base case - contents
-    type <- xml_type(x)
+    type <- xml2::xml_type(x)
 
     ## ignore these types
     if (type %in% c("text", "cdata"))
