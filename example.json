@@ -1,0 +1,523 @@
+{
+  "nexml": {
+    "version": "0.9",
+    "base": "http://example.org/",
+    "schemaLocation": "http://www.nexml.org/2009 ../xsd/nexml.xsd",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns:nex": "http://www.nexml.org/2009",
+    "xmlns:cdao": "http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#",
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema#",
+    "xmlns": "http://www.nexml.org/2009",
+    "otus": {
+      "@id": "tax1",
+      "label": "RootTaxaBlock",
+      "otu": [
+        {
+          "@id": "t1",
+          "label": "species 1"
+        },
+        {
+          "@id": "t2",
+          "label": "species 2"
+        },
+        {
+          "@id": "t3",
+          "label": "species 3"
+        },
+        {
+          "@id": "t4",
+          "label": "species 4"
+        },
+        {
+          "@id": "t5",
+          "label": "species 5"
+        }
+      ]
+    },
+    "10": "[ comment ]",
+    "trees": [
+      {
+        "otus": "tax1",
+        "@id": "Trees1",
+        "label": "TreesBlockFromXML",
+        "tree": {
+          "@id": "tree1",
+          "@type": "nex:FloatTree",
+          "label": "tree1",
+          "edge": {
+            "source": "n1",
+            "target": "n3",
+            "@id": "e1",
+            "length": "0.34534"
+          },
+          "edge.1": {
+            "source": "n1",
+            "target": "n2",
+            "@id": "e2",
+            "length": "0.4353"
+          },
+          "edge.2": {
+            "source": "n3",
+            "target": "n4",
+            "@id": "e3",
+            "length": "0.324"
+          },
+          "edge.3": {
+            "source": "n3",
+            "target": "n7",
+            "@id": "e4",
+            "length": "0.3247"
+          },
+          "edge.4": {
+            "source": "n4",
+            "target": "n5",
+            "@id": "e5",
+            "length": "0.234"
+          },
+          "edge.5": {
+            "source": "n4",
+            "target": "n6",
+            "@id": "e6",
+            "length": "0.3243"
+          },
+          "edge.6": {
+            "source": "n7",
+            "target": "n8",
+            "@id": "e7",
+            "length": "0.32443"
+          },
+          "edge.7": {
+            "source": "n7",
+            "target": "n9",
+            "@id": "e8",
+            "length": "0.2342"
+          },
+          "node": [
+            {
+              "@id": "n1",
+              "label": "n1",
+              "root": "true"
+            },
+            {
+              "@id": "n2",
+              "label": "n2",
+              "otu": "t1"
+            },
+            {
+              "@id": "n3",
+              "label": "n3"
+            },
+            {
+              "@id": "n4",
+              "label": "n4",
+              "about": "#n4",
+              "meta": {
+                "@id": "dict1",
+                "property": "cdao:has_tag",
+                "content": "true",
+                "@type": "nex:LiteralMeta",
+                "datatype": "xsd:boolean"
+              }
+            },
+            {
+              "@id": "n5",
+              "label": "n5",
+              "otu": "t3"
+            },
+            {
+              "@id": "n6",
+              "label": "n6",
+              "otu": "t2"
+            },
+            {
+              "@id": "n7",
+              "label": "n7"
+            },
+            {
+              "@id": "n8",
+              "label": "n8",
+              "otu": "t5"
+            },
+            {
+              "@id": "n9",
+              "label": "n9",
+              "otu": "t4"
+            }
+          ],
+          "edge.8": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        "5": [
+          "[ comment ]",
+          "[ comment ]"
+        ],
+        "tree.1": [
+          {
+            "@id": "tree2",
+            "@type": "nex:IntTree",
+            "label": "tree2",
+            "edge": {
+              "source": "tree2n1",
+              "target": "tree2n3",
+              "@id": "tree2e1",
+              "length": "1"
+            },
+            "edge.1": {
+              "source": "tree2n1",
+              "target": "tree2n2",
+              "@id": "tree2e2",
+              "length": "2"
+            },
+            "edge.2": {
+              "source": "tree2n3",
+              "target": "tree2n4",
+              "@id": "tree2e3",
+              "length": "3"
+            },
+            "edge.3": {
+              "source": "tree2n3",
+              "target": "tree2n7",
+              "@id": "tree2e4",
+              "length": "1"
+            },
+            "edge.4": {
+              "source": "tree2n4",
+              "target": "tree2n5",
+              "@id": "tree2e5",
+              "length": "2"
+            },
+            "edge.5": {
+              "source": "tree2n4",
+              "target": "tree2n6",
+              "@id": "tree2e6",
+              "length": "1"
+            },
+            "edge.6": {
+              "source": "tree2n7",
+              "target": "tree2n8",
+              "@id": "tree2e7",
+              "length": "1"
+            },
+            "edge.7": {
+              "source": "tree2n7",
+              "target": "tree2n9",
+              "@id": "tree2e8",
+              "length": "1"
+            },
+            "node": [
+              {
+                "@id": "tree2n1",
+                "label": "n1"
+              },
+              {
+                "@id": "tree2n2",
+                "label": "n2",
+                "otu": "t1"
+              },
+              {
+                "@id": "tree2n3",
+                "label": "n3"
+              },
+              {
+                "@id": "tree2n4",
+                "about": "#tree2n4",
+                "label": "n4",
+                "meta": {
+                  "@id": "tree2dict1",
+                  "property": "cdao:has_tag",
+                  "content": "true",
+                  "@type": "nex:LiteralMeta",
+                  "datatype": "xsd:boolean"
+                }
+              },
+              {
+                "@id": "tree2n5",
+                "label": "n5",
+                "otu": "t3"
+              },
+              {
+                "@id": "tree2n6",
+                "label": "n6",
+                "otu": "t2"
+              },
+              {
+                "@id": "tree2n7",
+                "label": "n7"
+              },
+              {
+                "@id": "tree2n8",
+                "label": "n8",
+                "otu": "t5"
+              },
+              {
+                "@id": "tree2n9",
+                "label": "n9",
+                "otu": "t4"
+              }
+            ],
+            "edge.8": [
+              {},
+              {},
+              {},
+              {},
+              {},
+              {},
+              {},
+              {}
+            ]
+          },
+          {}
+        ]
+      },
+      {
+        "otus": "tax1",
+        "@id": "Trees",
+        "label": "TreesBlockFromXML",
+        "tree": {
+          "@id": "tree1",
+          "@type": "nex:FloatTree",
+          "label": "tree1",
+          "edge": {
+            "source": "n1",
+            "target": "n3",
+            "@id": "e1",
+            "length": "0.34534"
+          },
+          "edge.1": {
+            "source": "n1",
+            "target": "n2",
+            "@id": "e2",
+            "length": "0.4353"
+          },
+          "edge.2": {
+            "source": "n3",
+            "target": "n4",
+            "@id": "e3",
+            "length": "0.324"
+          },
+          "edge.3": {
+            "source": "n3",
+            "target": "n7",
+            "@id": "e4",
+            "length": "0.3247"
+          },
+          "edge.4": {
+            "source": "n4",
+            "target": "n5",
+            "@id": "e5",
+            "length": "0.234"
+          },
+          "edge.5": {
+            "source": "n4",
+            "target": "n6",
+            "@id": "e6",
+            "length": "0.3243"
+          },
+          "edge.6": {
+            "source": "n7",
+            "target": "n8",
+            "@id": "e7",
+            "length": "0.32443"
+          },
+          "edge.7": {
+            "source": "n7",
+            "target": "n9",
+            "@id": "e8",
+            "length": "0.2342"
+          },
+          "node": [
+            {
+              "@id": "n1",
+              "label": "n1",
+              "root": "true"
+            },
+            {
+              "@id": "n2",
+              "label": "n2",
+              "otu": "t1"
+            },
+            {
+              "@id": "n3",
+              "label": "n3"
+            },
+            {
+              "@id": "n4",
+              "label": "n4",
+              "about": "#n4",
+              "meta": {
+                "@id": "dict1",
+                "property": "cdao:has_tag",
+                "content": "true",
+                "@type": "nex:LiteralMeta",
+                "datatype": "xsd:boolean"
+              }
+            },
+            {
+              "@id": "n5",
+              "label": "n5",
+              "otu": "t3"
+            },
+            {
+              "@id": "n6",
+              "label": "n6",
+              "otu": "t2"
+            },
+            {
+              "@id": "n7",
+              "label": "n7"
+            },
+            {
+              "@id": "n8",
+              "label": "n8",
+              "otu": "t5"
+            },
+            {
+              "@id": "n9",
+              "label": "n9",
+              "otu": "t4"
+            }
+          ],
+          "edge.8": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        "5": [
+          "[ comment ]",
+          "[ comment ]"
+        ],
+        "tree.1": [
+          {
+            "@id": "tree2",
+            "@type": "nex:IntTree",
+            "label": "tree2",
+            "edge": {
+              "source": "tree2n1",
+              "target": "tree2n3",
+              "@id": "tree2e1",
+              "length": "1"
+            },
+            "edge.1": {
+              "source": "tree2n1",
+              "target": "tree2n2",
+              "@id": "tree2e2",
+              "length": "2"
+            },
+            "edge.2": {
+              "source": "tree2n3",
+              "target": "tree2n4",
+              "@id": "tree2e3",
+              "length": "3"
+            },
+            "edge.3": {
+              "source": "tree2n3",
+              "target": "tree2n7",
+              "@id": "tree2e4",
+              "length": "1"
+            },
+            "edge.4": {
+              "source": "tree2n4",
+              "target": "tree2n5",
+              "@id": "tree2e5",
+              "length": "2"
+            },
+            "edge.5": {
+              "source": "tree2n4",
+              "target": "tree2n6",
+              "@id": "tree2e6",
+              "length": "1"
+            },
+            "edge.6": {
+              "source": "tree2n7",
+              "target": "tree2n8",
+              "@id": "tree2e7",
+              "length": "1"
+            },
+            "edge.7": {
+              "source": "tree2n7",
+              "target": "tree2n9",
+              "@id": "tree2e8",
+              "length": "1"
+            },
+            "node": [
+              {
+                "@id": "tree2n1",
+                "label": "n1"
+              },
+              {
+                "@id": "tree2n2",
+                "label": "n2",
+                "otu": "t1"
+              },
+              {
+                "@id": "tree2n3",
+                "label": "n3"
+              },
+              {
+                "@id": "tree2n4",
+                "about": "#tree2n4",
+                "label": "n4",
+                "meta": {
+                  "@id": "tree2dict1",
+                  "property": "cdao:has_tag",
+                  "content": "true",
+                  "@type": "nex:LiteralMeta",
+                  "datatype": "xsd:boolean"
+                }
+              },
+              {
+                "@id": "tree2n5",
+                "label": "n5",
+                "otu": "t3"
+              },
+              {
+                "@id": "tree2n6",
+                "label": "n6",
+                "otu": "t2"
+              },
+              {
+                "@id": "tree2n7",
+                "label": "n7"
+              },
+              {
+                "@id": "tree2n8",
+                "label": "n8",
+                "otu": "t5"
+              },
+              {
+                "@id": "tree2n9",
+                "label": "n9",
+                "otu": "t4"
+              }
+            ],
+            "edge.8": [
+              {},
+              {},
+              {},
+              {},
+              {},
+              {},
+              {},
+              {}
+            ]
+          },
+          {}
+        ]
+      }
+    ]
+  }
+}
