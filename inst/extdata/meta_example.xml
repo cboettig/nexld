@@ -1,0 +1,11 @@
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns="http://www.nexml.org/2009" version="0.9" generator="RNeXML">
+  <meta xsi:type="LiteralMeta" property="dc:title" datatype="xsd:string" content="My test title"/>
+  <meta xsi:type="LiteralMeta" property="dc:description" datatype="xsd:string" content="A description of my test"/>
+  <meta xsi:type="LiteralMeta" property="dc:creator" datatype="xsd:string" content="Boettiger, Carl"/>
+  <meta xsi:type="LiteralMeta" property="dc:date" datatype="xsd:string" content="2012-04-01"/>
+  <meta xsi:type="ResourceMeta" href="http://creativecommons.org/publicdomain/zero/1.0/" rel="cc:license"/>
+  <meta xsi:type="LiteralMeta" property="dc:publisher" datatype="xsd:string" content="unpublished data"/>
+  <otus id="tax1" label="RootTaxaBlock">
+		<otu id="t1" label="species 1"/>
+	</otus>
+</nex:nexml>

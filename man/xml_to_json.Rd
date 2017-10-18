@@ -9,6 +9,9 @@ xml_to_json(x)
 \arguments{
 \item{x}{path to a nexml file}
 }
+\value{
+json string
+}
 \description{
 xml_to_json
 }
@@ -16,7 +19,5 @@ xml_to_json
 
 ex <- system.file("extdata/example.xml", package = "nexld")
 xml_to_json(ex)
-
-
 
 }
