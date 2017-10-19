@@ -1,27 +1,42 @@
 #' xml_to_json
 #'
+#' Convert an NeXML file into a json string
+#'
 #' @param x path to a nexml file
 #' @return json string
 #' @export
 #' @importFrom xml2 read_xml xml_find_all xml_remove as_list
-#' @importFrom jsonlite toJSON
+#' @importFrom jsonlite toJSON write_json
 #' @examples
 #'
 #' ex <- system.file("extdata/example.xml", package = "nexld")
 #' xml_to_json(ex)
 #'
-xml_to_json <- function(x){
+xml_to_json <- function(x, out = NULL){
   json <- parse_nexml(x)
-  toJSON(json, pretty=TRUE, auto_unbox=TRUE)
-
+  if(is.null(out)){
+    jsonlite::toJSON(json, pretty = TRUE, auto_unbox = TRUE)
+  } else {
+    jsonlite::write_json(json, out, pretty = TRUE, auto_unbox = TRUE)
+  }
 }
 
+#' parse_nexml
+#'
+#' Parse an NeXML file into an R list object
+#'
 #' @export
 parse_nexml <- function(x){
   xml <- xml2::read_xml(x)
-  comments <- xml2::xml_find_all(xml, "//comment()")
-  xml2::xml_remove(comments)
+
+  ## Drop comment nodes.
+  xml2::xml_remove(xml2::xml_find_all(xml, "//comment()"))
+
+  ## Main transform, map XML to list using a modification of the xml2::as_list convention
+  ## See as_list.R
   json <- as_list(xml)
+
+  ## Set up the JSON-LD context
   json <- c(list("@context" = list("@vocab" = "http://www.nexml.org/2009/")), json)
   xmlns <- grepl("^xmlns", names(json))
   json <- json[!xmlns]   # just drop namespaces for now, should be appended to context

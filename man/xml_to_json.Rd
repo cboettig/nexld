@@ -4,7 +4,7 @@
 \alias{xml_to_json}
 \title{xml_to_json}
 \usage{
-xml_to_json(x)
+xml_to_json(x, out = NULL)
 }
 \arguments{
 \item{x}{path to a nexml file}
@@ -13,7 +13,7 @@ xml_to_json(x)
 json string
 }
 \description{
-xml_to_json
+Convert an NeXML file into a json string
 }
 \examples{
 

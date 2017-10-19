@@ -2,7 +2,8 @@
 output: github_document
 ---
 
-[![Travis-CI Build Status](https://travis-ci.org/cboettig/nexld.svg?branch=master)](https://travis-ci.org/cboettig/nexld)
+[![Project Status: Concept – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept)
+[![Travis-CI Build Status](https://travis-ci.org/cboettig/nexld.svg?branch=master)](https://travis-ci.org/cboettig/nexld) 
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -26,6 +27,11 @@ You can install nexld from github with:
 # install.packages("devtools")
 devtools::install_github("cboettig/nexld")
 ```
+
+## Heads up!
+
+Package is in purely exploratory stage at this time, function api likely to change.
+
 
 ## Example
 

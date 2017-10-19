@@ -22,9 +22,6 @@ as_list.xml_node <- function(x, ns = character(), embed_attr=TRUE, ...) {
     if (any(nms != "")) {
       names(out) <- nms
     }
-
-    ## Group repeated elements
-    out <- regroup(out)
   }
 
   node_attr <- special_jsonld_attrs(xml_attrs(x, ns = ns))
@@ -34,6 +31,8 @@ as_list.xml_node <- function(x, ns = character(), embed_attr=TRUE, ...) {
   else
     attributes(out) <- node_attr
 
+  ## Group repeated elements
+  out <- regroup(out)
   out
 }
 
@@ -86,16 +85,34 @@ regroup <- function(out){
 
 
 remap_meta <- function(nodelist){
-  message(paste(names(nodelist)))
+
+  ## FIXME Handles case of meta: [], must also handle and meta: {} (nonlist)
+
   is_meta <- names(nodelist) %in% "meta"
+
   if(sum(is_meta) == 0)
     return(nodelist)
 
+  meta_nodes <- nodelist[is_meta]
+  # "meta": {}
+  if("@type" %in% names(meta_nodes[[1]])){
+    out <-
+      lapply(meta_nodes, function(n)
+        setNames(meta_value(n), meta_property(n)))
+
+  # "meta": [{}, {}]
+  } else {
+    out <-
+      lapply(meta_nodes, function(n){
+        setNames(lapply(n, meta_value),
+                 lapply(n, meta_property))
+    })
+
+  }
+
+
   c(nodelist[!is_meta],
-    unlist(unname(lapply(nodelist[is_meta], function(n){
-      setNames(lapply(n, meta_value),
-               lapply(n, meta_property))
-    })),recursive = FALSE))
+    unlist(unname(out),recursive = FALSE))
 
 }
 
