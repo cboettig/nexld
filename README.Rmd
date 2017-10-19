@@ -40,7 +40,6 @@ Let's convert a simple NeXML file into JSON-LD:
 ```{r example}
 library(nexld)
 ex <- system.file("extdata/example.xml", package = "nexld")
-
 xml_to_json(ex)
 ```
 

@@ -43,5 +43,5 @@ parse_nexml <- function(x){
   xmlns <- grepl("^xmlns", names(json))
   json <- json[!xmlns]   # just drop namespaces for now, should be appended to context
 
-  json
+  list(nexml = json)
 }
