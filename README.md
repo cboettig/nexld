@@ -1,5 +1,5 @@
 
-[![Travis-CI Build Status](https://travis-ci.org/cboettig/nexld.svg?branch=master)](https://travis-ci.org/cboettig/nexld)
+[![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/joethorley/stability-badges#experimental) [![Travis-CI Build Status](https://travis-ci.org/cboettig/nexld.svg?branch=master)](https://travis-ci.org/cboettig/nexld)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 nexld
@@ -16,6 +16,11 @@ You can install nexld from github with:
 # install.packages("devtools")
 devtools::install_github("cboettig/nexld")
 ```
+
+Heads up!
+---------
+
+Package is in purely exploratory stage at this time, function api likely to change.
 
 Example
 -------
@@ -65,522 +70,136 @@ xml_to_json(ex)
       }
     ]
   },
-  "trees": [
-    {
-      "@type": "trees",
-      "otus": "tax1",
-      "@id": "Trees1",
-      "label": "TreesBlockFromXML",
-      "tree": [
+  "trees": {
+    "otus": "tax1",
+    "@id": "Trees1",
+    "label": "TreesBlockFromXML",
+    "tree": {
+      "@id": "tree1",
+      "@type": "nex:FloatTree",
+      "label": "tree1",
+      "node": [
         {
-          "@type": "tree",
-          "@id": "tree1",
-          "@type.1": "nex:FloatTree",
-          "label": "tree1",
-          "node": [
-            {
-              "@type": "node",
-              "@id": "n1",
-              "label": "n1",
-              "root": "true"
-            },
-            {
-              "@type": "node",
-              "@id": "n2",
-              "label": "n2",
-              "otu": "t1"
-            },
-            {
-              "@type": "node",
-              "@id": "n3",
-              "label": "n3"
-            },
-            {
-              "@type": "node",
-              "@id": "n4",
-              "label": "n4",
-              "about": "#n4",
-              "meta": {
-                "@id": "dict1",
-                "property": "cdao:has_tag",
-                "content": "true",
-                "@type": "nex:LiteralMeta",
-                "datatype": "xsd:boolean"
-              }
-            },
-            {
-              "@type": "node",
-              "@id": "n5",
-              "label": "n5",
-              "otu": "t3"
-            },
-            {
-              "@type": "node",
-              "@id": "n6",
-              "label": "n6",
-              "otu": "t2"
-            },
-            {
-              "@type": "node",
-              "@id": "n7",
-              "label": "n7"
-            },
-            {
-              "@type": "node",
-              "@id": "n8",
-              "label": "n8",
-              "otu": "t5"
-            },
-            {
-              "@type": "node",
-              "@id": "n9",
-              "label": "n9",
-              "otu": "t4"
-            }
-          ],
-          "edge": [
-            {
-              "@type": "edge",
-              "source": "n1",
-              "target": "n3",
-              "@id": "e1",
-              "length": "0.34534"
-            },
-            {
-              "@type": "edge",
-              "source": "n1",
-              "target": "n2",
-              "@id": "e2",
-              "length": "0.4353"
-            },
-            {
-              "@type": "edge",
-              "source": "n3",
-              "target": "n4",
-              "@id": "e3",
-              "length": "0.324"
-            },
-            {
-              "@type": "edge",
-              "source": "n3",
-              "target": "n7",
-              "@id": "e4",
-              "length": "0.3247"
-            },
-            {
-              "@type": "edge",
-              "source": "n4",
-              "target": "n5",
-              "@id": "e5",
-              "length": "0.234"
-            },
-            {
-              "@type": "edge",
-              "source": "n4",
-              "target": "n6",
-              "@id": "e6",
-              "length": "0.3243"
-            },
-            {
-              "@type": "edge",
-              "source": "n7",
-              "target": "n8",
-              "@id": "e7",
-              "length": "0.32443"
-            },
-            {
-              "@type": "edge",
-              "source": "n7",
-              "target": "n9",
-              "@id": "e8",
-              "length": "0.2342"
-            }
-          ]
+          "@type": "node",
+          "@id": "n1",
+          "label": "n1",
+          "root": "true"
         },
         {
-          "@type": "tree",
-          "@id": "tree2",
-          "@type.1": "nex:IntTree",
-          "label": "tree2",
-          "node": [
-            {
-              "@type": "node",
-              "@id": "tree2n1",
-              "label": "n1"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n2",
-              "label": "n2",
-              "otu": "t1"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n3",
-              "label": "n3"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n4",
-              "about": "#tree2n4",
-              "label": "n4",
-              "meta": {
-                "@id": "tree2dict1",
-                "property": "cdao:has_tag",
-                "content": "true",
-                "@type": "nex:LiteralMeta",
-                "datatype": "xsd:boolean"
-              }
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n5",
-              "label": "n5",
-              "otu": "t3"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n6",
-              "label": "n6",
-              "otu": "t2"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n7",
-              "label": "n7"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n8",
-              "label": "n8",
-              "otu": "t5"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n9",
-              "label": "n9",
-              "otu": "t4"
-            }
-          ],
-          "edge": [
-            {
-              "@type": "edge",
-              "source": "tree2n1",
-              "target": "tree2n3",
-              "@id": "tree2e1",
-              "length": "1"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n1",
-              "target": "tree2n2",
-              "@id": "tree2e2",
-              "length": "2"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n3",
-              "target": "tree2n4",
-              "@id": "tree2e3",
-              "length": "3"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n3",
-              "target": "tree2n7",
-              "@id": "tree2e4",
-              "length": "1"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n4",
-              "target": "tree2n5",
-              "@id": "tree2e5",
-              "length": "2"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n4",
-              "target": "tree2n6",
-              "@id": "tree2e6",
-              "length": "1"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n7",
-              "target": "tree2n8",
-              "@id": "tree2e7",
-              "length": "1"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n7",
-              "target": "tree2n9",
-              "@id": "tree2e8",
-              "length": "1"
-            }
-          ]
+          "@type": "node",
+          "@id": "n2",
+          "label": "n2",
+          "otu": "t1"
+        },
+        {
+          "@type": "node",
+          "@id": "n3",
+          "label": "n3"
+        },
+        {
+          "@type": "node",
+          "@id": "n4",
+          "label": "n4",
+          "about": "#n4",
+          "cc:license": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "cdao:has_tag": true
+        },
+        {
+          "@type": "node",
+          "@id": "n5",
+          "label": "n5",
+          "otu": "t3"
+        },
+        {
+          "@type": "node",
+          "@id": "n6",
+          "label": "n6",
+          "otu": "t2"
+        },
+        {
+          "@type": "node",
+          "@id": "n7",
+          "label": "n7"
+        },
+        {
+          "@type": "node",
+          "@id": "n8",
+          "label": "n8",
+          "otu": "t5"
+        },
+        {
+          "@type": "node",
+          "@id": "n9",
+          "label": "n9",
+          "otu": "t4"
         }
-      ]
-    },
-    {
-      "@type": "trees",
-      "otus": "tax1",
-      "@id": "Trees",
-      "label": "TreesBlockFromXML",
-      "tree": [
+      ],
+      "edge": [
         {
-          "@type": "tree",
-          "@id": "tree1",
-          "@type.1": "nex:FloatTree",
-          "label": "tree1",
-          "node": [
-            {
-              "@type": "node",
-              "@id": "n1",
-              "label": "n1",
-              "root": "true"
-            },
-            {
-              "@type": "node",
-              "@id": "n2",
-              "label": "n2",
-              "otu": "t1"
-            },
-            {
-              "@type": "node",
-              "@id": "n3",
-              "label": "n3"
-            },
-            {
-              "@type": "node",
-              "@id": "n4",
-              "label": "n4",
-              "about": "#n4",
-              "meta": {
-                "@id": "dict1",
-                "property": "cdao:has_tag",
-                "content": "true",
-                "@type": "nex:LiteralMeta",
-                "datatype": "xsd:boolean"
-              }
-            },
-            {
-              "@type": "node",
-              "@id": "n5",
-              "label": "n5",
-              "otu": "t3"
-            },
-            {
-              "@type": "node",
-              "@id": "n6",
-              "label": "n6",
-              "otu": "t2"
-            },
-            {
-              "@type": "node",
-              "@id": "n7",
-              "label": "n7"
-            },
-            {
-              "@type": "node",
-              "@id": "n8",
-              "label": "n8",
-              "otu": "t5"
-            },
-            {
-              "@type": "node",
-              "@id": "n9",
-              "label": "n9",
-              "otu": "t4"
-            }
-          ],
-          "edge": [
-            {
-              "@type": "edge",
-              "source": "n1",
-              "target": "n3",
-              "@id": "e1",
-              "length": "0.34534"
-            },
-            {
-              "@type": "edge",
-              "source": "n1",
-              "target": "n2",
-              "@id": "e2",
-              "length": "0.4353"
-            },
-            {
-              "@type": "edge",
-              "source": "n3",
-              "target": "n4",
-              "@id": "e3",
-              "length": "0.324"
-            },
-            {
-              "@type": "edge",
-              "source": "n3",
-              "target": "n7",
-              "@id": "e4",
-              "length": "0.3247"
-            },
-            {
-              "@type": "edge",
-              "source": "n4",
-              "target": "n5",
-              "@id": "e5",
-              "length": "0.234"
-            },
-            {
-              "@type": "edge",
-              "source": "n4",
-              "target": "n6",
-              "@id": "e6",
-              "length": "0.3243"
-            },
-            {
-              "@type": "edge",
-              "source": "n7",
-              "target": "n8",
-              "@id": "e7",
-              "length": "0.32443"
-            },
-            {
-              "@type": "edge",
-              "source": "n7",
-              "target": "n9",
-              "@id": "e8",
-              "length": "0.2342"
-            }
-          ]
+          "@type": "edge",
+          "source": "n1",
+          "target": "n3",
+          "@id": "e1",
+          "length": "0.34534"
         },
         {
-          "@type": "tree",
-          "@id": "tree2",
-          "@type.1": "nex:IntTree",
-          "label": "tree2",
-          "node": [
-            {
-              "@type": "node",
-              "@id": "tree2n1",
-              "label": "n1"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n2",
-              "label": "n2",
-              "otu": "t1"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n3",
-              "label": "n3"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n4",
-              "about": "#tree2n4",
-              "label": "n4",
-              "meta": {
-                "@id": "tree2dict1",
-                "property": "cdao:has_tag",
-                "content": "true",
-                "@type": "nex:LiteralMeta",
-                "datatype": "xsd:boolean"
-              }
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n5",
-              "label": "n5",
-              "otu": "t3"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n6",
-              "label": "n6",
-              "otu": "t2"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n7",
-              "label": "n7"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n8",
-              "label": "n8",
-              "otu": "t5"
-            },
-            {
-              "@type": "node",
-              "@id": "tree2n9",
-              "label": "n9",
-              "otu": "t4"
-            }
-          ],
-          "edge": [
-            {
-              "@type": "edge",
-              "source": "tree2n1",
-              "target": "tree2n3",
-              "@id": "tree2e1",
-              "length": "1"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n1",
-              "target": "tree2n2",
-              "@id": "tree2e2",
-              "length": "2"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n3",
-              "target": "tree2n4",
-              "@id": "tree2e3",
-              "length": "3"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n3",
-              "target": "tree2n7",
-              "@id": "tree2e4",
-              "length": "1"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n4",
-              "target": "tree2n5",
-              "@id": "tree2e5",
-              "length": "2"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n4",
-              "target": "tree2n6",
-              "@id": "tree2e6",
-              "length": "1"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n7",
-              "target": "tree2n8",
-              "@id": "tree2e7",
-              "length": "1"
-            },
-            {
-              "@type": "edge",
-              "source": "tree2n7",
-              "target": "tree2n9",
-              "@id": "tree2e8",
-              "length": "1"
-            }
-          ]
+          "@type": "edge",
+          "source": "n1",
+          "target": "n2",
+          "@id": "e2",
+          "length": "0.4353"
+        },
+        {
+          "@type": "edge",
+          "source": "n3",
+          "target": "n4",
+          "@id": "e3",
+          "length": "0.324"
+        },
+        {
+          "@type": "edge",
+          "source": "n3",
+          "target": "n7",
+          "@id": "e4",
+          "length": "0.3247"
+        },
+        {
+          "@type": "edge",
+          "source": "n4",
+          "target": "n5",
+          "@id": "e5",
+          "length": "0.234"
+        },
+        {
+          "@type": "edge",
+          "source": "n4",
+          "target": "n6",
+          "@id": "e6",
+          "length": "0.3243"
+        },
+        {
+          "@type": "edge",
+          "source": "n7",
+          "target": "n8",
+          "@id": "e7",
+          "length": "0.32443"
+        },
+        {
+          "@type": "edge",
+          "source": "n7",
+          "target": "n9",
+          "@id": "e8",
+          "length": "0.2342"
         }
       ]
     }
-  ]
+  },
+  "dc:title": "My test title",
+  "dc:description": "A description of my test",
+  "dc:creator": "Boettiger, Carl",
+  "dc:date": "2012-04-01",
+  "cc:license": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "dc:publisher": "unpublished data"
 } 
 ```
 
