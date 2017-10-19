@@ -6,6 +6,9 @@
 \usage{
 parse_nexml(x)
 }
+\arguments{
+\item{x}{path to a nexml file}
+}
 \description{
 Parse an NeXML file into an R list object
 }

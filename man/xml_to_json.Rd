@@ -8,12 +8,14 @@ xml_to_json(x, out = NULL)
 }
 \arguments{
 \item{x}{path to a nexml file}
+
+\item{out}{output filename; optional, if ommitted will return JSON string}
 }
 \value{
-json string
+json string or json output file
 }
 \description{
-Convert an NeXML file into a json string
+Convert an NeXML file into a json file/string
 }
 \examples{
 

@@ -1,9 +1,10 @@
 #' xml_to_json
 #'
-#' Convert an NeXML file into a json string
+#' Convert an NeXML file into a json file/string
 #'
 #' @param x path to a nexml file
-#' @return json string
+#' @param out output filename; optional, if ommitted will return JSON string
+#' @return json string or json output file
 #' @export
 #' @importFrom xml2 read_xml xml_find_all xml_remove as_list
 #' @importFrom jsonlite toJSON write_json
@@ -24,6 +25,7 @@ xml_to_json <- function(x, out = NULL){
 #' parse_nexml
 #'
 #' Parse an NeXML file into an R list object
+#' @inheritParams xml_to_json
 #'
 #' @export
 parse_nexml <- function(x){
