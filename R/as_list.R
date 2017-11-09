@@ -13,17 +13,14 @@ as_list.xml_node <- function(x, ns = character(), embed_attr=TRUE, ...) {
       return(xml_text(x))
     if (type != "element" && type != "document")
       return(paste("[", type, "]"))
-
     out <- list()
   } else {
     out <- lapply(seq_along(contents), function(i) as_list(contents[[i]], ns = ns))
-
     nms <- ifelse(xml_type(contents) == "element", xml_name(contents, ns = ns), "")
     if (any(nms != "")) {
       names(out) <- nms
     }
   }
-
   node_attr <- special_jsonld_attrs(xml_attrs(x, ns = ns))
   # Add xml attributes as R attributes or embed in list
   if(embed_attr)
