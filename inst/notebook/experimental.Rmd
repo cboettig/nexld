@@ -1,0 +1,31 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library(nexld)
+library(jsonlite)
+library(jsonld)
+library(magrittr)
+```
+
+
+```{r}
+
+f <- system.file("extdata/example.xml", package = "nexld")
+json <- nexld::parse_nexml(f)
+
+json %>% write_json("example.json", pretty = TRUE, auto_unbox=TRUE)
+
+readr::read_lines("example.json", n_max = 10) %>% cat(sep="\n")
+```
+
+```{r}
+
+f <- system.file("extdata/ontotrace.xml", package = "nexld")
+json <- nexld::parse_nexml(f)
+
+
+```
