@@ -13,4 +13,7 @@ RoxygenNote: 6.0.1
 Imports: xml2,
     jsonlite
 Suggests: 
-    testthat
+    testthat,
+    jsonld,
+    readr,
+    magrittr

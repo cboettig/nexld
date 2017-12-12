@@ -149,6 +149,7 @@ special_jsonld_attrs <- function(x) {
     return(NULL)
   }
   # escape special names
+  ## FIXME: apply/enforce URI format to @id
   special <- names(x) %in% ld_attributes
   names(x)[special] <- paste0("@", names(x)[special])
   r_attrs_to_xml(as.list(x))
