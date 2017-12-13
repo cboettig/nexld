@@ -19,9 +19,9 @@ for(filename in files_to_convert) {
             testthat::expect_is(content_jsonld, "json")
         })
         
-        # TODO for now, just write it down
+        # Save a copy of the JSON-LD file so we can see if it's changed.
         if(is.na(content_jsonld)) {
-            expect_error("Blank output file produced")
+            stop("Blank output file produced")
         } else {
             fd_json_output <- file(output_file, open="w")
             writeLines(content_jsonld, fd_json_output)
