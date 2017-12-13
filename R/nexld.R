@@ -37,7 +37,7 @@ parse_nexml <- function(x){
   xml2::xml_remove(xml2::xml_find_all(xml, "//comment()"))
 
   ## strip about attributes
-  res <- xml2::xml_find_all(xml, '//*[@about]')
+  res <- xml2::xml_find_all(xml, '//@about')
   invisible(xml2::xml_remove(res))
 
   ## Main transform, map XML to list using a modification of the xml2::as_list convention

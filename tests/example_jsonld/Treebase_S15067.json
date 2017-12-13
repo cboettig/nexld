@@ -1,33 +1,29 @@
 {
   "@context": {
-    "@vocab": "http://www.nexml.org/2009/"
+    "@base": "http://purl.org/phylo/treebase/phylows/study/TB2:",
+    "@vocab": "http://www.nexml.org/2009",
+    "nex": "http://www.nexml.org/2009",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prism": "http://prismstandard.org/namespaces/1.2/basic/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "tb": "http://purl.org/phylo/treebase/2.0/terms#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "xsi": "http://www.w3.org/2001/XMLSchema-instance"
   },
   "nexml": {
-    "about": "#S15067",
     "generator": "org.nexml.model.impl.DocumentImpl",
     "@id": "S15067",
     "version": "0.9",
-    "base": "http://purl.org/phylo/treebase/phylows/study/TB2:",
-    "xmlns:nex": "http://www.nexml.org/2009",
-    "xmlns": "http://www.nexml.org/2009",
-    "xmlns:dc": "http://purl.org/dc/elements/1.1/",
-    "xmlns:dcterms": "http://purl.org/dc/terms/",
-    "xmlns:prism": "http://prismstandard.org/namespaces/1.2/basic/",
-    "xmlns:rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "xmlns:rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "xmlns:skos": "http://www.w3.org/2004/02/skos/core#",
-    "xmlns:tb": "http://purl.org/phylo/treebase/2.0/terms#",
-    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema#",
-    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
     "otus": {
-      "about": "#Tls37789",
       "@id": "Tls37789",
       "label": "Taxa",
       "base": "http://purl.org/phylo/treebase/phylows/taxon/TB2:",
       "otu": [
         {
           "@type": "otu",
-          "about": "#Tl1502117",
           "@id": "Tl1502117",
           "label": "Euparkeria capensis",
           "tb:identifier.taxon": {},
@@ -37,7 +33,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502138",
           "@id": "Tl1502138",
           "label": "Eudimorphodon ranzii",
           "tb:identifier.taxon": {},
@@ -47,7 +42,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502078",
           "@id": "Tl1502078",
           "label": "Eudimorphodon rosenfeldi",
           "tb:identifier.taxon": {},
@@ -57,7 +51,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502109",
           "@id": "Tl1502109",
           "label": "Eudimorphodon cromptonellus",
           "tb:identifier.taxon": {},
@@ -67,28 +60,24 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502096",
           "@id": "Tl1502096",
           "label": "Peteinosaurus zambelli",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502126",
           "@id": "Tl1502126",
           "label": "Caviramus schesaplanensis",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502116",
           "@id": "Tl1502116",
           "label": "Raeticodactylus filisurensis",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502077",
           "@id": "Tl1502077",
           "label": "Austriadactylus cristatus",
           "tb:identifier.taxon": {},
@@ -98,7 +87,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502112",
           "@id": "Tl1502112",
           "label": "Preondactylus buffarinii",
           "tb:identifier.taxon": {},
@@ -108,7 +96,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502125",
           "@id": "Tl1502125",
           "label": "Dimorphodon macronyx",
           "tb:identifier.taxon": {},
@@ -118,14 +105,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502054",
           "@id": "Tl1502054",
           "label": "Parapsicephalus purdoni",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502135",
           "@id": "Tl1502135",
           "label": "Campylognathoides liasicus",
           "tb:identifier.taxon": {},
@@ -135,28 +120,24 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502049",
           "@id": "Tl1502049",
           "label": "Campylognathoides zitteli",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502086",
           "@id": "Tl1502086",
           "label": "Sericipterus wucaiwanensis",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502124",
           "@id": "Tl1502124",
           "label": "Angustinaripterus longicephalus",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502088",
           "@id": "Tl1502088",
           "label": "Harpactognathus gentryii",
           "tb:identifier.taxon": {},
@@ -166,7 +147,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502122",
           "@id": "Tl1502122",
           "label": "Cacibupteryx caribensis",
           "tb:identifier.taxon": {},
@@ -176,7 +156,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502137",
           "@id": "Tl1502137",
           "label": "Rhamphorhynchus muensteri",
           "tb:identifier.taxon": {},
@@ -186,7 +165,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502079",
           "@id": "Tl1502079",
           "label": "Nesodactylus hesperius",
           "tb:identifier.taxon": {},
@@ -196,7 +174,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502056",
           "@id": "Tl1502056",
           "label": "Dorygnathus banthensis",
           "tb:identifier.taxon": {},
@@ -206,7 +183,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502090",
           "@id": "Tl1502090",
           "label": "Scaphognathus crassirostris",
           "tb:identifier.taxon": {},
@@ -216,7 +192,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502092",
           "@id": "Tl1502092",
           "label": "Sordes pilosus",
           "tb:identifier.taxon": {},
@@ -226,21 +201,18 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502108",
           "@id": "Tl1502108",
           "label": "Darwinopterus modularis",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502113",
           "@id": "Tl1502113",
           "label": "Wukongopterus lii",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502087",
           "@id": "Tl1502087",
           "label": "Pterorhynchus wellnhoferi",
           "tb:identifier.taxon": {},
@@ -250,14 +222,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502111",
           "@id": "Tl1502111",
           "label": "Changchengopterus pani",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502089",
           "@id": "Tl1502089",
           "label": "Batrachognathus volans",
           "tb:identifier.taxon": {},
@@ -267,7 +237,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502080",
           "@id": "Tl1502080",
           "label": "Jeholopterus ningchengensis",
           "tb:identifier.taxon": {},
@@ -277,7 +246,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502085",
           "@id": "Tl1502085",
           "label": "Anurognathus ammoni",
           "tb:identifier.taxon": {},
@@ -287,7 +255,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502142",
           "@id": "Tl1502142",
           "label": "Dendrorhynchoides curvidentatus",
           "tb:identifier.taxon": {},
@@ -297,7 +264,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502150",
           "@id": "Tl1502150",
           "label": "Gnathosaurus subulatus",
           "tb:identifier.taxon": {},
@@ -307,7 +273,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502043",
           "@id": "Tl1502043",
           "label": "Gnathosaurus macrurus",
           "tb:identifier.taxon": {},
@@ -317,7 +282,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502144",
           "@id": "Tl1502144",
           "label": "Plataleorhynchus streptophorodon",
           "tb:identifier.taxon": {},
@@ -327,7 +291,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502106",
           "@id": "Tl1502106",
           "label": "Huanhepterus quingyangensis",
           "tb:identifier.taxon": {},
@@ -337,14 +300,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502100",
           "@id": "Tl1502100",
           "label": "Elanodactylus prolatus",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502061",
           "@id": "Tl1502061",
           "label": "Kepodactylus insperatus",
           "tb:identifier.taxon": {},
@@ -354,7 +315,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502062",
           "@id": "Tl1502062",
           "label": "Ctenochasma elegans",
           "tb:identifier.taxon": {},
@@ -364,7 +324,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502145",
           "@id": "Tl1502145",
           "label": "Ctenochasma porocristata",
           "tb:identifier.taxon": {},
@@ -374,7 +333,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502123",
           "@id": "Tl1502123",
           "label": "Pterodaustro guinazui",
           "tb:identifier.taxon": {},
@@ -384,7 +342,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502141",
           "@id": "Tl1502141",
           "label": "Eosipterus yangi",
           "tb:identifier.taxon": {},
@@ -394,7 +351,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502099",
           "@id": "Tl1502099",
           "label": "Beipiaopterus chenianus",
           "tb:identifier.taxon": {},
@@ -404,28 +360,24 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502143",
           "@id": "Tl1502143",
           "label": "Gegepterus changi",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502105",
           "@id": "Tl1502105",
           "label": "Boreopterus cuiae",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502149",
           "@id": "Tl1502149",
           "label": "Feilongus youngi",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502110",
           "@id": "Tl1502110",
           "label": "Gallodactylus canjuersensis",
           "tb:identifier.taxon": {},
@@ -435,7 +387,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502074",
           "@id": "Tl1502074",
           "label": "Cycnorhamphus suevicus",
           "tb:identifier.taxon": {},
@@ -445,14 +396,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502098",
           "@id": "Tl1502098",
           "label": "Pterodactylus longicollum",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502069",
           "@id": "Tl1502069",
           "label": "Pterodactylus kochi",
           "tb:identifier.taxon": {},
@@ -462,7 +411,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502057",
           "@id": "Tl1502057",
           "label": "Pterodactylus antiquus",
           "tb:identifier.taxon": {},
@@ -472,7 +420,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502118",
           "@id": "Tl1502118",
           "label": "Normannognathus wellnhoferi",
           "tb:identifier.taxon": {},
@@ -482,14 +429,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502151",
           "@id": "Tl1502151",
           "label": "Germanodactylus cristatus",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502064",
           "@id": "Tl1502064",
           "label": "Germanodactylus rhamphastinus",
           "tb:identifier.taxon": {},
@@ -499,7 +444,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502066",
           "@id": "Tl1502066",
           "label": "Haopterus gracilis",
           "tb:identifier.taxon": {},
@@ -509,7 +453,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502146",
           "@id": "Tl1502146",
           "label": "Anhanguera santanae",
           "tb:identifier.taxon": {},
@@ -519,7 +462,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502071",
           "@id": "Tl1502071",
           "label": "Anhanguera piscator",
           "tb:identifier.taxon": {},
@@ -529,7 +471,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502107",
           "@id": "Tl1502107",
           "label": "Anhanguera blittersdorffi",
           "tb:identifier.taxon": {},
@@ -539,14 +480,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502073",
           "@id": "Tl1502073",
           "label": "Anhanguera araripensis",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502114",
           "@id": "Tl1502114",
           "label": "Liaoningopterus gui",
           "tb:identifier.taxon": {},
@@ -556,7 +495,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502148",
           "@id": "Tl1502148",
           "label": "Tropeognathus mesembrinus",
           "tb:identifier.taxon": {},
@@ -566,14 +504,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502076",
           "@id": "Tl1502076",
           "label": "Coloborhynchus clavirostris",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502129",
           "@id": "Tl1502129",
           "label": "Ornithocheirus simus",
           "tb:identifier.taxon": {},
@@ -583,14 +519,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502131",
           "@id": "Tl1502131",
           "label": "Brasileodactylus araripensis",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502072",
           "@id": "Tl1502072",
           "label": "Ludodactylus sibbicki",
           "tb:identifier.taxon": {},
@@ -600,7 +534,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502045",
           "@id": "Tl1502045",
           "label": "Cearadactylus atrox",
           "tb:identifier.taxon": {},
@@ -610,7 +543,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502102",
           "@id": "Tl1502102",
           "label": "Lonchodectes compressirostris",
           "tb:identifier.taxon": {},
@@ -620,28 +552,24 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502052",
           "@id": "Tl1502052",
           "label": "Nurhachius ignaciobritoi",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502120",
           "@id": "Tl1502120",
           "label": "Liaoxipterus brachyognathus",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502060",
           "@id": "Tl1502060",
           "label": "Istiodactylus sinensis",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502055",
           "@id": "Tl1502055",
           "label": "Istiodactylus latidens",
           "tb:identifier.taxon": {},
@@ -651,14 +579,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502101",
           "@id": "Tl1502101",
           "label": "Longchengopterus zhaoi",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502119",
           "@id": "Tl1502119",
           "label": "Pteranodon longiceps",
           "tb:identifier.taxon": {},
@@ -668,7 +594,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502081",
           "@id": "Tl1502081",
           "label": "Pteranodon sternbergi",
           "tb:identifier.taxon": {},
@@ -678,7 +603,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502053",
           "@id": "Tl1502053",
           "label": "Nyctosaurus gracilis",
           "tb:identifier.taxon": {},
@@ -688,21 +612,18 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502051",
           "@id": "Tl1502051",
           "label": "Nyctosaurus lamegoi",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502063",
           "@id": "Tl1502063",
           "label": "Muzquizopteryx coahuilensis",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502147",
           "@id": "Tl1502147",
           "label": "Tupandactylus navigans",
           "tb:identifier.taxon": {},
@@ -712,7 +633,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502046",
           "@id": "Tl1502046",
           "label": "Tupandactylus imperator",
           "tb:identifier.taxon": {},
@@ -722,14 +642,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502115",
           "@id": "Tl1502115",
           "label": "Bakonydraco galaczi",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502104",
           "@id": "Tl1502104",
           "label": "Tapejara wellnhoferi",
           "tb:identifier.taxon": {},
@@ -739,28 +657,24 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502058",
           "@id": "Tl1502058",
           "label": "Huaxiapterus benxiensis",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502127",
           "@id": "Tl1502127",
           "label": "Huaxiapterus corallatus",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502103",
           "@id": "Tl1502103",
           "label": "Eopteranodon lii",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502136",
           "@id": "Tl1502136",
           "label": "Sinopterus gui",
           "tb:identifier.taxon": {},
@@ -770,14 +684,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502133",
           "@id": "Tl1502133",
           "label": "Huaxiapterus jii",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502082",
           "@id": "Tl1502082",
           "label": "Sinopterus dongi",
           "tb:identifier.taxon": {},
@@ -787,14 +699,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502070",
           "@id": "Tl1502070",
           "label": "Nemicolopterus crypticus",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502075",
           "@id": "Tl1502075",
           "label": "Bennettazhia oregonensis",
           "tb:identifier.taxon": {},
@@ -804,7 +714,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502084",
           "@id": "Tl1502084",
           "label": "Dsungaripterus weii",
           "tb:identifier.taxon": {},
@@ -814,7 +723,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502094",
           "@id": "Tl1502094",
           "label": "Domeykodactylus ceciliae",
           "tb:identifier.taxon": {},
@@ -824,14 +732,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502134",
           "@id": "Tl1502134",
           "label": "Noripterus parvus",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502139",
           "@id": "Tl1502139",
           "label": "Noripterus complicidens",
           "tb:identifier.taxon": {},
@@ -841,7 +747,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502095",
           "@id": "Tl1502095",
           "label": "Tupuxuara longicristatus",
           "tb:identifier.taxon": {},
@@ -851,7 +756,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502059",
           "@id": "Tl1502059",
           "label": "Tupuxuara leonardii",
           "tb:identifier.taxon": {},
@@ -861,7 +765,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502048",
           "@id": "Tl1502048",
           "label": "Thalassodromeus sethi",
           "tb:identifier.taxon": {},
@@ -871,7 +774,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502065",
           "@id": "Tl1502065",
           "label": "Chaoyangopterus zhangi",
           "tb:identifier.taxon": {},
@@ -881,28 +783,24 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502093",
           "@id": "Tl1502093",
           "label": "Jidapterus edentus",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502128",
           "@id": "Tl1502128",
           "label": "Eoazhdarcho liaoxiensis",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502068",
           "@id": "Tl1502068",
           "label": "Shenzhoupterus chaoyangensis",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502050",
           "@id": "Tl1502050",
           "label": "Zhejiangopterus linhaiensis",
           "tb:identifier.taxon": {},
@@ -912,7 +810,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502121",
           "@id": "Tl1502121",
           "label": "Azhdarcho lancicollis",
           "tb:identifier.taxon": {},
@@ -922,7 +819,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502083",
           "@id": "Tl1502083",
           "label": "Arambourgiania philadelphiae",
           "tb:identifier.taxon": {},
@@ -932,49 +828,42 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502140",
           "@id": "Tl1502140",
           "label": "Radiodactylus langstoni",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502132",
           "@id": "Tl1502132",
           "label": "Alamodactylus byrdi",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502130",
           "@id": "Tl1502130",
           "label": "USNM 13804",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502097",
           "@id": "Tl1502097",
           "label": "Aetodactylus halli",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502044",
           "@id": "Tl1502044",
           "label": "Coloborhynchus wadleighi",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502047",
           "@id": "Tl1502047",
           "label": "TMM 42489",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
           "@type": "otu",
-          "about": "#Tl1502091",
           "@id": "Tl1502091",
           "label": "Quetzalcoatlus northropi",
           "tb:identifier.taxon": {},
@@ -984,7 +873,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl1502067",
           "@id": "Tl1502067",
           "label": "Quetzalcoatlus sp",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
@@ -993,14 +881,12 @@
       "skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@30defd8 $Rev: 1040 $"
     },
     "trees": {
-      "about": "#Tb25789",
       "@id": "Tb25789",
       "label": "Lone Star Pterosaurs",
       "otus": "Tls37789",
       "base": "http://purl.org/phylo/treebase/phylows/tree/TB2:",
       "tree": [
         {
-          "about": "#Tr75190",
           "@id": "Tr75190",
           "label": "Single MPT w/out USNM 13804",
           "@type": "nex:FloatTree",
@@ -3355,7 +3241,6 @@
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S15067"
         },
         {
-          "about": "#Tr75191",
           "@id": "Tr75191",
           "label": "Adams consensus w/USNM 13804",
           "@type": "nex:FloatTree",
@@ -5727,7 +5612,6 @@
     },
     "characters": [
       {
-        "about": "#M22398",
         "@id": "M22398",
         "label": "Pterosaurs Morphological Discrete",
         "otus": "Tls37789",
@@ -7659,7 +7543,6 @@
         "tb:type.matrix": "Standard"
       },
       {
-        "about": "#M22399",
         "@id": "M22399",
         "label": "Pterosaurs Morphological Continuous",
         "otus": "Tls37789",

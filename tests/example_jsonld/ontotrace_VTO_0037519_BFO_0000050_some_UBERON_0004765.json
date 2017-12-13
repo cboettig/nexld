@@ -1,17 +1,16 @@
 {
   "@context": {
-    "@vocab": "http://www.nexml.org/2009/"
+    "@vocab": "http://www.nexml.org/2009",
+    "dc": "http://purl.org/dc/terms/",
+    "dwc": "http://rs.tdwg.org/dwc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "ps": "http://vocab.phenoscape.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsi": "http://www.w3.org/2001/XMLSchema-instance"
   },
   "nexml": {
     "version": "0.9",
     "schemaLocation": "http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd",
-    "xmlns": "http://www.nexml.org/2009",
-    "xmlns:dc": "http://purl.org/dc/terms/",
-    "xmlns:dwc": "http://rs.tdwg.org/dwc/terms/",
-    "xmlns:obo": "http://purl.obolibrary.org/obo/",
-    "xmlns:ps": "http://vocab.phenoscape.org/",
-    "xmlns:rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
     "otus": {
       "@id": "tdcdf576d-af84-47da-aa08-a98992ca20be",
       "otu": [
@@ -19,2779 +18,2382 @@
           "@type": "otu",
           "@id": "VTO_0065870",
           "label": "Xenurobrycon macropus",
-          "about": "#VTO_0065870",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065870"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065095",
           "label": "Cheirodontops geayi",
-          "about": "#VTO_0065095",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065095"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037840",
           "label": "Alestes dentex",
-          "about": "#VTO_0037840",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037840"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038111",
           "label": "Serrapinnus",
-          "about": "#VTO_0038111",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038111"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066002",
           "label": "Curimata macrops",
-          "about": "#VTO_0066002",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066002"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037799",
           "label": "Phenacogrammus aurantiacus",
-          "about": "#VTO_0037799",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037799"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066108",
           "label": "Brycinus intermedius",
-          "about": "#VTO_0066108",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066108"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065744",
           "label": "Gymnocorymbus sp. (Fink and Fink 1981)",
-          "about": "#VTO_0065744",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065744"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037543",
           "label": "Hepsetidae",
-          "about": "#VTO_0037543",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037543"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065903",
           "label": "Charax stenopterus",
-          "about": "#VTO_0065903",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065903"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065575",
           "label": "Odontostilbe dialeptura",
-          "about": "#VTO_0065575",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065575"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038118",
           "label": "Acinocheirodon melanogramma",
-          "about": "#VTO_0038118",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038118"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065535",
           "label": "Creagrutus lepidus",
-          "about": "#VTO_0065535",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065535"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066109",
           "label": "Brycinus brevis",
-          "about": "#VTO_0066109",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066109"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037519",
           "label": "Characiformes",
-          "about": "#VTO_0037519",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037519"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065374",
           "label": "Roeboides sp. A (Lucena and Menezes 1998)",
-          "about": "#VTO_0065374",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065374"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037807",
           "label": "Bryconaethiops boulengeri",
-          "about": "#VTO_0037807",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037807"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038378",
           "label": "Agoniates anchovia",
-          "about": "#VTO_0038378",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038378"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038554",
           "label": "Xenocharax spilurus",
-          "about": "#VTO_0038554",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038554"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065532",
           "label": "Creagrutus britskii",
-          "about": "#VTO_0065532",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065532"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065901",
           "label": "Charax gibbosus",
-          "about": "#VTO_0065901",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065901"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037545",
           "label": "Hepsetus odoe",
-          "about": "#VTO_0037545",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037545"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037808",
           "label": "Bryconaethiops macrops",
-          "about": "#VTO_0037808",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037808"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065097",
           "label": "Phenacobrycon henni",
-          "about": "#VTO_0065097",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065097"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065585",
           "label": "Odontostilbe pequira",
-          "about": "#VTO_0065585",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065585"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066076",
           "label": "Lebiasina bimaculata",
-          "about": "#VTO_0066076",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066076"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064928",
           "label": "Acestrorhynchus isalineae",
-          "about": "#VTO_0064928",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064928"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065904",
           "label": "Charax pauciradiatus",
-          "about": "#VTO_0065904",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065904"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038295",
           "label": "Tetragonopterus argenteus",
-          "about": "#VTO_0038295",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038295"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065533",
           "label": "Creagrutus beni",
-          "about": "#VTO_0065533",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065533"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037798",
           "label": "Phenacogrammus interruptus",
-          "about": "#VTO_0037798",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037798"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065931",
           "label": "Acrobrycon ipanquianus",
-          "about": "#VTO_0065931",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065931"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065024",
           "label": "Rhoadsia altipinna",
-          "about": "#VTO_0065024",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065024"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065353",
           "label": "Mimagoniates sylvicola",
-          "about": "#VTO_0065353",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065353"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064953",
           "label": "Anodus elongatus",
-          "about": "#VTO_0064953",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064953"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038628",
           "label": "Acestrorhynchus grandoculis",
-          "about": "#VTO_0038628",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038628"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065932",
           "label": "Acrobrycon sp. (Burns et al 1995)",
-          "about": "#VTO_0065932",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065932"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065099",
           "label": "Chrysobrycon hesperus",
-          "about": "#VTO_0065099",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065099"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038618",
           "label": "Acestrorhynchus altus",
-          "about": "#VTO_0038618",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038618"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038374",
           "label": "Hydrolycus scomberoides",
-          "about": "#VTO_0038374",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038374"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065352",
           "label": "Glandulocauda melanopleura",
-          "about": "#VTO_0065352",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065352"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038629",
           "label": "Acestrorhynchus nasutus",
-          "about": "#VTO_0038629",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038629"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064718",
           "label": "Abramites sp. (Fink and Fink 1981)",
-          "about": "#VTO_0064718",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064718"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064923",
           "label": "Paradistichodus dimidiatus",
-          "about": "#VTO_0064923",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064923"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038375",
           "label": "Hydrolycus armatus",
-          "about": "#VTO_0038375",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038375"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065373",
           "label": "Roeboides sp. B (Lucena and Menezes 1998)",
-          "about": "#VTO_0065373",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065373"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065893",
           "label": "Spintherobolus papilliferus",
-          "about": "#VTO_0065893",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065893"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066124",
           "label": "Alestes macrophthalmus",
-          "about": "#VTO_0066124",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066124"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064646",
           "label": "Caenotropus maculosus",
-          "about": "#VTO_0064646",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064646"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066107",
           "label": "Brycinus derhami",
-          "about": "#VTO_0066107",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066107"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065894",
           "label": "Tyttocharax sp. (Burns et al 1995)",
-          "about": "#VTO_0065894",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065894"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038255",
           "label": "Piabina argentea",
-          "about": "#VTO_0038255",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038255"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064786",
           "label": "Leporinus tigrinus",
-          "about": "#VTO_0064786",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064786"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066100",
           "label": "Gilbertolus atratoensis",
-          "about": "#VTO_0066100",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066100"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037849",
           "label": "Lepidarchus adonis",
-          "about": "#VTO_0037849",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037849"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066112",
           "label": "Brycinus aff. nurse (Zanata and Vari 2005)",
-          "about": "#VTO_0066112",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066112"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037791",
           "label": "Micralestes occidentalis",
-          "about": "#VTO_0037791",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037791"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064644",
           "label": "Caenotropus mestomorgmatos",
-          "about": "#VTO_0064644",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064644"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066101",
           "label": "Brycinus leuciscus",
-          "about": "#VTO_0066101",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066101"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037864",
           "label": "Alestopetersius hilgendorfi",
-          "about": "#VTO_0037864",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037864"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037792",
           "label": "Micralestes acutidens",
-          "about": "#VTO_0037792",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037792"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066019",
           "label": "Citharinus sp. (DiDario 2004)",
-          "about": "#VTO_0066019",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066019"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064788",
           "label": "Leporinus gomesi",
-          "about": "#VTO_0064788",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064788"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066008",
           "label": "Curimata vittata",
-          "about": "#VTO_0066008",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066008"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065355",
           "label": "Mimagoniates barberi",
-          "about": "#VTO_0065355",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065355"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037847",
           "label": "Clupeocharax schoutedeni",
-          "about": "#VTO_0037847",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037847"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038371",
           "label": "Cynodon gibbus",
-          "about": "#VTO_0038371",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038371"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066114",
           "label": "Tricuspidalestes caeruleus",
-          "about": "#VTO_0066114",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066114"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065790",
           "label": "Lonchogenys ilisha",
-          "about": "#VTO_0065790",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065790"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064822",
           "label": "Schizodon vittatus",
-          "about": "#VTO_0064822",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064822"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066103",
           "label": "Brycinus sadleri",
-          "about": "#VTO_0066103",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066103"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066090",
           "label": "Hydrolycus wallacei",
-          "about": "#VTO_0066090",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066090"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037801",
           "label": "Phenacogrammus altus",
-          "about": "#VTO_0037801",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037801"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038031",
           "label": "Bryconops affinis",
-          "about": "#VTO_0038031",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038031"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065571",
           "label": "Odontostilbe mitoptera",
-          "about": "#VTO_0065571",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065571"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065530",
           "label": "Creagrutus machadoi",
-          "about": "#VTO_0065530",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065530"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066073",
           "label": "Copella eigenmanni",
-          "about": "#VTO_0066073",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066073"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037844",
           "label": "Brachypetersius notospilus",
-          "about": "#VTO_0037844",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037844"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064783",
           "label": "Leporinus cf. moralesi (Sidlauskas and Vari 2008)",
-          "about": "#VTO_0064783",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064783"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065490",
           "label": "Creagrutus mucipu",
-          "about": "#VTO_0065490",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065490"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065531",
           "label": "Creagrutus hildebrandi",
-          "about": "#VTO_0065531",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065531"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037860",
           "label": "Bathyaethiops caudomaculatus",
-          "about": "#VTO_0037860",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037860"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037814",
           "label": "Brycinus macrolepidotus",
-          "about": "#VTO_0037814",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037814"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064784",
           "label": "Leporinus aripuanaensis",
-          "about": "#VTO_0064784",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064784"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038368",
           "label": "Rhaphiodon vulpinus",
-          "about": "#VTO_0038368",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038368"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037793",
           "label": "Micralestes lualabae",
-          "about": "#VTO_0037793",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037793"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065027",
           "label": "Acanthocharax microlepis",
-          "about": "#VTO_0065027",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065027"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065764",
           "label": "Cynopotamus tocantinensis",
-          "about": "#VTO_0065764",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065764"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065747",
           "label": "Cheirodon pisciculus",
-          "about": "#VTO_0065747",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065747"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064785",
           "label": "Leporinus jatuncochi",
-          "about": "#VTO_0064785",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064785"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064912",
           "label": "Ichthyborus sp. (Fink and Fink 1981)",
-          "about": "#VTO_0064912",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064912"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065972",
           "label": "Potamorhina laticeps",
-          "about": "#VTO_0065972",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065972"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037714",
           "label": "Lebiasinidae",
-          "about": "#VTO_0037714",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037714"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064654",
           "label": "Ctenolucius sp. (Fink and Fink 1981)",
-          "about": "#VTO_0064654",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064654"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064829",
           "label": "Schizodon isognathus",
-          "about": "#VTO_0064829",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064829"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038434",
           "label": "Corynopoma riisei",
-          "about": "#VTO_0038434",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038434"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065788",
           "label": "Genus C species C (Malabarba 1998)",
-          "about": "#VTO_0065788",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065788"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065869",
           "label": "Xenurobrycon polyancistrus",
-          "about": "#VTO_0065869",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065869"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066084",
           "label": "Lebiasina sp. (Vari 1995)",
-          "about": "#VTO_0066084",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066084"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064769",
           "label": "Leporinus cf. fasciatus (Sidlauskas and Vari 2008)",
-          "about": "#VTO_0064769",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064769"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065494",
           "label": "Creagrutus pila",
-          "about": "#VTO_0065494",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065494"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037853",
           "label": "Arnoldichthys spilopterus",
-          "about": "#VTO_0037853",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037853"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065480",
           "label": "Creagrutus bolivari",
-          "about": "#VTO_0065480",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065480"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065854",
           "label": "Bryconamericus brevirostris",
-          "about": "#VTO_0065854",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065854"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065483",
           "label": "Creagrutus sp. (Fink and Fink 1981)",
-          "about": "#VTO_0065483",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065483"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065523",
           "label": "Creagrutus taphorni",
-          "about": "#VTO_0065523",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065523"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065868",
           "label": "Xenurobrycon heterodon",
-          "about": "#VTO_0065868",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065868"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065481",
           "label": "Creagrutus kunturus",
-          "about": "#VTO_0065481",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065481"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038503",
           "label": "Steindachnerina elegans",
-          "about": "#VTO_0038503",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038503"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065491",
           "label": "Creagrutus atratus",
-          "about": "#VTO_0065491",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065491"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037851",
           "label": "Hemigrammopetersius barnardi",
-          "about": "#VTO_0037851",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037851"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065482",
           "label": "Creagrutus pearsoni",
-          "about": "#VTO_0065482",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065482"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065492",
           "label": "Creagrutus occidaneus",
-          "about": "#VTO_0065492",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065492"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064970",
           "label": "Parodon suborbitalis",
-          "about": "#VTO_0064970",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064970"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038430",
           "label": "Mimagoniates rheocharis",
-          "about": "#VTO_0038430",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038430"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038639",
           "label": "Schizodon fasciatus",
-          "about": "#VTO_0038639",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038639"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065526",
           "label": "Creagrutus menezesi",
-          "about": "#VTO_0065526",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065526"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038614",
           "label": "Acestrorhynchus pantaneiro",
-          "about": "#VTO_0038614",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038614"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065498",
           "label": "Creagrutus anary",
-          "about": "#VTO_0065498",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065498"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065484",
           "label": "Creagrutus caucanus",
-          "about": "#VTO_0065484",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065484"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065527",
           "label": "Creagrutus paralacus",
-          "about": "#VTO_0065527",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065527"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064823",
           "label": "Schizodon scotorhabdotus",
-          "about": "#VTO_0064823",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064823"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038548",
           "label": "Distichodontidae",
-          "about": "#VTO_0038548",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038548"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037867",
           "label": "Alestopetersius caudalis",
-          "about": "#VTO_0037867",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037867"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065485",
           "label": "Creagrutus gephyrus",
-          "about": "#VTO_0065485",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065485"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065495",
           "label": "Creagrutus phasma",
-          "about": "#VTO_0065495",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065495"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064938",
           "label": "Hemiodus unimaculatus",
-          "about": "#VTO_0064938",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064938"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038432",
           "label": "Mimagoniates lateralis",
-          "about": "#VTO_0038432",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038432"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037770",
           "label": "Hydrocynus brevis",
-          "about": "#VTO_0037770",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037770"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065524",
           "label": "Creagrutus vexillapinnus",
-          "about": "#VTO_0065524",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065524"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065550",
           "label": "Brycon falcatus",
-          "about": "#VTO_0065550",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065550"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065486",
           "label": "Creagrutus affinis",
-          "about": "#VTO_0065486",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065486"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065496",
           "label": "Creagrutus hysginus",
-          "about": "#VTO_0065496",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065496"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065038",
           "label": "Gephyrocharax sinuensis",
-          "about": "#VTO_0065038",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065038"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065525",
           "label": "Creagrutus muelleri",
-          "about": "#VTO_0065525",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065525"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038624",
           "label": "Acestrorhynchus microlepis",
-          "about": "#VTO_0038624",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038624"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064760",
           "label": "Leporinus agassizii",
-          "about": "#VTO_0064760",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064760"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037812",
           "label": "Brycinus longipinnis",
-          "about": "#VTO_0037812",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037812"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038546",
           "label": "Chilodus punctatus",
-          "about": "#VTO_0038546",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038546"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065487",
           "label": "Creagrutus gracilis",
-          "about": "#VTO_0065487",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065487"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038007",
           "label": "Brycon guatemalensis",
-          "about": "#VTO_0038007",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038007"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064960",
           "label": "Chalceus spilogyros",
-          "about": "#VTO_0064960",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064960"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064964",
           "label": "Parodon caliensis",
-          "about": "#VTO_0064964",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064964"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064665",
           "label": "Prochilodus vimboides",
-          "about": "#VTO_0064665",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064665"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065039",
           "label": "Gephyrocharax valencia",
-          "about": "#VTO_0065039",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065039"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038625",
           "label": "Acestrorhynchus falcatus",
-          "about": "#VTO_0038625",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038625"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065488",
           "label": "Creagrutus gyrospilus",
-          "about": "#VTO_0065488",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065488"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064979",
           "label": "Apareiodon sp. (Fink and Fink 1981)",
-          "about": "#VTO_0064979",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064979"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038108",
           "label": "Kolpotocheirodon theloura",
-          "about": "#VTO_0038108",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038108"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038541",
           "label": "Gilbertolus maracaiboensis",
-          "about": "#VTO_0038541",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038541"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064961",
           "label": "Chalceus guaporensis",
-          "about": "#VTO_0064961",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064961"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066091",
           "label": "Hydrolycus tatauaia",
-          "about": "#VTO_0066091",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066091"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066263",
           "label": "Hoplias cf. malabaricus (Vari 1995)",
-          "about": "#VTO_0066263",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066263"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038626",
           "label": "Acestrorhynchus abbreviatus",
-          "about": "#VTO_0038626",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038626"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038523",
           "label": "Curimata inornata",
-          "about": "#VTO_0038523",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038523"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038120",
           "label": "Aphyocheirodon hemigrammus",
-          "about": "#VTO_0038120",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038120"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037810",
           "label": "Bryconaethiops microstoma",
-          "about": "#VTO_0037810",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037810"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065489",
           "label": "Creagrutus ephippiatus",
-          "about": "#VTO_0065489",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065489"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065499",
           "label": "Creagrutus figueiredoi",
-          "about": "#VTO_0065499",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065499"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066094",
           "label": "Cynodon septenarius",
-          "about": "#VTO_0066094",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066094"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038109",
           "label": "Heterocheirodon",
-          "about": "#VTO_0038109",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038109"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037761",
           "label": "Alestidae",
-          "about": "#VTO_0037761",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037761"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037520",
           "label": "Hemiodontidae",
-          "about": "#VTO_0037520",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037520"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065528",
           "label": "Creagrutus saxatilis",
-          "about": "#VTO_0065528",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065528"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038627",
           "label": "Acestrorhynchus britskii",
-          "about": "#VTO_0038627",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038627"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038612",
           "label": "Acestrorhynchidae",
-          "about": "#VTO_0038612",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038612"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066202",
           "label": "Characidium cf. zebra (Buckup 1998)",
-          "about": "#VTO_0066202",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066202"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065056",
           "label": "Grundulus bogotensis",
-          "about": "#VTO_0065056",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065056"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038158",
           "label": "Hollandichthys multifasciatus",
-          "about": "#VTO_0038158",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038158"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064759",
           "label": "Leporinus pellegrinii",
-          "about": "#VTO_0064759",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064759"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065529",
           "label": "Creagrutus crenatus",
-          "about": "#VTO_0065529",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065529"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038061",
           "label": "Roeboides myersii",
-          "about": "#VTO_0038061",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038061"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038620",
           "label": "Acestrorhynchus lacustris",
-          "about": "#VTO_0038620",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038620"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064974",
           "label": "Saccodon wagneri",
-          "about": "#VTO_0064974",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064974"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038542",
           "label": "Chilodontidae",
-          "about": "#VTO_0038542",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038542"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038621",
           "label": "Acestrorhynchus heterolepis",
-          "about": "#VTO_0038621",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038621"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037779",
           "label": "Ladigesia roloffi",
-          "about": "#VTO_0037779",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037779"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038104",
           "label": "Cheirodon interruptus",
-          "about": "#VTO_0038104",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038104"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066088",
           "label": "Lebiasina provenzanoi",
-          "about": "#VTO_0066088",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066088"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038582",
           "label": "Distichodus notospilus",
-          "about": "#VTO_0038582",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038582"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038124",
           "label": "Saccoderma melanostigma",
-          "about": "#VTO_0038124",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038124"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066033",
           "label": "Piabucina panamensis",
-          "about": "#VTO_0066033",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066033"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038622",
           "label": "Acestrorhynchus minimus",
-          "about": "#VTO_0038622",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038622"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066098",
           "label": "Roestes molossus",
-          "about": "#VTO_0066098",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066098"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064962",
           "label": "Parodontidae",
-          "about": "#VTO_0064962",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064962"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065954",
           "label": "Curimatopsis microlepis",
-          "about": "#VTO_0065954",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065954"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038172",
           "label": "Astyanax",
-          "about": "#VTO_0038172",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038172"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038106",
           "label": "Compsura heterura",
-          "about": "#VTO_0038106",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038106"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064719",
           "label": "Abramites hypselonotus",
-          "about": "#VTO_0064719",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064719"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038605",
           "label": "Hoplias malabaricus",
-          "about": "#VTO_0038605",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038605"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066066",
           "label": "Copella sp. (Vari 1995)",
-          "about": "#VTO_0066066",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066066"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064936",
           "label": "Hemiodus sp. (Fink and Fink 1981)",
-          "about": "#VTO_0064936",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064936"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065005",
           "label": "Scopaeocharax rhinodus",
-          "about": "#VTO_0065005",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065005"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037926",
           "label": "Serrasalmus rhombeus",
-          "about": "#VTO_0037926",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037926"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038128",
           "label": "Odontostilbe fugitiva",
-          "about": "#VTO_0038128",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038128"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038608",
           "label": "Hoplias microlepis",
-          "about": "#VTO_0038608",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038608"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038041",
           "label": "Triportheus albus",
-          "about": "#VTO_0038041",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038041"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065006",
           "label": "Scopaeocharax atopodus",
-          "about": "#VTO_0065006",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065006"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038460",
           "label": "Ctenoluciidae",
-          "about": "#VTO_0038460",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038460"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065566",
           "label": "Brycon dentex",
-          "about": "#VTO_0065566",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065566"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065007",
           "label": "Scopaeocharax sp. (Burns et al 1995)",
-          "about": "#VTO_0065007",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065007"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064714",
           "label": "Petulanos intermedius",
-          "about": "#VTO_0064714",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064714"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065920",
           "label": "Ptychocharax rhyacophila",
-          "about": "#VTO_0065920",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065920"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066196",
           "label": "Poecilocharax sp. (Fink and Fink 1981)",
-          "about": "#VTO_0066196",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066196"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064843",
           "label": "Hypomasticus despaxi",
-          "about": "#VTO_0064843",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064843"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064940",
           "label": "Hemiodus semitaeniatus",
-          "about": "#VTO_0064940",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064940"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065905",
           "label": "Charax sp. (Buckup 1998)",
-          "about": "#VTO_0065905",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065905"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064717",
           "label": "Gnathodolus bidens",
-          "about": "#VTO_0064717",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064717"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037945",
           "label": "Piaractus mesopotamicus",
-          "about": "#VTO_0037945",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037945"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037983",
           "label": "Salminus hilarii",
-          "about": "#VTO_0037983",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037983"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065100",
           "label": "Chrysobrycon myersi",
-          "about": "#VTO_0065100",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065100"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037868",
           "label": "Characidae",
-          "about": "#VTO_0037868",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037868"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065080",
           "label": "Hysteronotus sp. (Weitzman and Menezes 1998)",
-          "about": "#VTO_0065080",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065080"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064795",
           "label": "Leporinus cf. ecuadorensis (Sidlauskas and Vari 2008)",
-          "about": "#VTO_0064795",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064795"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065081",
           "label": "Hysteronotus megalostomus",
-          "about": "#VTO_0065081",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065081"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064817",
           "label": "Synaptolaemus cingulatus",
-          "about": "#VTO_0064817",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064817"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037824",
           "label": "Brycinus lateralis",
-          "about": "#VTO_0037824",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037824"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066096",
           "label": "Roestes sp. (Lucena and Menezes 1998)",
-          "about": "#VTO_0066096",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066096"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038423",
           "label": "Planaltina myersi",
-          "about": "#VTO_0038423",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038423"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064819",
           "label": "Sartor elongatus",
-          "about": "#VTO_0064819",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064819"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038630",
           "label": "Acestrorhynchus falcirostris",
-          "about": "#VTO_0038630",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038630"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038539",
           "label": "Roestes ogilviei",
-          "about": "#VTO_0038539",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038539"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038631",
           "label": "Anostomidae",
-          "about": "#VTO_0038631",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038631"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037784",
           "label": "Rhabdalestes septentrionalis",
-          "about": "#VTO_0037784",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037784"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038537",
           "label": "Cynodontidae",
-          "about": "#VTO_0038537",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038537"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065563",
           "label": "Brycon sp. (Fink and Fink 1981)",
-          "about": "#VTO_0065563",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065563"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064811",
           "label": "Leporellus pictus",
-          "about": "#VTO_0064811",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064811"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064814",
           "label": "Rhytiodus lauzannei",
-          "about": "#VTO_0064814",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064814"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038600",
           "label": "Hoplerythrinus unitaeniatus",
-          "about": "#VTO_0038600",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038600"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064813",
           "label": "Rhytiodus argenteofuscus",
-          "about": "#VTO_0064813",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064813"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066243",
           "label": "Characidium sp. (Fink and Fink 1981)",
-          "about": "#VTO_0066243",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066243"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065911",
           "label": "Charax unimaculatus",
-          "about": "#VTO_0065911",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065911"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064748",
           "label": "Leporinus cf. niceforoi (Sidlauskas and Vari 2008)",
-          "about": "#VTO_0064748",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064748"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064653",
           "label": "Boulengerella lucius",
-          "about": "#VTO_0064653",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064653"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038133",
           "label": "Macropsobrycon uruguayanae",
-          "about": "#VTO_0038133",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038133"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038524",
           "label": "Gasteropelecidae",
-          "about": "#VTO_0038524",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038524"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038602",
           "label": "Erythrinus erythrinus",
-          "about": "#VTO_0038602",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038602"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065447",
           "label": "Oligosarcus argenteus",
-          "about": "#VTO_0065447",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065447"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037786",
           "label": "Micralestes pabrensis",
-          "about": "#VTO_0037786",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037786"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064651",
           "label": "Boulengerella cuvieri",
-          "about": "#VTO_0064651",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064651"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065926",
           "label": "Hollandichthys sp. (DiDario 2004)",
-          "about": "#VTO_0065926",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065926"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064655",
           "label": "Ctenolucius beani",
-          "about": "#VTO_0064655",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064655"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064946",
           "label": "Hemiodus quadrimaculatus",
-          "about": "#VTO_0064946",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064946"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064713",
           "label": "Petulanos plicatus",
-          "about": "#VTO_0064713",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064713"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064652",
           "label": "Boulengerella xyrekes",
-          "about": "#VTO_0064652",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064652"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064656",
           "label": "Prochilodontidae",
-          "about": "#VTO_0064656",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064656"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038426",
           "label": "Glandulocauda melanogenys",
-          "about": "#VTO_0038426",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038426"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038357",
           "label": "Creagrutus paraguayensis",
-          "about": "#VTO_0038357",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038357"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038138",
           "label": "Prodontocharax melanotus",
-          "about": "#VTO_0038138",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038138"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038358",
           "label": "Creagrutus ignotus",
-          "about": "#VTO_0038358",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038358"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038428",
           "label": "Mimagoniates inequalis",
-          "about": "#VTO_0038428",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038428"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038359",
           "label": "Creagrutus meridionalis",
-          "about": "#VTO_0038359",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038359"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065877",
           "label": "Compsura gorgonae",
-          "about": "#VTO_0065877",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065877"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038135",
           "label": "Pseudocheirodon arnoldi",
-          "about": "#VTO_0038135",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038135"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038429",
           "label": "Mimagoniates microlepis",
-          "about": "#VTO_0038429",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038429"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037836",
           "label": "Alestes baremoze",
-          "about": "#VTO_0037836",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037836"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065502",
           "label": "Creagrutus seductus",
-          "about": "#VTO_0065502",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065502"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065768",
           "label": "Argopleura magdalenensis",
-          "about": "#VTO_0065768",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065768"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065119",
           "label": "Bryconops alburnoides",
-          "about": "#VTO_0065119",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065119"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065510",
           "label": "Creagrutus cracentis",
-          "about": "#VTO_0065510",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065510"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037724",
           "label": "Nannostomus unifasciatus",
-          "about": "#VTO_0037724",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037724"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065769",
           "label": "Argopleura diquensis",
-          "about": "#VTO_0065769",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065769"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065503",
           "label": "Creagrutus magdalenae",
-          "about": "#VTO_0065503",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065503"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066143",
           "label": "Alestopetersius smykalai",
-          "about": "#VTO_0066143",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066143"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065511",
           "label": "Creagrutus nigrostigmatus",
-          "about": "#VTO_0065511",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065511"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066147",
           "label": "Brachypetersius gabonensis",
-          "about": "#VTO_0066147",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066147"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037989",
           "label": "Lignobrycon myersi",
-          "about": "#VTO_0037989",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037989"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065500",
           "label": "Creagrutus manu",
-          "about": "#VTO_0065500",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065500"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038087",
           "label": "Heterocharax macrolepis",
-          "about": "#VTO_0038087",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038087"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037722",
           "label": "Pyrrhulina australis",
-          "about": "#VTO_0037722",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037722"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065767",
           "label": "Argopleura sp. (Weitzman and Fink 1985)",
-          "about": "#VTO_0065767",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065767"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065514",
           "label": "Creagrutus lassoi",
-          "about": "#VTO_0065514",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065514"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037833",
           "label": "Alestes bimaculatus",
-          "about": "#VTO_0037833",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037833"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065650",
           "label": "Pterobrycon landoni",
-          "about": "#VTO_0065650",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065650"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065515",
           "label": "Creagrutus provenzanoi",
-          "about": "#VTO_0065515",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065515"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038440",
           "label": "Citharinidae",
-          "about": "#VTO_0038440",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038440"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066148",
           "label": "Brachypetersius altus",
-          "about": "#VTO_0066148",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066148"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065512",
           "label": "Creagrutus brevipinnis",
-          "about": "#VTO_0065512",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065512"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037826",
           "label": "Brycinus carolinae",
-          "about": "#VTO_0037826",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037826"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064947",
           "label": "Hemiodus argenteus",
-          "about": "#VTO_0064947",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064947"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065513",
           "label": "Creagrutus melanzonus",
-          "about": "#VTO_0065513",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065513"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066136",
           "label": "Duboisialestes tumbensis",
-          "about": "#VTO_0066136",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066136"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065518",
           "label": "Creagrutus calai",
-          "about": "#VTO_0065518",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065518"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064844",
           "label": "Hypomasticus mormyrops",
-          "about": "#VTO_0064844",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064844"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038140",
           "label": "Nanocheirodon",
-          "about": "#VTO_0038140",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038140"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065519",
           "label": "Creagrutus atrisignum",
-          "about": "#VTO_0065519",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065519"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037823",
           "label": "Brycinus kingsleyae",
-          "about": "#VTO_0037823",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037823"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066138",
           "label": "Petersius conserialis",
-          "about": "#VTO_0066138",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066138"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065508",
           "label": "Creagrutus magoi",
-          "about": "#VTO_0065508",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065508"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065516",
           "label": "Creagrutus flavescens",
-          "about": "#VTO_0065516",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065516"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037822",
           "label": "Brycinus imberi",
-          "about": "#VTO_0037822",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037822"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064845",
           "label": "Hypomasticus pachycheilus",
-          "about": "#VTO_0064845",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064845"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065517",
           "label": "Creagrutus petilus",
-          "about": "#VTO_0065517",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065517"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037821",
           "label": "Brycinus nurse",
-          "about": "#VTO_0037821",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037821"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065506",
           "label": "Creagrutus ouranonastes",
-          "about": "#VTO_0065506",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065506"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064840",
           "label": "Pseudanos winterbottomi",
-          "about": "#VTO_0064840",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064840"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066133",
           "label": "Hydrocynus cf. brevis (Zanata and Vari 2005)",
-          "about": "#VTO_0066133",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066133"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065507",
           "label": "Creagrutus ortegai",
-          "about": "#VTO_0065507",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065507"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065505",
           "label": "Creagrutus changae",
-          "about": "#VTO_0065505",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065505"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065553",
           "label": "Brycon sp. (Lucena and Menezes 1998)",
-          "about": "#VTO_0065553",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065553"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038661",
           "label": "Leporinus friderici",
-          "about": "#VTO_0038661",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038661"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064841",
           "label": "Pseudanos gracilis",
-          "about": "#VTO_0064841",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064841"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065649",
           "label": "Pterobrycon myrnae",
-          "about": "#VTO_0065649",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065649"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038411",
           "label": "Gephyrocharax atracaudatus",
-          "about": "#VTO_0038411",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038411"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064847",
           "label": "Hypomasticus megalepis",
-          "about": "#VTO_0064847",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064847"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038081",
           "label": "Cynopotamus kincaidi",
-          "about": "#VTO_0038081",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038081"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038419",
           "label": "Xenurobrycon pteropus",
-          "about": "#VTO_0038419",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038419"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065770",
           "label": "Argopleura chocoensis",
-          "about": "#VTO_0065770",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065770"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038468",
           "label": "Curimatidae",
-          "about": "#VTO_0038468",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038468"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038414",
           "label": "Tyttocharax madeirae",
-          "about": "#VTO_0038414",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038414"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038084",
           "label": "Hoplocharax",
-          "about": "#VTO_0038084",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038084"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038416",
           "label": "Pseudocorynopoma doriae",
-          "about": "#VTO_0038416",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038416"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038082",
           "label": "Cynopotamus argenteus",
-          "about": "#VTO_0038082",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038082"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038417",
           "label": "Pseudocorynopoma heterandria",
-          "about": "#VTO_0038417",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038417"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066047",
           "label": "Pyrrhulina semifasciata",
-          "about": "#VTO_0066047",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066047"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037734",
           "label": "Crenuchidae",
-          "about": "#VTO_0037734",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037734"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038355",
           "label": "Creagrutus peruanus",
-          "about": "#VTO_0038355",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038355"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066023",
           "label": "Citharinus sp. (Sidlauskas and Vari 2008)",
-          "about": "#VTO_0066023",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066023"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038598",
           "label": "Erythrinidae",
-          "about": "#VTO_0038598",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038598"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064834",
           "label": "Anostomoides laticeps",
-          "about": "#VTO_0064834",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064834"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038284",
           "label": "Moenkhausia lepidura",
-          "about": "#VTO_0038284",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038284"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064839",
           "label": "Pseudanos irinae",
-          "about": "#VTO_0064839",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064839"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064838",
           "label": "Pseudanos trimaculatus",
-          "about": "#VTO_0064838",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064838"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065895",
           "label": "Tyttocharax sp. B (Weitzman and Fink 1985)",
-          "about": "#VTO_0065895",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065895"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038407",
           "label": "Diapoma terofali",
-          "about": "#VTO_0038407",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038407"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038408",
           "label": "Diapoma speculiferum",
-          "about": "#VTO_0038408",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038408"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065897",
           "label": "Tyttocharax sp. A (Weitzman and Fink 1985)",
-          "about": "#VTO_0065897",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065897"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066041",
           "label": "Pyrrhulina sp. (Vari 1995)",
-          "about": "#VTO_0066041",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066041"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065636",
           "label": "Megacheirodon unicus",
-          "about": "#VTO_0065636",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065636"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065478",
           "label": "Creagrutus cochui",
-          "about": "#VTO_0065478",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065478"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038648",
           "label": "Leporinus striatus",
-          "about": "#VTO_0038648",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038648"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065476",
           "label": "Creagrutus zephyrus",
-          "about": "#VTO_0065476",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065476"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065475",
           "label": "Creagrutus ungulus",
-          "about": "#VTO_0065475",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065475"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037764",
           "label": "Hydrocynus forskahlii",
-          "about": "#VTO_0037764",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037764"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064867",
           "label": "Distichodus sp. (Sidlauskas and Vari 2008)",
-          "about": "#VTO_0064867",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064867"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038466",
           "label": "Ctenolucius hujeta",
-          "about": "#VTO_0038466",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038466"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038646",
           "label": "Rhytiodus microlepis",
-          "about": "#VTO_0038646",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038646"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065479",
           "label": "Creagrutus melasma",
-          "about": "#VTO_0065479",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065479"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038642",
           "label": "Schizodon nasutus",
-          "about": "#VTO_0038642",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038642"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065470",
           "label": "Creagrutus maracaiboensis",
-          "about": "#VTO_0065470",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065470"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038464",
           "label": "Boulengerella lateristriga",
-          "about": "#VTO_0038464",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038464"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037760",
           "label": "Crenuchus spilurus",
-          "about": "#VTO_0037760",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037760"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066151",
           "label": "Phenacogrammus urotaenia",
-          "about": "#VTO_0066151",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066151"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065474",
           "label": "Creagrutus holmi",
-          "about": "#VTO_0065474",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065474"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066152",
           "label": "Phenacogrammus major",
-          "about": "#VTO_0066152",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066152"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065473",
           "label": "Creagrutus barrigai",
-          "about": "#VTO_0065473",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065473"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066153",
           "label": "Phenacogrammus ansorgii",
-          "about": "#VTO_0066153",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066153"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065472",
           "label": "Creagrutus runa",
-          "about": "#VTO_0065472",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065472"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065471",
           "label": "Creagrutus amoenus",
-          "about": "#VTO_0065471",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065471"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038219",
           "label": "Astyanax parahybae",
-          "about": "#VTO_0038219",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038219"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066156",
           "label": "Rhabdalestes rhodesiensis",
-          "about": "#VTO_0066156",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066156"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038445",
           "label": "Ichthyborus ornatus",
-          "about": "#VTO_0038445",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038445"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066166",
           "label": "Micralestes elongatus",
-          "about": "#VTO_0066166",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066166"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038484",
           "label": "Prochilodus lineatus",
-          "about": "#VTO_0038484",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038484"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066165",
           "label": "Micralestes cf. elongatus (Zanata and Vari 2005)",
-          "about": "#VTO_0066165",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066165"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066163",
           "label": "Micralestes cf. acutidens (Zanata and Vari 2005)",
-          "about": "#VTO_0066163",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066163"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065918",
           "label": "Landonia latidens",
-          "about": "#VTO_0065918",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065918"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037994",
           "label": "Chalceus macrolepidotus",
-          "about": "#VTO_0037994",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037994"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037993",
           "label": "Chalceus epakros",
-          "about": "#VTO_0037993",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037993"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037992",
           "label": "Chalceus erythrurus",
-          "about": "#VTO_0037992",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037992"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038328",
           "label": "Bryconamericus iheringii",
-          "about": "#VTO_0038328",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038328"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037996",
           "label": "Brycon pesu",
-          "about": "#VTO_0037996",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037996"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038454",
           "label": "Citharinus gibbosus",
-          "about": "#VTO_0038454",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038454"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064877",
           "label": "Distichodus sp. (Fink and Fink 1981)",
-          "about": "#VTO_0064877",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064877"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038586",
           "label": "Distichodus maculatus",
-          "about": "#VTO_0038586",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038586"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038212",
           "label": "Astyanax mexicanus",
-          "about": "#VTO_0038212",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038212"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065469",
           "label": "Creagrutus maxillaris",
-          "about": "#VTO_0065469",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065469"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038659",
           "label": "Leporinus fasciatus",
-          "about": "#VTO_0038659",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038659"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038479",
           "label": "Prochilodus rubrotaeniatus",
-          "about": "#VTO_0038479",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038479"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064853",
           "label": "Mesoborus sp. (Fink and Fink 1981)",
-          "about": "#VTO_0064853",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064853"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065043",
           "label": "Gephyrocharax melanocheir",
-          "about": "#VTO_0065043",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065043"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065044",
           "label": "Gephyrocharax venezuelae",
-          "about": "#VTO_0065044",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065044"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065045",
           "label": "Gephyrocharax sp. (Weitzman and Fink 1985)",
-          "about": "#VTO_0065045",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065045"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038463",
           "label": "Boulengerella maculata",
-          "about": "#VTO_0038463",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038463"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065046",
           "label": "Gephyrocharax whaleri",
-          "about": "#VTO_0065046",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065046"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065047",
           "label": "Gephyrocharax caucanus",
-          "about": "#VTO_0065047",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065047"
         },
         {
           "@type": "otu",
           "@id": "VTO_0037726",
           "label": "Nannostomus beckfordi",
-          "about": "#VTO_0037726",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0037726"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065048",
           "label": "Gephyrocharax major",
-          "about": "#VTO_0065048",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065048"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065049",
           "label": "Gephyrocharax chocoensis",
-          "about": "#VTO_0065049",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065049"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066174",
           "label": "Micralestes sp. (Zanata and Vari 2005)",
-          "about": "#VTO_0066174",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066174"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065040",
           "label": "Gephyrocharax intermedius",
-          "about": "#VTO_0065040",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065040"
         },
         {
           "@type": "otu",
           "@id": "VTO_0066171",
           "label": "Micralestes eburneensis",
-          "about": "#VTO_0066171",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0066171"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038489",
           "label": "Semaprochilodus insignis",
-          "about": "#VTO_0038489",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038489"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038045",
           "label": "Gnathocharax steindachneri",
-          "about": "#VTO_0038045",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038045"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038039",
           "label": "Triportheus guentheri",
-          "about": "#VTO_0038039",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038039"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064804",
           "label": "Laemolyta proxima",
-          "about": "#VTO_0064804",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064804"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064806",
           "label": "Laemolyta taeniata",
-          "about": "#VTO_0064806",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064806"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038036",
           "label": "Triportheus nematurus",
-          "about": "#VTO_0038036",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038036"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064800",
           "label": "Leporinus ortomaculatus",
-          "about": "#VTO_0064800",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064800"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064809",
           "label": "Laemolyta garmani",
-          "about": "#VTO_0064809",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064809"
         },
         {
           "@type": "otu",
           "@id": "VTO_0064808",
           "label": "Laemolyta orinocensis",
-          "about": "#VTO_0064808",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0064808"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038638",
           "label": "Schizodon knerii",
-          "about": "#VTO_0038638",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038638"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038636",
           "label": "Anostomus anostomus",
-          "about": "#VTO_0038636",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038636"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038635",
           "label": "Anostomus ternetzi",
-          "about": "#VTO_0038635",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038635"
         },
         {
           "@type": "otu",
           "@id": "VTO_0038633",
           "label": "Leporellus vittatus",
-          "about": "#VTO_0038633",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0038633"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065441",
           "label": "Iotabrycon praecox",
-          "about": "#VTO_0065441",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065441"
         },
         {
           "@type": "otu",
           "@id": "VTO_0065443",
           "label": "Planaltina sp. (Burns et al 1995)",
-          "about": "#VTO_0065443",
           "dwc:taxonID": "http://purl.obolibrary.org/obo/VTO_0065443"
         }
       ]
@@ -5242,7 +4844,6 @@
             "@type": "char",
             "@id": "UBERON_0010527",
             "label": "cavity of bone organ",
-            "about": "#UBERON_0010527",
             "states": "sbaa1df0d-ee55-4eee-bb60-617520728203",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0010527"
           },
@@ -5250,7 +4851,6 @@
             "@type": "char",
             "@id": "UBERON_2000438",
             "label": "parhypural",
-            "about": "#UBERON_2000438",
             "states": "s77f2ecd0-5f25-494b-b87d-b88551fa3f01",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000438"
           },
@@ -5258,7 +4858,6 @@
             "@type": "char",
             "@id": "UBERON_0003675",
             "label": "tooth crown",
-            "about": "#UBERON_0003675",
             "states": "s19d90b78-8120-4f19-aca1-59dd1354c6dc",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0003675"
           },
@@ -5266,7 +4865,6 @@
             "@type": "char",
             "@id": "UBERON_0002418",
             "label": "cartilage tissue",
-            "about": "#UBERON_0002418",
             "states": "s547f56ef-7e3b-4251-bc43-065b560de608",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0002418"
           },
@@ -5274,7 +4872,6 @@
             "@type": "char",
             "@id": "UBERON_0010728",
             "label": "sphenoid lesser wing pre-cartilage condensation",
-            "about": "#UBERON_0010728",
             "states": "s5319c8a0-0c08-4166-aa5f-31f684efe3d5",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0010728"
           },
@@ -5282,7 +4879,6 @@
             "@type": "char",
             "@id": "UBERON_0005744",
             "label": "bone foramen",
-            "about": "#UBERON_0005744",
             "states": "sd1377dbf-7f3d-4002-9f71-6135c3061701",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0005744"
           },
@@ -5290,7 +4886,6 @@
             "@type": "char",
             "@id": "UBERON_0001075",
             "label": "bony vertebral centrum",
-            "about": "#UBERON_0001075",
             "states": "s26689d30-c91a-4a45-a470-05f41ae984d9",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0001075"
           },
@@ -5298,7 +4893,6 @@
             "@type": "char",
             "@id": "UBERON_0002481",
             "label": "bone tissue",
-            "about": "#UBERON_0002481",
             "states": "s222fee5f-cf7f-42bd-ad7d-a7192cb28648",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0002481"
           },
@@ -5306,7 +4900,6 @@
             "@type": "char",
             "@id": "UBERON_0001076",
             "label": "neural spine",
-            "about": "#UBERON_0001076",
             "states": "s35a17799-cd49-4754-9ecb-f18cd815564e",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0001076"
           },
@@ -5314,7 +4907,6 @@
             "@type": "char",
             "@id": "UBERON_4000013",
             "label": "mineralized skeletal tissue",
-            "about": "#UBERON_4000013",
             "states": "s2c8bc848-da9b-4056-a72c-1af802bdabb9",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_4000013"
           },
@@ -5322,7 +4914,6 @@
             "@type": "char",
             "@id": "UBERON_0010358",
             "label": "arch of centrum of vertebra",
-            "about": "#UBERON_0010358",
             "states": "s4ddbdf0b-f142-4a21-8c09-c09b62162704",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0010358"
           },
@@ -5330,7 +4921,6 @@
             "@type": "char",
             "@id": "UBERON_2001603",
             "label": "maxilla ascending process",
-            "about": "#UBERON_2001603",
             "states": "sa4c09d9a-f187-47e2-86cd-44a8c199a48b",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001603"
           },
@@ -5338,7 +4928,6 @@
             "@type": "char",
             "@id": "UBERON_0006332",
             "label": "nasal capsule",
-            "about": "#UBERON_0006332",
             "states": "sc5eecbf0-721b-4574-b5ee-7fb5ec5942cc",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0006332"
           },
@@ -5346,7 +4935,6 @@
             "@type": "char",
             "@id": "UBERON_2001364",
             "label": "hemal spine",
-            "about": "#UBERON_2001364",
             "states": "s9386022d-589b-4ddd-8795-1c21989eb5a8",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001364"
           },
@@ -5354,7 +4942,6 @@
             "@type": "char",
             "@id": "UBERON_0004755",
             "label": "skeletal tissue",
-            "about": "#UBERON_0004755",
             "states": "s8d57dd96-d481-4419-a8ef-aa9e2d87ebf0",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0004755"
           },
@@ -5362,7 +4949,6 @@
             "@type": "char",
             "@id": "UBERON_2001649",
             "label": "basihyal tooth",
-            "about": "#UBERON_2001649",
             "states": "s57f17473-993e-4256-bb47-e604b35a8b6a",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001649"
           },
@@ -5370,7 +4956,6 @@
             "@type": "char",
             "@id": "UBERON_0011587",
             "label": "pre-dentine",
-            "about": "#UBERON_0011587",
             "states": "s27bc7085-b357-4fbc-a23f-c2294bfdd144",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0011587"
           },
@@ -5378,7 +4963,6 @@
             "@type": "char",
             "@id": "UBERON_0005913",
             "label": "zone of bone organ",
-            "about": "#UBERON_0005913",
             "states": "sc5f5981c-6be5-4fce-b572-07ad1df55033",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0005913"
           },
@@ -5386,7 +4970,6 @@
             "@type": "char",
             "@id": "UBERON_0004704",
             "label": "bone fossa",
-            "about": "#UBERON_0004704",
             "states": "sb4887036-ddaf-4c95-bb79-845db2df265f",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0004704"
           },
@@ -5394,7 +4977,6 @@
             "@type": "char",
             "@id": "UBERON_0006844",
             "label": "cusp of tooth",
-            "about": "#UBERON_0006844",
             "states": "s440562f2-11a7-4d4d-a93b-ccb4383e0d08",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0006844"
           },
@@ -5402,7 +4984,6 @@
             "@type": "char",
             "@id": "UBERON_0010528",
             "label": "pneumatic cavity of bone",
-            "about": "#UBERON_0010528",
             "states": "sd4bbaeab-7c54-4c98-bf38-415734a85aed",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0010528"
           },
@@ -5410,7 +4991,6 @@
             "@type": "char",
             "@id": "UBERON_0007830",
             "label": "pelvic girdle bone/zone",
-            "about": "#UBERON_0007830",
             "states": "s949045d0-455a-45ae-b19c-6fbef7bc4906",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0007830"
           },
@@ -5418,7 +4998,6 @@
             "@type": "char",
             "@id": "UBERON_0016491",
             "label": "vertebral centrum element",
-            "about": "#UBERON_0016491",
             "states": "sd73392a0-6580-45ad-a8ef-10fddcd4d652",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0016491"
           },
@@ -5426,7 +5005,6 @@
             "@type": "char",
             "@id": "UBERON_0001077",
             "label": "transverse process of vertebra",
-            "about": "#UBERON_0001077",
             "states": "sf0761f26-ecf2-45d4-9b9d-663014a6860a",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0001077"
           },
@@ -5434,7 +5012,6 @@
             "@type": "char",
             "@id": "UBERON_2001651",
             "label": "pharyngobranchial 2 tooth",
-            "about": "#UBERON_2001651",
             "states": "s0cf71fec-5450-4684-a377-6ed6acb4f1ba",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001651"
           },
@@ -5442,7 +5019,6 @@
             "@type": "char",
             "@id": "UBERON_2001825",
             "label": "urohyal lateral process",
-            "about": "#UBERON_2001825",
             "states": "safd98556-e63e-4980-9d2c-3877e87188c7",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001825"
           },
@@ -5450,7 +5026,6 @@
             "@type": "char",
             "@id": "UBERON_0006065",
             "label": "hemal arch",
-            "about": "#UBERON_0006065",
             "states": "s2e5d3e2f-bea9-46b1-b446-e40b3ce72d30",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0006065"
           },
@@ -5458,7 +5033,6 @@
             "@type": "char",
             "@id": "UBERON_0006063",
             "label": "cartilaginous neural arch",
-            "about": "#UBERON_0006063",
             "states": "s83c89958-abcc-4158-b8ab-c362bf8640e2",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0006063"
           },
@@ -5466,7 +5040,6 @@
             "@type": "char",
             "@id": "UBERON_2000694",
             "label": "ceratobranchial 5 tooth",
-            "about": "#UBERON_2000694",
             "states": "s54e3ffdb-6ce5-44bc-a999-c949a97f0186",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000694"
           },
@@ -5474,7 +5047,6 @@
             "@type": "char",
             "@id": "UBERON_2000660",
             "label": "epural",
-            "about": "#UBERON_2000660",
             "states": "se6697769-6012-48b8-bac5-d2a4ea85c936",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000660"
           },
@@ -5482,7 +5054,6 @@
             "@type": "char",
             "@id": "UBERON_2000623",
             "label": "basipterygium bone",
-            "about": "#UBERON_2000623",
             "states": "s742284b5-0185-4e37-b1f9-9ea4ac9fcd79",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000623"
           },
@@ -5490,7 +5061,6 @@
             "@type": "char",
             "@id": "UBERON_0010355",
             "label": "ossification center",
-            "about": "#UBERON_0010355",
             "states": "s365052e0-3c7f-4e45-9e93-7fc3e1db204a",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0010355"
           },
@@ -5498,7 +5068,6 @@
             "@type": "char",
             "@id": "UBERON_0009638",
             "label": "orbitosphenoid ossification center",
-            "about": "#UBERON_0009638",
             "states": "s721821f4-133b-4aa3-8b8e-f02cee3983b8",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0009638"
           },
@@ -5506,7 +5075,6 @@
             "@type": "char",
             "@id": "UBERON_2001783",
             "label": "supraoccipital crest",
-            "about": "#UBERON_2001783",
             "states": "sec4c6462-3397-49fb-aaf1-d95af81fb6a2",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001783"
           },
@@ -5514,7 +5082,6 @@
             "@type": "char",
             "@id": "UBERON_0003861",
             "label": "neural arch",
-            "about": "#UBERON_0003861",
             "states": "s7241588f-dc8d-48ca-a318-ce7a0ecca0d6",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0003861"
           },
@@ -5522,7 +5089,6 @@
             "@type": "char",
             "@id": "UBERON_4100000",
             "label": "skeletal element projection",
-            "about": "#UBERON_4100000",
             "states": "sc7cbc638-bcfc-45d0-9480-dd5580e9760d",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_4100000"
           },
@@ -5530,7 +5096,6 @@
             "@type": "char",
             "@id": "UBERON_2001822",
             "label": "epibranchial 3 bone uncinate process",
-            "about": "#UBERON_2001822",
             "states": "s7ccd96d0-9d89-4cee-a9f5-0a9e3a76e27a",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001822"
           },
@@ -5538,7 +5103,6 @@
             "@type": "char",
             "@id": "UBERON_2001392",
             "label": "parapophysis 1",
-            "about": "#UBERON_2001392",
             "states": "s0b2686a6-10b9-4cc1-9ae1-07f7e363b02f",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001392"
           },
@@ -5546,7 +5110,6 @@
             "@type": "char",
             "@id": "UBERON_2001734",
             "label": "posterior process of basipterygium",
-            "about": "#UBERON_2001734",
             "states": "s51ed0d7b-43cc-423d-af97-73f9c937fce3",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001734"
           },
@@ -5554,7 +5117,6 @@
             "@type": "char",
             "@id": "UBERON_0006061",
             "label": "process of vertebra",
-            "about": "#UBERON_0006061",
             "states": "s5708798f-44d9-4db4-baf2-a5e059a86f4e",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0006061"
           },
@@ -5562,7 +5124,6 @@
             "@type": "char",
             "@id": "UBERON_0002478",
             "label": "orbitosphenoid",
-            "about": "#UBERON_0002478",
             "states": "s1e8b7753-0b24-4422-9f03-c925c3937fa1",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0002478"
           },
@@ -5570,7 +5131,6 @@
             "@type": "char",
             "@id": "UBERON_2001735",
             "label": "scapular foramen",
-            "about": "#UBERON_2001735",
             "states": "sc6cef1b7-5087-4dba-bbfd-b11c8f9fa14d",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001735"
           },
@@ -5578,7 +5138,6 @@
             "@type": "char",
             "@id": "UBERON_2001742",
             "label": "auditory foramen",
-            "about": "#UBERON_2001742",
             "states": "sc9cbc37c-d866-4e11-8aca-a39b5d544833",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001742"
           },
@@ -5586,7 +5145,6 @@
             "@type": "char",
             "@id": "UBERON_2000911",
             "label": "transverse process of neural arch 3",
-            "about": "#UBERON_2000911",
             "states": "sb0ea9680-88a5-47d0-919b-26c7496b12d6",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000911"
           },
@@ -5594,7 +5152,6 @@
             "@type": "char",
             "@id": "UBERON_2001394",
             "label": "neural arch 3",
-            "about": "#UBERON_2001394",
             "states": "s15fff3cd-577a-4070-b792-08ec6f2f5d95",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001394"
           },
@@ -5602,7 +5159,6 @@
             "@type": "char",
             "@id": "UBERON_2001171",
             "label": "os suspensorium",
-            "about": "#UBERON_2001171",
             "states": "s474c67b4-ed70-4524-b394-63b86762686e",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001171"
           },
@@ -5610,7 +5166,6 @@
             "@type": "char",
             "@id": "UBERON_0010365",
             "label": "odontoid tissue",
-            "about": "#UBERON_0010365",
             "states": "s897b28fe-61a1-4044-9978-f22760af744a",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0010365"
           },
@@ -5618,7 +5173,6 @@
             "@type": "char",
             "@id": "UBERON_0003109",
             "label": "parapophysis",
-            "about": "#UBERON_0003109",
             "states": "s78eadb27-59ad-4a5a-8c01-1b446f717cdc",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0003109"
           },
@@ -5626,7 +5180,6 @@
             "@type": "char",
             "@id": "UBERON_0011370",
             "label": "transverse process of atlas",
-            "about": "#UBERON_0011370",
             "states": "sce295f5c-7594-43ea-80ca-90cd23c6a444",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0011370"
           },
@@ -5634,7 +5187,6 @@
             "@type": "char",
             "@id": "UBERON_2001616",
             "label": "lateral ethmoid wing",
-            "about": "#UBERON_2001616",
             "states": "sd01afc5b-ae87-412f-bd40-e91f5932edb8",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001616"
           },
@@ -5642,7 +5194,6 @@
             "@type": "char",
             "@id": "UBERON_2001753",
             "label": "posttemporal fossa",
-            "about": "#UBERON_2001753",
             "states": "sa7bac65f-0ed4-4c66-97e2-c7cabe17ddef",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001753"
           },
@@ -5650,7 +5201,6 @@
             "@type": "char",
             "@id": "UBERON_2001733",
             "label": "mesethmoid ventral diverging lamella",
-            "about": "#UBERON_2001733",
             "states": "sba83e2d5-230b-4e01-b2c3-c0c48901d245",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001733"
           },
@@ -5658,7 +5208,6 @@
             "@type": "char",
             "@id": "UBERON_2001747",
             "label": "lateral mesethmoid wing",
-            "about": "#UBERON_2001747",
             "states": "se3244b0c-97aa-47a0-abf2-a5171c48e71a",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001747"
           },
@@ -5666,7 +5215,6 @@
             "@type": "char",
             "@id": "UBERON_2000289",
             "label": "preopercle horizontal limb",
-            "about": "#UBERON_2000289",
             "states": "secb694d6-8528-4ec9-87ea-33d1643a029c",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000289"
           },
@@ -5674,7 +5222,6 @@
             "@type": "char",
             "@id": "UBERON_2001615",
             "label": "sphenotic spine",
-            "about": "#UBERON_2001615",
             "states": "s85e21146-19ea-4289-8029-5fcc39ec715f",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001615"
           },
@@ -5682,7 +5229,6 @@
             "@type": "char",
             "@id": "UBERON_2002118",
             "label": "scale radius",
-            "about": "#UBERON_2002118",
             "states": "sd5fbe265-2932-46ec-a1bd-03ba89798de0",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002118"
           },
@@ -5690,7 +5236,6 @@
             "@type": "char",
             "@id": "UBERON_0013685",
             "label": "foramen of skull",
-            "about": "#UBERON_0013685",
             "states": "s053a3789-9816-45bb-9406-6e69b6449d45",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0013685"
           },
@@ -5698,7 +5243,6 @@
             "@type": "char",
             "@id": "UBERON_2001382",
             "label": "epibranchial bone uncinate process",
-            "about": "#UBERON_2001382",
             "states": "s7fd9f112-22d4-4061-aec4-641dd4754d2a",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001382"
           },
@@ -5706,7 +5250,6 @@
             "@type": "char",
             "@id": "UBERON_2001577",
             "label": "premaxilla ascending process",
-            "about": "#UBERON_2001577",
             "states": "s12889929-623a-4871-9a67-28fa18816c7b",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001577"
           },
@@ -5714,7 +5257,6 @@
             "@type": "char",
             "@id": "UBERON_2001657",
             "label": "upper pharyngeal 5 tooth",
-            "about": "#UBERON_2001657",
             "states": "s489f4904-55e8-49b4-9d99-75a6029e35b2",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001657"
           },
@@ -5722,7 +5264,6 @@
             "@type": "char",
             "@id": "UBERON_2002051",
             "label": "scale circulus",
-            "about": "#UBERON_2002051",
             "states": "se9980264-d37d-49fc-af47-c5a2642de0e5",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002051"
           },
@@ -5730,7 +5271,6 @@
             "@type": "char",
             "@id": "UBERON_2001548",
             "label": "intercalarium ascending process",
-            "about": "#UBERON_2001548",
             "states": "sa92fd72d-2697-4e24-9092-dd92a59d85cb",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001548"
           },
@@ -5738,7 +5278,6 @@
             "@type": "char",
             "@id": "UBERON_2002123",
             "label": "neural arch 5",
-            "about": "#UBERON_2002123",
             "states": "s7095e36c-59cf-426d-8b8d-96226ca93d89",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002123"
           },
@@ -5746,7 +5285,6 @@
             "@type": "char",
             "@id": "UBERON_2002095",
             "label": "third posttemporal fossa",
-            "about": "#UBERON_2002095",
             "states": "s83b5dec0-fafb-4fa4-9b6e-7b005e56a14c",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002095"
           },
@@ -5754,7 +5292,6 @@
             "@type": "char",
             "@id": "UBERON_2001655",
             "label": "upper pharyngeal 4 tooth",
-            "about": "#UBERON_2001655",
             "states": "s6f09f65c-7ad0-49cd-898e-3fa3ef956397",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001655"
           },
@@ -5762,7 +5299,6 @@
             "@type": "char",
             "@id": "UBERON_2001393",
             "label": "parapophysis 2",
-            "about": "#UBERON_2001393",
             "states": "s37fa3e1e-5af9-4464-b904-d6a55328c331",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001393"
           },
@@ -5770,7 +5306,6 @@
             "@type": "char",
             "@id": "UBERON_0008789",
             "label": "cranial fossa",
-            "about": "#UBERON_0008789",
             "states": "s466b0a08-4b86-4292-920c-a5def5bf1118",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0008789"
           },
@@ -5778,7 +5313,6 @@
             "@type": "char",
             "@id": "UBERON_2000364",
             "label": "hypural",
-            "about": "#UBERON_2000364",
             "states": "s1937fa63-9865-4a70-b29e-ece5caa481d1",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000364"
           },
@@ -5786,7 +5320,6 @@
             "@type": "char",
             "@id": "UBERON_0001844",
             "label": "cochlea",
-            "about": "#UBERON_0001844",
             "states": "s59012b82-6ca3-43fb-8699-74f2562241b8",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0001844"
           },
@@ -5794,7 +5327,6 @@
             "@type": "char",
             "@id": "UBERON_2000698",
             "label": "tripus",
-            "about": "#UBERON_2000698",
             "states": "scb5014e3-1485-4afd-9888-e2a1da3ab1f0",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000698"
           },
@@ -5802,7 +5334,6 @@
             "@type": "char",
             "@id": "UBERON_2002110",
             "label": "metapterygoid-quadrate fenestra",
-            "about": "#UBERON_2002110",
             "states": "s0f0187f1-f9ef-47ec-88f3-e7d11caebf90",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002110"
           },
@@ -5810,7 +5341,6 @@
             "@type": "char",
             "@id": "UBERON_2001971",
             "label": "parapophysis 4",
-            "about": "#UBERON_2001971",
             "states": "s562e5e20-43a6-4bc2-bd50-2bebe46dd6fb",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001971"
           },
@@ -5818,7 +5348,6 @@
             "@type": "char",
             "@id": "UBERON_2001562",
             "label": "hypural 3",
-            "about": "#UBERON_2001562",
             "states": "s61b8cbd2-d423-4934-b5df-30c45ce6919f",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001562"
           },
@@ -5826,7 +5355,6 @@
             "@type": "char",
             "@id": "UBERON_2001335",
             "label": "supradorsal",
-            "about": "#UBERON_2001335",
             "states": "se73ad487-e582-46bd-9b2b-68b5c719ac13",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001335"
           },
@@ -5834,7 +5362,6 @@
             "@type": "char",
             "@id": "UBERON_2001253",
             "label": "neural arch 2",
-            "about": "#UBERON_2001253",
             "states": "s4417c7e1-a68d-4d1b-958c-640cc5d61ea2",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001253"
           },
@@ -5842,7 +5369,6 @@
             "@type": "char",
             "@id": "UBERON_2002058",
             "label": "Weberian complex centrum",
-            "about": "#UBERON_2002058",
             "states": "s937d6fa5-e318-49a7-9188-3a9a31aef7b7",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002058"
           },
@@ -5850,7 +5376,6 @@
             "@type": "char",
             "@id": "UBERON_0001694",
             "label": "petrous part of temporal bone",
-            "about": "#UBERON_0001694",
             "states": "sbe43e37b-de1a-4dc7-bb5e-30786c0ef73a",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0001694"
           },
@@ -5858,7 +5383,6 @@
             "@type": "char",
             "@id": "UBERON_2001561",
             "label": "hypural 2",
-            "about": "#UBERON_2001561",
             "states": "sc2621982-58df-4e3d-ba80-83beb2e0241f",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001561"
           },
@@ -5866,7 +5390,6 @@
             "@type": "char",
             "@id": "UBERON_0001751",
             "label": "dentine",
-            "about": "#UBERON_0001751",
             "states": "s58d5e8fd-903f-47c7-be39-5e8fe859a7a2",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0001751"
           },
@@ -5874,7 +5397,6 @@
             "@type": "char",
             "@id": "UBERON_2001797",
             "label": "epibranchial 1 bone uncinate process",
-            "about": "#UBERON_2001797",
             "states": "sea8a8556-db31-4e52-8f29-6d16951bef36",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001797"
           },
@@ -5882,7 +5404,6 @@
             "@type": "char",
             "@id": "UBERON_0005814",
             "label": "arch of atlas",
-            "about": "#UBERON_0005814",
             "states": "s001aebb0-1799-48eb-a7ea-8f400b754ef3",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0005814"
           },
@@ -5890,7 +5411,6 @@
             "@type": "char",
             "@id": "UBERON_2001887",
             "label": "neural spine 3",
-            "about": "#UBERON_2001887",
             "states": "sb5bb4f34-1bf5-4873-b53a-7b8b30d7e316",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001887"
           },
@@ -5898,7 +5418,6 @@
             "@type": "char",
             "@id": "UBERON_0005687",
             "label": "orbitosphenoid cartilage element",
-            "about": "#UBERON_0005687",
             "states": "sccad7def-0f4b-4e5e-a4ca-e532c0b2b1cd",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0005687"
           },
@@ -5906,7 +5425,6 @@
             "@type": "char",
             "@id": "UBERON_2000429",
             "label": "scaphium",
-            "about": "#UBERON_2000429",
             "states": "s76102fb0-f8f3-4b15-8bb0-2394a64d37a3",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000429"
           },
@@ -5914,7 +5432,6 @@
             "@type": "char",
             "@id": "UBERON_2001653",
             "label": "pharyngobranchial 3 tooth",
-            "about": "#UBERON_2001653",
             "states": "se8c890f6-36cf-4bc9-8eda-d270604dcea5",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001653"
           },
@@ -5922,7 +5439,6 @@
             "@type": "char",
             "@id": "UBERON_0006062",
             "label": "zygapophysis",
-            "about": "#UBERON_0006062",
             "states": "s4c06267c-fb4d-430c-96c8-d9f9e9ca612c",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0006062"
           },
@@ -5930,7 +5446,6 @@
             "@type": "char",
             "@id": "UBERON_2001737",
             "label": "coracoid foramen",
-            "about": "#UBERON_2001737",
             "states": "s7abf40e1-4b84-4f21-8d74-70a2c2f0d968",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001737"
           },
@@ -5938,7 +5453,6 @@
             "@type": "char",
             "@id": "UBERON_0000218",
             "label": "vertebral arch of axis",
-            "about": "#UBERON_0000218",
             "states": "sad0807d3-5bef-4479-b7b7-20a5299fe4a2",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0000218"
           },
@@ -5946,7 +5460,6 @@
             "@type": "char",
             "@id": "UBERON_2000602",
             "label": "uroneural",
-            "about": "#UBERON_2000602",
             "states": "s484f58ab-20ea-411f-9454-200b576adbab",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000602"
           },
@@ -5954,7 +5467,6 @@
             "@type": "char",
             "@id": "UBERON_2001395",
             "label": "neural arch 4",
-            "about": "#UBERON_2001395",
             "states": "s0ffbbb8a-b7b3-4fbe-b902-2b0473806180",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001395"
           },
@@ -5962,7 +5474,6 @@
             "@type": "char",
             "@id": "UBERON_2001560",
             "label": "hypural 1",
-            "about": "#UBERON_2001560",
             "states": "sb7592cd7-04d2-4ea9-957c-7de68ed46e28",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001560"
           },
@@ -5970,7 +5481,6 @@
             "@type": "char",
             "@id": "UBERON_2000525",
             "label": "intercalarium",
-            "about": "#UBERON_2000525",
             "states": "se7ef58b1-a412-467a-8471-247d805852ae",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000525"
           },
@@ -5978,7 +5488,6 @@
             "@type": "char",
             "@id": "UBERON_2002039",
             "label": "dilatator fossa",
-            "about": "#UBERON_2002039",
             "states": "s1092c485-3f79-45f6-9094-d7f3fb681813",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002039"
           },
@@ -5986,7 +5495,6 @@
             "@type": "char",
             "@id": "UBERON_0001839",
             "label": "bony labyrinth",
-            "about": "#UBERON_0001839",
             "states": "s283f3924-77eb-4e71-823b-28f324012600",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0001839"
           },
@@ -5994,7 +5502,6 @@
             "@type": "char",
             "@id": "UBERON_2001659",
             "label": "upper pharyngeal tooth",
-            "about": "#UBERON_2001659",
             "states": "s308713cc-39c2-44b5-93ff-55b1ee79d7aa",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001659"
           },
@@ -6002,7 +5509,6 @@
             "@type": "char",
             "@id": "UBERON_2001983",
             "label": "centrum 1",
-            "about": "#UBERON_2001983",
             "states": "sdaabdf28-26f9-4c11-b610-c656d7cfefc1",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001983"
           },
@@ -6010,7 +5516,6 @@
             "@type": "char",
             "@id": "UBERON_2001985",
             "label": "centrum 3",
-            "about": "#UBERON_2001985",
             "states": "sa7a13d70-1884-4e0a-8259-63f921dc364c",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001985"
           },
@@ -6018,7 +5523,6 @@
             "@type": "char",
             "@id": "UBERON_2001986",
             "label": "centrum 4",
-            "about": "#UBERON_2001986",
             "states": "s9843b9f0-adbe-42dd-b7b8-fdc9b762231e",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001986"
           },
@@ -6026,7 +5530,6 @@
             "@type": "char",
             "@id": "UBERON_2002069",
             "label": "distal cartilage of posterior process of basipterygium",
-            "about": "#UBERON_2002069",
             "states": "s8e01cb0b-f6df-4243-ad13-88fdaa1c32b5",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002069"
           },
@@ -6034,7 +5537,6 @@
             "@type": "char",
             "@id": "UBERON_2001984",
             "label": "centrum 2",
-            "about": "#UBERON_2001984",
             "states": "sc91c6284-ffb3-4d62-ab4e-2dd5e82ce04e",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001984"
           },
@@ -6042,7 +5544,6 @@
             "@type": "char",
             "@id": "UBERON_0009979",
             "label": "condyle",
-            "about": "#UBERON_0009979",
             "states": "s742a4af5-f743-425b-abd4-d6d551dae5e1",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0009979"
           },
@@ -6050,7 +5551,6 @@
             "@type": "char",
             "@id": "UBERON_2002056",
             "label": "hypural 6",
-            "about": "#UBERON_2002056",
             "states": "s9ae343a2-b6f1-41cf-9b46-bcf061a7b585",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002056"
           },
@@ -6058,7 +5558,6 @@
             "@type": "char",
             "@id": "UBERON_0003687",
             "label": "foramen magnum",
-            "about": "#UBERON_0003687",
             "states": "saea480c9-bee4-44fa-9c21-937145471d6e",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0003687"
           },
@@ -6066,7 +5565,6 @@
             "@type": "char",
             "@id": "UBERON_2001877",
             "label": "neural arch 1",
-            "about": "#UBERON_2001877",
             "states": "s0203556f-2604-4cad-91ed-80c955c01f20",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001877"
           },
@@ -6074,7 +5572,6 @@
             "@type": "char",
             "@id": "UBERON_2001604",
             "label": "lateral ethmoid palatine process",
-            "about": "#UBERON_2001604",
             "states": "se5cfdfaa-f98e-4692-813b-3c8929a9a213",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001604"
           },
@@ -6082,7 +5579,6 @@
             "@type": "char",
             "@id": "UBERON_2000224",
             "label": "quadrate ventral process",
-            "about": "#UBERON_2000224",
             "states": "s138073cc-b1ae-49e8-aa38-327d12ccf37e",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000224"
           },
@@ -6090,7 +5586,6 @@
             "@type": "char",
             "@id": "UBERON_0004530",
             "label": "bony projection",
-            "about": "#UBERON_0004530",
             "states": "s043e5bfc-d4ed-4a54-9636-80a721b56cac",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0004530"
           },
@@ -6098,7 +5593,6 @@
             "@type": "char",
             "@id": "UBERON_2002084",
             "label": "pleurostyle",
-            "about": "#UBERON_2002084",
             "states": "sfec66d49-274b-40cf-80ce-c49a40137b33",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002084"
           },
@@ -6106,7 +5600,6 @@
             "@type": "char",
             "@id": "UBERON_2002012",
             "label": "dentary foramen",
-            "about": "#UBERON_2002012",
             "states": "s3f4c6912-caad-4b2c-b9bb-543482ff47c3",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002012"
           },
@@ -6114,7 +5607,6 @@
             "@type": "char",
             "@id": "UBERON_2002013",
             "label": "ascending limb of ceratobranchial 5 bone",
-            "about": "#UBERON_2002013",
             "states": "se8b8caa2-58d9-420a-91b3-bc7c8ad92af7",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002013"
           },
@@ -6122,7 +5614,6 @@
             "@type": "char",
             "@id": "UBERON_2002018",
             "label": "anterior limb of ceratobranchial 5 cartilage",
-            "about": "#UBERON_2002018",
             "states": "s99297b15-8a64-461a-9cd0-e51b12ada46d",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002018"
           },
@@ -6130,7 +5621,6 @@
             "@type": "char",
             "@id": "UBERON_2002017",
             "label": "anterior limb of ceratobranchial 5 bone",
-            "about": "#UBERON_2002017",
             "states": "sdc538e32-398b-40cf-96f2-d7e378ea3026",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002017"
           },
@@ -6138,7 +5628,6 @@
             "@type": "char",
             "@id": "UBERON_2002014",
             "label": "ascending limb of ceratobranchial 5 cartilage",
-            "about": "#UBERON_2002014",
             "states": "s85409069-f16b-44f7-bcf4-e8921dc188e8",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002014"
           },
@@ -6146,7 +5635,6 @@
             "@type": "char",
             "@id": "UBERON_0001823",
             "label": "nasal cartilage",
-            "about": "#UBERON_0001823",
             "states": "sbae9576f-0852-47b1-b91b-2cebb1979f91",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0001823"
           },
@@ -6154,7 +5642,6 @@
             "@type": "char",
             "@id": "UBERON_2001663",
             "label": "basibranchial 4 tooth",
-            "about": "#UBERON_2001663",
             "states": "s965dabeb-f321-4230-b5f7-32092d4f22dc",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001663"
           },
@@ -6162,7 +5649,6 @@
             "@type": "char",
             "@id": "UBERON_2001396",
             "label": "parapophysis + rib of vertebra 4",
-            "about": "#UBERON_2001396",
             "states": "sff49b132-f3b8-4101-9355-ae75a8be4ce2",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001396"
           },
@@ -6170,7 +5656,6 @@
             "@type": "char",
             "@id": "UBERON_2001456",
             "label": "pectoral fin endoskeletal disc",
-            "about": "#UBERON_2001456",
             "states": "s5f8a99a9-5ff6-479c-ad18-95e34ce638f6",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001456"
           },
@@ -6178,7 +5663,6 @@
             "@type": "char",
             "@id": "UBERON_2001809",
             "label": "trigeminal foramen",
-            "about": "#UBERON_2001809",
             "states": "sfd9020a9-4586-4a4c-a010-65cedb2cd67a",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001809"
           },
@@ -6186,7 +5670,6 @@
             "@type": "char",
             "@id": "UBERON_2007005",
             "label": "hemal prezygapophysis",
-            "about": "#UBERON_2007005",
             "states": "s5550a65c-2ff3-4fbd-80c1-9c11aec58c22",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2007005"
           },
@@ -6194,7 +5677,6 @@
             "@type": "char",
             "@id": "UBERON_0007390",
             "label": "pectoral appendage cartilage tissue",
-            "about": "#UBERON_0007390",
             "states": "s518c4495-ab59-48dd-b6f6-2ac51934d8e3",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0007390"
           },
@@ -6202,7 +5684,6 @@
             "@type": "char",
             "@id": "UBERON_2001564",
             "label": "hypural 5",
-            "about": "#UBERON_2001564",
             "states": "sf64204e9-f0ae-478b-904d-ef747e56c927",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001564"
           },
@@ -6210,7 +5691,6 @@
             "@type": "char",
             "@id": "UBERON_2001563",
             "label": "hypural 4",
-            "about": "#UBERON_2001563",
             "states": "s51ab3fe1-083d-4b85-b896-94a4d78d4b1d",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001563"
           },
@@ -6218,7 +5698,6 @@
             "@type": "char",
             "@id": "UBERON_2001948",
             "label": "anal-fin hook",
-            "about": "#UBERON_2001948",
             "states": "s027f128e-3911-4285-9142-c3cec838f3b7",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001948"
           },
@@ -6226,7 +5705,6 @@
             "@type": "char",
             "@id": "UBERON_2000336",
             "label": "preopercle vertical limb",
-            "about": "#UBERON_2000336",
             "states": "s422ce3d7-f23d-47e1-91c9-bedbbba6f156",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000336"
           },
@@ -6234,7 +5712,6 @@
             "@type": "char",
             "@id": "UBERON_2001823",
             "label": "epibranchial 4 bone uncinate process",
-            "about": "#UBERON_2001823",
             "states": "sa90b60a7-2850-4db8-b3b0-ca39396c2eae",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001823"
           },
@@ -6242,7 +5719,6 @@
             "@type": "char",
             "@id": "UBERON_2001926",
             "label": "posterior myodome",
-            "about": "#UBERON_2001926",
             "states": "s31d3719d-6241-4734-8df3-7d4879c70858",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001926"
           },
@@ -6250,7 +5726,6 @@
             "@type": "char",
             "@id": "UBERON_2002021",
             "label": "ascending process of the parasphenoid",
-            "about": "#UBERON_2002021",
             "states": "s76c11e26-46d3-4013-b3b1-3cabedfa1ace",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002021"
           },
@@ -6258,7 +5733,6 @@
             "@type": "char",
             "@id": "UBERON_2001949",
             "label": "caudal-fin hook",
-            "about": "#UBERON_2001949",
             "states": "sccaf775e-0736-43c2-bb84-34492d646641",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001949"
           },
@@ -6266,7 +5740,6 @@
             "@type": "char",
             "@id": "UBERON_2002066",
             "label": "auditory fenestra",
-            "about": "#UBERON_2002066",
             "states": "s82b22d47-639a-4f11-b7fc-f724c42a2de8",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002066"
           },
@@ -6274,7 +5747,6 @@
             "@type": "char",
             "@id": "UBERON_2001808",
             "label": "facial foramen",
-            "about": "#UBERON_2001808",
             "states": "s26521d50-aa2c-40e5-8cb4-343c8b06869b",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001808"
           },
@@ -6282,7 +5754,6 @@
             "@type": "char",
             "@id": "UBERON_0007389",
             "label": "paired limb/fin cartilage",
-            "about": "#UBERON_0007389",
             "states": "s163a2c89-7be7-41f4-95be-e6fc4a2a4a5a",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0007389"
           },
@@ -6290,7 +5761,6 @@
             "@type": "char",
             "@id": "UBERON_2001987",
             "label": "centrum 5",
-            "about": "#UBERON_2001987",
             "states": "sd74b00c0-f6e5-4d57-a72d-5f4a146610a5",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001987"
           },
@@ -6298,7 +5768,6 @@
             "@type": "char",
             "@id": "UBERON_2002065",
             "label": "ural centrum 1",
-            "about": "#UBERON_2002065",
             "states": "s2c2cea12-86ee-4b97-bb5e-8edbe66b4d1a",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002065"
           },
@@ -6306,7 +5775,6 @@
             "@type": "char",
             "@id": "UBERON_2000699",
             "label": "entopterygoid vertical strut",
-            "about": "#UBERON_2000699",
             "states": "s4ccd9092-2a12-4f98-9c93-39985ea17c36",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000699"
           },
@@ -6314,7 +5782,6 @@
             "@type": "char",
             "@id": "UBERON_2001581",
             "label": "ural centrum 2",
-            "about": "#UBERON_2001581",
             "states": "s4fd6f48b-ca07-45dc-aed8-ccc2009f3d2e",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001581"
           },
@@ -6322,7 +5789,6 @@
             "@type": "char",
             "@id": "UBERON_2001804",
             "label": "olfactory nerve foramen",
-            "about": "#UBERON_2001804",
             "states": "s468a8f90-02e9-445b-acfe-02a391f8c488",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001804"
           },
@@ -6330,7 +5796,6 @@
             "@type": "char",
             "@id": "UBERON_2000735",
             "label": "hemal postzygapophysis",
-            "about": "#UBERON_2000735",
             "states": "s873dcac0-1074-472e-b405-f5d4b8c25c8d",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2000735"
           },
@@ -6338,7 +5803,6 @@
             "@type": "char",
             "@id": "UBERON_2001796",
             "label": "epibranchial 2 bone uncinate process",
-            "about": "#UBERON_2001796",
             "states": "sac071b3b-e8c1-44ee-8f34-18826eed8ed2",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001796"
           },
@@ -6346,7 +5810,6 @@
             "@type": "char",
             "@id": "UBERON_0005701",
             "label": "lower jaw molar odontogenic papilla",
-            "about": "#UBERON_0005701",
             "states": "sa9d2e166-ec9e-43e1-aa6a-845adbae39e2",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0005701"
           },
@@ -6354,7 +5817,6 @@
             "@type": "char",
             "@id": "UBERON_0017614",
             "label": "cingulum of molar tooth",
-            "about": "#UBERON_0017614",
             "states": "sb5eca70d-12ef-43a4-a048-074dbb69a0cd",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0017614"
           },
@@ -6362,7 +5824,6 @@
             "@type": "char",
             "@id": "UBERON_0008854",
             "label": "root of molar tooth",
-            "about": "#UBERON_0008854",
             "states": "s39b80359-eb18-47eb-99a8-5b1baf00fde2",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0008854"
           },
@@ -6370,7 +5831,6 @@
             "@type": "char",
             "@id": "UBERON_0018272",
             "label": "apex of paracone",
-            "about": "#UBERON_0018272",
             "states": "sffae0884-c1c4-406e-98d7-99eca0fb8bf4",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018272"
           },
@@ -6378,7 +5838,6 @@
             "@type": "char",
             "@id": "UBERON_0005700",
             "label": "upper jaw molar odontogenic papilla",
-            "about": "#UBERON_0005700",
             "states": "s48471105-3f53-4057-834b-2b2f8e6a80f6",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0005700"
           },
@@ -6386,7 +5845,6 @@
             "@type": "char",
             "@id": "UBERON_2001884",
             "label": "accessory neural arch",
-            "about": "#UBERON_2001884",
             "states": "sd2afd16a-441a-4832-accd-bfee1070baa9",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001884"
           },
@@ -6394,7 +5852,6 @@
             "@type": "char",
             "@id": "UBERON_0018287",
             "label": "premolar 1 hypoconoid",
-            "about": "#UBERON_0018287",
             "states": "sf1dd2d90-e83b-410e-bb44-45f20ecf2aa0",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018287"
           },
@@ -6402,7 +5859,6 @@
             "@type": "char",
             "@id": "UBERON_0015839",
             "label": "molar epithelium",
-            "about": "#UBERON_0015839",
             "states": "s1bf549e0-1e78-4d40-b5bc-f75671dddd2b",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0015839"
           },
@@ -6410,7 +5866,6 @@
             "@type": "char",
             "@id": "UBERON_0015843",
             "label": "molar enamel organ",
-            "about": "#UBERON_0015843",
             "states": "s3c7e8f2d-8c33-4abe-b759-516bb3929446",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0015843"
           },
@@ -6418,7 +5873,6 @@
             "@type": "char",
             "@id": "UBERON_2001141",
             "label": "tooth 1V",
-            "about": "#UBERON_2001141",
             "states": "sf8cf1785-921a-4019-bc8f-95a035f02c8b",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001141"
           },
@@ -6426,7 +5880,6 @@
             "@type": "char",
             "@id": "UBERON_4300002",
             "label": "palatine prong",
-            "about": "#UBERON_4300002",
             "states": "s9e6b6052-0568-448e-9eee-e4191d8ae04c",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_4300002"
           },
@@ -6434,7 +5887,6 @@
             "@type": "char",
             "@id": "UBERON_0017613",
             "label": "cingulum of upper jaw molar",
-            "about": "#UBERON_0017613",
             "states": "sb8923eb9-9114-4388-aa9f-39ae2dc2e020",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0017613"
           },
@@ -6442,7 +5894,6 @@
             "@type": "char",
             "@id": "UBERON_2001172",
             "label": "roofing cartilage",
-            "about": "#UBERON_2001172",
             "states": "sb8dca487-e9c2-43a6-acef-af305c004770",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001172"
           },
@@ -6450,7 +5901,6 @@
             "@type": "char",
             "@id": "UBERON_0018242",
             "label": "palatine bone horizontal plate",
-            "about": "#UBERON_0018242",
             "states": "s057d7a8f-12e8-4d8b-b567-d03a157ccf76",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018242"
           },
@@ -6458,7 +5908,6 @@
             "@type": "char",
             "@id": "UBERON_0018275",
             "label": "posthypocrista of deciduous premolar 5",
-            "about": "#UBERON_0018275",
             "states": "s79f7d6b3-9879-4200-8f34-1a393b7e77da",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018275"
           },
@@ -6466,7 +5915,6 @@
             "@type": "char",
             "@id": "UBERON_0015838",
             "label": "molar dental pulp",
-            "about": "#UBERON_0015838",
             "states": "sb8e00f28-73ab-4df2-b9ca-6bf1a81c653c",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0015838"
           },
@@ -6474,7 +5922,6 @@
             "@type": "char",
             "@id": "UBERON_0015844",
             "label": "molar dental papilla",
-            "about": "#UBERON_0015844",
             "states": "s6fde2566-4236-4bc5-b39b-2eb9b54ba49c",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0015844"
           },
@@ -6482,7 +5929,6 @@
             "@type": "char",
             "@id": "UBERON_0018288",
             "label": "paracone",
-            "about": "#UBERON_0018288",
             "states": "s3f08b8fe-4ea3-4550-bd13-40f88f1672cf",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018288"
           },
@@ -6490,7 +5936,6 @@
             "@type": "char",
             "@id": "UBERON_2001142",
             "label": "tooth 5V",
-            "about": "#UBERON_2001142",
             "states": "sbab7e867-3c26-4587-8783-01ad70242d7a",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001142"
           },
@@ -6498,7 +5943,6 @@
             "@type": "char",
             "@id": "UBERON_0017297",
             "label": "cingulum of canine tooth",
-            "about": "#UBERON_0017297",
             "states": "s7b33b3e4-0d37-4b05-86b5-0353fd583900",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0017297"
           },
@@ -6506,7 +5950,6 @@
             "@type": "char",
             "@id": "UBERON_3000401",
             "label": "pars facialis of maxillopalatine",
-            "about": "#UBERON_3000401",
             "states": "s8afbb27b-641d-409e-9dc6-ec7b01197c25",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_3000401"
           },
@@ -6514,7 +5957,6 @@
             "@type": "char",
             "@id": "UBERON_0018289",
             "label": "paracristid",
-            "about": "#UBERON_0018289",
             "states": "sb01a3214-3b6a-4e4e-94b5-690f552354ae",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018289"
           },
@@ -6522,7 +5964,6 @@
             "@type": "char",
             "@id": "UBERON_0018274",
             "label": "postcingulum of deciduous premolar 5",
-            "about": "#UBERON_0018274",
             "states": "s4eec4c30-18fa-4474-83d9-b5b96aa0c68b",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018274"
           },
@@ -6530,7 +5971,6 @@
             "@type": "char",
             "@id": "UBERON_0018314",
             "label": "choanal groove",
-            "about": "#UBERON_0018314",
             "states": "s0e76a248-9311-408d-aab2-12cb481cbb95",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018314"
           },
@@ -6538,7 +5978,6 @@
             "@type": "char",
             "@id": "UBERON_0013068",
             "label": "palatine torus",
-            "about": "#UBERON_0013068",
             "states": "s44e91781-473e-4ff5-b54a-f2f9da518903",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0013068"
           },
@@ -6546,7 +5985,6 @@
             "@type": "char",
             "@id": "UBERON_0005654",
             "label": "lower jaw molar epithelium",
-            "about": "#UBERON_0005654",
             "states": "s630d2299-da31-4726-8c90-9d1622a57ea9",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0005654"
           },
@@ -6554,7 +5992,6 @@
             "@type": "char",
             "@id": "UBERON_0011641",
             "label": "odontogenic mesenchyme of molar",
-            "about": "#UBERON_0011641",
             "states": "s57b5344d-d66e-4e57-8a4d-a9ae4cc0e5f8",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0011641"
           },
@@ -6562,7 +5999,6 @@
             "@type": "char",
             "@id": "UBERON_2002120",
             "label": "orbitosphenoid septum",
-            "about": "#UBERON_2002120",
             "states": "s27bb0273-41fd-4834-abc8-aa6493af36e0",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002120"
           },
@@ -6570,7 +6006,6 @@
             "@type": "char",
             "@id": "UBERON_0018279",
             "label": "hypoconid",
-            "about": "#UBERON_0018279",
             "states": "s166bff0e-cbdb-4c91-b273-d255a98e855d",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018279"
           },
@@ -6578,7 +6013,6 @@
             "@type": "char",
             "@id": "UBERON_0005653",
             "label": "upper jaw molar epithelium",
-            "about": "#UBERON_0005653",
             "states": "s43c6c220-3b64-4eff-aafc-27b4940f5c4e",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0005653"
           },
@@ -6586,7 +6020,6 @@
             "@type": "char",
             "@id": "UBERON_0018286",
             "label": "molar 1 posteroloph",
-            "about": "#UBERON_0018286",
             "states": "s6a5350c8-e8a8-4697-a158-bc197f9841eb",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018286"
           },
@@ -6594,7 +6027,6 @@
             "@type": "char",
             "@id": "UBERON_0018290",
             "label": "postcingulum",
-            "about": "#UBERON_0018290",
             "states": "s82895738-164b-4cd0-bb25-d92c867622b7",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018290"
           },
@@ -6602,7 +6034,6 @@
             "@type": "char",
             "@id": "UBERON_2001147",
             "label": "tooth 2MD",
-            "about": "#UBERON_2001147",
             "states": "s59c83b2f-3113-40a2-ab43-f0977c6b2fbd",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001147"
           },
@@ -6610,7 +6041,6 @@
             "@type": "char",
             "@id": "UBERON_0018345",
             "label": "stylar shelf",
-            "about": "#UBERON_0018345",
             "states": "sb8a70b33-df98-41ba-8f91-f3405a54ea7d",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018345"
           },
@@ -6618,7 +6048,6 @@
             "@type": "char",
             "@id": "UBERON_4200207",
             "label": "external rim of the coracoid foramen",
-            "about": "#UBERON_4200207",
             "states": "s1bc3a93e-f03d-40e4-83bc-ee24ac31533e",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_4200207"
           },
@@ -6626,7 +6055,6 @@
             "@type": "char",
             "@id": "UBERON_2001145",
             "label": "tooth 3V",
-            "about": "#UBERON_2001145",
             "states": "s9f946a41-bcbb-42a9-9726-483fa2484814",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001145"
           },
@@ -6634,7 +6062,6 @@
             "@type": "char",
             "@id": "UBERON_0018291",
             "label": "posteroloph",
-            "about": "#UBERON_0018291",
             "states": "sbd5ede6f-e32d-42a0-b6ea-f9cd2b45aedc",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018291"
           },
@@ -6642,7 +6069,6 @@
             "@type": "char",
             "@id": "UBERON_0017313",
             "label": "cingulum of lower canine tooth",
-            "about": "#UBERON_0017313",
             "states": "s5a6dd54c-86aa-4ca6-930d-c8d85bcc1e96",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0017313"
           },
@@ -6650,7 +6076,6 @@
             "@type": "char",
             "@id": "UBERON_2001148",
             "label": "tooth 1D",
-            "about": "#UBERON_2001148",
             "states": "s10b5a144-82de-4bc4-8e58-d6d2e75e6b3e",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001148"
           },
@@ -6658,7 +6083,6 @@
             "@type": "char",
             "@id": "UBERON_0018344",
             "label": "parastyle",
-            "about": "#UBERON_0018344",
             "states": "s248eaa37-361c-4e38-a265-9e4d7476ac80",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018344"
           },
@@ -6666,7 +6090,6 @@
             "@type": "char",
             "@id": "UBERON_0017312",
             "label": "cingulum of upper canine tooth",
-            "about": "#UBERON_0017312",
             "states": "s2e14a9a8-f241-451a-8b1d-fd424c1f5081",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0017312"
           },
@@ -6674,7 +6097,6 @@
             "@type": "char",
             "@id": "UBERON_2001146",
             "label": "tooth 1MD",
-            "about": "#UBERON_2001146",
             "states": "s454a5fed-07bc-4954-8d42-36f9e2638a53",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001146"
           },
@@ -6682,7 +6104,6 @@
             "@type": "char",
             "@id": "UBERON_0018292",
             "label": "posthypocrista",
-            "about": "#UBERON_0018292",
             "states": "saebb60a2-eb42-4d24-af9d-314b267f1220",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018292"
           },
@@ -6690,7 +6111,6 @@
             "@type": "char",
             "@id": "UBERON_0006428",
             "label": "basisphenoid bone",
-            "about": "#UBERON_0006428",
             "states": "s1b99ac26-e912-409e-bff7-c3d41bcc4885",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0006428"
           },
@@ -6698,7 +6118,6 @@
             "@type": "char",
             "@id": "UBERON_0003955",
             "label": "molar crown",
-            "about": "#UBERON_0003955",
             "states": "s4575acce-d127-427e-9fea-733e71659d49",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0003955"
           },
@@ -6706,7 +6125,6 @@
             "@type": "char",
             "@id": "UBERON_0017612",
             "label": "cingulum of lower jaw molar",
-            "about": "#UBERON_0017612",
             "states": "s9fbcb3fd-0a34-4d6f-b899-180484c46bdb",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0017612"
           },
@@ -6714,7 +6132,6 @@
             "@type": "char",
             "@id": "UBERON_0016929",
             "label": "lingual cusp of tooth",
-            "about": "#UBERON_0016929",
             "states": "s675f06fe-33cb-436a-adf5-56dfacaf9bbe",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0016929"
           },
@@ -6722,7 +6139,6 @@
             "@type": "char",
             "@id": "UBERON_2001143",
             "label": "tooth 4V",
-            "about": "#UBERON_2001143",
             "states": "s694327db-bc01-4c73-89f0-500a9a015829",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001143"
           },
@@ -6730,7 +6146,6 @@
             "@type": "char",
             "@id": "UBERON_2001665",
             "label": "basibranchial 2 tooth",
-            "about": "#UBERON_2001665",
             "states": "sa86120fc-bea3-4b46-9d44-449bb04d259e",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001665"
           },
@@ -6738,7 +6153,6 @@
             "@type": "char",
             "@id": "UBERON_2001816",
             "label": "anterior nuchal plate",
-            "about": "#UBERON_2001816",
             "states": "s7b1f0372-907b-436f-b052-69f788f083bf",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001816"
           },
@@ -6746,7 +6160,6 @@
             "@type": "char",
             "@id": "UBERON_2001144",
             "label": "tooth 2V",
-            "about": "#UBERON_2001144",
             "states": "s8f59c95f-0d8f-44ba-bde2-628e3f72b532",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001144"
           },
@@ -6754,7 +6167,6 @@
             "@type": "char",
             "@id": "UBERON_0015853",
             "label": "dental pulp of median incisor tusk",
-            "about": "#UBERON_0015853",
             "states": "s7a8a95c8-901a-4586-91a3-22dbd35f5302",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0015853"
           },
@@ -6762,7 +6174,6 @@
             "@type": "char",
             "@id": "UBERON_2001151",
             "label": "tooth 4MD",
-            "about": "#UBERON_2001151",
             "states": "sfd7ade04-a14a-4702-bb89-93324ca09411",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001151"
           },
@@ -6770,7 +6181,6 @@
             "@type": "char",
             "@id": "UBERON_0018295",
             "label": "preprotocrista",
-            "about": "#UBERON_0018295",
             "states": "sea361e94-078c-4c64-a70d-9b5b9067cacf",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018295"
           },
@@ -6778,7 +6188,6 @@
             "@type": "char",
             "@id": "UBERON_2002166",
             "label": "pseudourostyle",
-            "about": "#UBERON_2002166",
             "states": "s22a44dd9-c53c-4f91-bee6-1a2e04c0b367",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002166"
           },
@@ -6786,7 +6195,6 @@
             "@type": "char",
             "@id": "UBERON_0018293",
             "label": "precingulum",
-            "about": "#UBERON_0018293",
             "states": "s0c3c2985-fd3f-4154-8b6a-317768fc2a1d",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018293"
           },
@@ -6794,7 +6202,6 @@
             "@type": "char",
             "@id": "UBERON_2001152",
             "label": "tooth 3MD",
-            "about": "#UBERON_2001152",
             "states": "s16261fbb-4df1-43ac-ab38-a011829f9860",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001152"
           },
@@ -6802,7 +6209,6 @@
             "@type": "char",
             "@id": "UBERON_2001965",
             "label": "epibranchial 4 bone uncinate process cartilage",
-            "about": "#UBERON_2001965",
             "states": "s9653f217-85b5-49fe-893a-862a419180a3",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001965"
           },
@@ -6810,7 +6216,6 @@
             "@type": "char",
             "@id": "UBERON_4500002",
             "label": "upper uroneural",
-            "about": "#UBERON_4500002",
             "states": "se787bc87-7c3d-4fb2-9d4f-7a2f37448da8",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_4500002"
           },
@@ -6818,7 +6223,6 @@
             "@type": "char",
             "@id": "UBERON_4200206",
             "label": "internal rim of coracoid foramen",
-            "about": "#UBERON_4200206",
             "states": "sd453cf85-6638-4774-ba14-694f08349542",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_4200206"
           },
@@ -6826,7 +6230,6 @@
             "@type": "char",
             "@id": "UBERON_0015841",
             "label": "molar dental lamina",
-            "about": "#UBERON_0015841",
             "states": "s351d1a62-1ec3-4a48-bc12-74f853494c68",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0015841"
           },
@@ -6834,7 +6237,6 @@
             "@type": "char",
             "@id": "UBERON_0018298",
             "label": "stylocone",
-            "about": "#UBERON_0018298",
             "states": "s90ccbe73-7b91-470f-b2ed-a0998cdf9aea",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018298"
           },
@@ -6842,7 +6244,6 @@
             "@type": "char",
             "@id": "UBERON_2001150",
             "label": "tooth 2D",
-            "about": "#UBERON_2001150",
             "states": "s6d8ef41c-5154-4837-b002-a535b981b7b8",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001150"
           },
@@ -6850,7 +6251,6 @@
             "@type": "char",
             "@id": "UBERON_2002167",
             "label": "stegural",
-            "about": "#UBERON_2002167",
             "states": "sc34b86b6-4cf8-44a3-9749-c6781fd71947",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002167"
           },
@@ -6858,7 +6258,6 @@
             "@type": "char",
             "@id": "UBERON_3000547",
             "label": "rostral process",
-            "about": "#UBERON_3000547",
             "states": "s25ca8719-8bca-4f86-9eba-fbd082fb11a7",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_3000547"
           },
@@ -6866,7 +6265,6 @@
             "@type": "char",
             "@id": "UBERON_2001609",
             "label": "pharyngobranchial 2 bone uncinate process",
-            "about": "#UBERON_2001609",
             "states": "s425db046-8d86-45a5-8368-96cfadacaf9f",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001609"
           },
@@ -6874,7 +6272,6 @@
             "@type": "char",
             "@id": "UBERON_0005745",
             "label": "optic foramen",
-            "about": "#UBERON_0005745",
             "states": "sc6df6172-8c8b-47e2-8415-17cb5811ec30",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0005745"
           },
@@ -6882,7 +6279,6 @@
             "@type": "char",
             "@id": "UBERON_2001660",
             "label": "basibranchial tooth",
-            "about": "#UBERON_2001660",
             "states": "s5f52b4a1-50f1-4245-b27d-cc6ab5eac44b",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001660"
           },
@@ -6890,7 +6286,6 @@
             "@type": "char",
             "@id": "UBERON_0005707",
             "label": "upper jaw incisor odontogenic papilla",
-            "about": "#UBERON_0005707",
             "states": "s3328e1f7-5fab-47f6-acc0-62146c833582",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0005707"
           },
@@ -6898,7 +6293,6 @@
             "@type": "char",
             "@id": "UBERON_0005709",
             "label": "upper jaw incisor epithelium",
-            "about": "#UBERON_0005709",
             "states": "s134359e4-7cb6-4d5b-beca-0f289129dbbc",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0005709"
           },
@@ -6906,7 +6300,6 @@
             "@type": "char",
             "@id": "UBERON_2001792",
             "label": "pharyngobranchial 3 bone uncinate process",
-            "about": "#UBERON_2001792",
             "states": "s687084e1-dcd8-49f2-9fd0-b31d7a2d04ed",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2001792"
           },
@@ -6914,7 +6307,6 @@
             "@type": "char",
             "@id": "UBERON_0006006",
             "label": "metoptic pillar",
-            "about": "#UBERON_0006006",
             "states": "sd3f192dc-00c0-4e7a-a481-3f231ee5b2a0",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0006006"
           },
@@ -6922,7 +6314,6 @@
             "@type": "char",
             "@id": "UBERON_2002109",
             "label": "uroneural 2",
-            "about": "#UBERON_2002109",
             "states": "s044121a9-8600-44b2-bb29-2b27c0742b4d",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002109"
           },
@@ -6930,7 +6321,6 @@
             "@type": "char",
             "@id": "UBERON_2002064",
             "label": "uroneural 1",
-            "about": "#UBERON_2002064",
             "states": "sc48608e8-d5ca-4f72-ada2-95ea72c15e0d",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002064"
           },
@@ -6938,7 +6328,6 @@
             "@type": "char",
             "@id": "UBERON_0018508",
             "label": "foramen of nasal bone",
-            "about": "#UBERON_0018508",
             "states": "s3bd05418-efed-40df-8a29-6710482951bd",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0018508"
           },
@@ -6946,7 +6335,6 @@
             "@type": "char",
             "@id": "UBERON_0035957",
             "label": "antotic pillar",
-            "about": "#UBERON_0035957",
             "states": "sf52ed991-cc3d-4ac4-aef3-eaebeff14003",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0035957"
           },
@@ -6954,7 +6342,6 @@
             "@type": "char",
             "@id": "UBERON_0035958",
             "label": "preoptic pillar",
-            "about": "#UBERON_0035958",
             "states": "s74d08b61-ca2d-419f-acc7-baf2eca62052",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_0035958"
           },
@@ -6962,7 +6349,6 @@
             "@type": "char",
             "@id": "UBERON_2002115",
             "label": "uroneural 3",
-            "about": "#UBERON_2002115",
             "states": "sd48bb9e1-c3bb-42cf-8e3b-337410c35c33",
             "obo:IAO_0000219": "http://purl.obolibrary.org/obo/UBERON_2002115"
           }

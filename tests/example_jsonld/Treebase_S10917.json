@@ -1,33 +1,29 @@
 {
   "@context": {
-    "@vocab": "http://www.nexml.org/2009/"
+    "@base": "http://purl.org/phylo/treebase/phylows/study/TB2:",
+    "@vocab": "http://www.nexml.org/2009",
+    "nex": "http://www.nexml.org/2009",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prism": "http://prismstandard.org/namespaces/1.2/basic/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "tb": "http://purl.org/phylo/treebase/2.0/terms#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "xsi": "http://www.w3.org/2001/XMLSchema-instance"
   },
   "nexml": {
-    "about": "#S10917",
     "generator": "org.nexml.model.impl.DocumentImpl",
     "@id": "S10917",
     "version": "0.9",
-    "base": "http://purl.org/phylo/treebase/phylows/study/TB2:",
-    "xmlns:nex": "http://www.nexml.org/2009",
-    "xmlns": "http://www.nexml.org/2009",
-    "xmlns:dc": "http://purl.org/dc/elements/1.1/",
-    "xmlns:dcterms": "http://purl.org/dc/terms/",
-    "xmlns:prism": "http://prismstandard.org/namespaces/1.2/basic/",
-    "xmlns:rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "xmlns:rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "xmlns:skos": "http://www.w3.org/2004/02/skos/core#",
-    "xmlns:tb": "http://purl.org/phylo/treebase/2.0/terms#",
-    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema#",
-    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
     "otus": {
-      "about": "#Tls18428",
       "@id": "Tls18428",
       "label": "Taxa",
       "base": "http://purl.org/phylo/treebase/phylows/taxon/TB2:",
       "otu": [
         {
           "@type": "otu",
-          "about": "#Tl420423",
           "@id": "Tl420423",
           "label": "Lauridromia dehaani",
           "tb:identifier.taxon": {},
@@ -38,7 +34,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420413",
           "@id": "Tl420413",
           "label": "Paromola japonica ",
           "tb:identifier.taxon": {},
@@ -50,7 +45,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420449",
           "@id": "Tl420449",
           "label": "Blepharipoda occidentalis ",
           "tb:identifier.taxon": {},
@@ -62,7 +56,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420421",
           "@id": "Tl420421",
           "label": "Emerita emeritus ",
           "tb:identifier.taxon": {},
@@ -74,7 +67,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420470",
           "@id": "Tl420470",
           "label": "Lepidopa californica ",
           "tb:identifier.taxon": {},
@@ -86,7 +78,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420442",
           "@id": "Tl420442",
           "label": "Coenobita compressus ",
           "tb:identifier.taxon": {},
@@ -98,7 +89,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420444",
           "@id": "Tl420444",
           "label": "Clibanarius albidigitus ",
           "tb:identifier.taxon": {},
@@ -110,7 +100,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420414",
           "@id": "Tl420414",
           "label": "Isocheles pilosus ",
           "tb:identifier.taxon": {},
@@ -122,7 +111,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420472",
           "@id": "Tl420472",
           "label": "Calcinus obscurus ",
           "tb:identifier.taxon": {},
@@ -134,7 +122,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420412",
           "@id": "Tl420412",
           "label": "Paguristes turgidus",
           "tb:identifier.taxon": {},
@@ -145,7 +132,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420431",
           "@id": "Tl420431",
           "label": "Lithodes santolla ",
           "tb:identifier.taxon": {},
@@ -157,7 +143,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420466",
           "@id": "Tl420466",
           "label": "Oedignathus inermis",
           "tb:identifier.taxon": {},
@@ -168,14 +153,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420432",
           "@id": "Tl420432",
           "label": "Pagurus sp.",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S10917"
         },
         {
           "@type": "otu",
-          "about": "#Tl420415",
           "@id": "Tl420415",
           "label": "Discorsopagurus schmitti ",
           "tb:identifier.taxon": {},
@@ -187,7 +170,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420430",
           "@id": "Tl420430",
           "label": "Bythiopagurus macrocolus",
           "tb:identifier.taxon": {},
@@ -198,7 +180,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420456",
           "@id": "Tl420456",
           "label": "Sympagurus dimorphus",
           "tb:identifier.taxon": {},
@@ -209,7 +190,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420418",
           "@id": "Tl420418",
           "label": "Parapagurus latimanus",
           "tb:identifier.taxon": {},
@@ -220,7 +200,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420420",
           "@id": "Tl420420",
           "label": "Trizocheles spinosus",
           "tb:identifier.taxon": {},
@@ -229,14 +208,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420464",
           "@id": "Tl420464",
           "label": "Pylocheles macrops ",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S10917"
         },
         {
           "@type": "otu",
-          "about": "#Tl420455",
           "@id": "Tl420455",
           "label": "Pachycheles haigae",
           "tb:identifier.taxon": {},
@@ -247,7 +224,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420439",
           "@id": "Tl420439",
           "label": "Pachycheles rudis ",
           "tb:identifier.taxon": {},
@@ -259,7 +235,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420463",
           "@id": "Tl420463",
           "label": "Petrolisthes armatus ",
           "tb:identifier.taxon": {},
@@ -271,7 +246,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420468",
           "@id": "Tl420468",
           "label": "Petrolisthes laevigatus ",
           "tb:identifier.taxon": {},
@@ -283,7 +257,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420452",
           "@id": "Tl420452",
           "label": "Porcellanella triloba",
           "tb:identifier.taxon": {},
@@ -292,7 +265,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420471",
           "@id": "Tl420471",
           "label": "Lomis hirta",
           "tb:identifier.taxon": {},
@@ -303,7 +275,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420416",
           "@id": "Tl420416",
           "label": "Aegla uruguayana",
           "tb:identifier.taxon": {},
@@ -314,7 +285,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420465",
           "@id": "Tl420465",
           "label": "Aegla violacea",
           "tb:identifier.taxon": {},
@@ -325,7 +295,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420446",
           "@id": "Tl420446",
           "label": "Kiwa hirsuta ",
           "tb:identifier.taxon": {},
@@ -337,7 +306,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420427",
           "@id": "Tl420427",
           "label": "Pseudomunida fragilis",
           "tb:identifier.taxon": {},
@@ -348,7 +316,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420441",
           "@id": "Tl420441",
           "label": "Shinkaia crosnieri",
           "tb:identifier.taxon": {},
@@ -359,7 +326,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420457",
           "@id": "Tl420457",
           "label": "Eumunida sternomaculata",
           "tb:identifier.taxon": {},
@@ -370,7 +336,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420451",
           "@id": "Tl420451",
           "label": "Uroptychus spinirostris",
           "tb:identifier.taxon": {},
@@ -379,7 +344,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420448",
           "@id": "Tl420448",
           "label": "Uroptychus australis",
           "tb:identifier.taxon": {},
@@ -389,7 +353,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420453",
           "@id": "Tl420453",
           "label": "Uroptychus nitidus",
           "tb:identifier.taxon": {},
@@ -400,7 +363,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420454",
           "@id": "Tl420454",
           "label": "Uroptychus parvulus",
           "tb:identifier.taxon": {},
@@ -411,14 +373,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420462",
           "@id": "Tl420462",
           "label": "Uroptychus scambus ",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S10917"
         },
         {
           "@type": "otu",
-          "about": "#Tl420417",
           "@id": "Tl420417",
           "label": "Gastroptychus novaezelandiae ",
           "tb:identifier.taxon": {},
@@ -427,7 +387,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420450",
           "@id": "Tl420450",
           "label": "Gastroptychus rogeri ",
           "tb:identifier.taxon": {},
@@ -437,7 +396,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420443",
           "@id": "Tl420443",
           "label": "Chirostylus novaecaledoniae",
           "tb:identifier.taxon": {},
@@ -448,7 +406,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420447",
           "@id": "Tl420447",
           "label": "Uroptychodes epigaster",
           "tb:identifier.taxon": {},
@@ -458,7 +415,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420460",
           "@id": "Tl420460",
           "label": "Munida subrugosa ",
           "tb:identifier.taxon": {},
@@ -470,7 +426,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420461",
           "@id": "Tl420461",
           "label": "Agononida longipes ",
           "tb:identifier.taxon": {},
@@ -481,7 +436,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420428",
           "@id": "Tl420428",
           "label": "Agononida procera ",
           "tb:identifier.taxon": {},
@@ -493,7 +447,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420438",
           "@id": "Tl420438",
           "label": "Munida quadrispina ",
           "tb:identifier.taxon": {},
@@ -505,7 +458,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420435",
           "@id": "Tl420435",
           "label": "Leiogalathea laevirostris",
           "tb:identifier.taxon": {},
@@ -516,7 +468,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420467",
           "@id": "Tl420467",
           "label": "Munidopsis bairdii",
           "tb:identifier.taxon": {},
@@ -527,21 +478,18 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420440",
           "@id": "Tl420440",
           "label": "Galacantha rostrata ",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S10917"
         },
         {
           "@type": "otu",
-          "about": "#Tl420426",
           "@id": "Tl420426",
           "label": "Galathea sp.",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S10917"
         },
         {
           "@type": "otu",
-          "about": "#Tl420469",
           "@id": "Tl420469",
           "label": "Pleuroncodes monodon",
           "tb:identifier.taxon": {},
@@ -552,7 +500,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420422",
           "@id": "Tl420422",
           "label": "Cervimunida johni",
           "tb:identifier.taxon": {},
@@ -563,21 +510,18 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420473",
           "@id": "Tl420473",
           "label": "Torbenella orbis",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S10917"
         },
         {
           "@type": "otu",
-          "about": "#Tl420433",
           "@id": "Tl420433",
           "label": "Heteronida spinirostris",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S10917"
         },
         {
           "@type": "otu",
-          "about": "#Tl420425",
           "@id": "Tl420425",
           "label": "Alainius crosnieri",
           "tb:identifier.taxon": {},
@@ -588,7 +532,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420429",
           "@id": "Tl420429",
           "label": "Neonida grandis",
           "tb:identifier.taxon": {},
@@ -598,7 +541,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420424",
           "@id": "Tl420424",
           "label": "Allogalathea elegans",
           "tb:identifier.taxon": {},
@@ -609,21 +551,18 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420434",
           "@id": "Tl420434",
           "label": "Sadayoshia sp.",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S10917"
         },
         {
           "@type": "otu",
-          "about": "#Tl420459",
           "@id": "Tl420459",
           "label": "Anoplonida inermis",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S10917"
         },
         {
           "@type": "otu",
-          "about": "#Tl420458",
           "@id": "Tl420458",
           "label": "Bathymunida balssi",
           "tb:identifier.taxon": {},
@@ -633,7 +572,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420410",
           "@id": "Tl420410",
           "label": "Porcellanopagurus filholi",
           "tb:identifier.taxon": {},
@@ -643,14 +581,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420411",
           "@id": "Tl420411",
           "label": "Euceramus sp.",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S10917"
         },
         {
           "@type": "otu",
-          "about": "#Tl420419",
           "@id": "Tl420419",
           "label": "Porcellana platycheles",
           "tb:identifier.taxon": {},
@@ -661,14 +597,12 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420437",
           "@id": "Tl420437",
           "label": "Babamunida kanaloa ",
           "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S10917"
         },
         {
           "@type": "otu",
-          "about": "#Tl420436",
           "@id": "Tl420436",
           "label": "Birgus latro",
           "tb:identifier.taxon": {},
@@ -679,7 +613,6 @@
         },
         {
           "@type": "otu",
-          "about": "#Tl420445",
           "@id": "Tl420445",
           "label": "Paguristes pilosus",
           "tb:identifier.taxon": {},
@@ -691,7 +624,6 @@
       "skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@1fc8b826 $Rev: 1040 $"
     },
     "characters": {
-      "about": "#M6806",
       "@id": "M6806",
       "label": "Character Matrix",
       "otus": "Tls18428",
@@ -16190,13 +16122,11 @@
     "trees": [
       {
         "@type": "trees",
-        "about": "#Tb12764",
         "@id": "Tb12764",
         "label": "Fig 2: BI for morphology partition only",
         "otus": "Tls18428",
         "base": "http://purl.org/phylo/treebase/phylows/tree/TB2:",
         "tree": {
-          "about": "#Tr25304",
           "@id": "Tr25304",
           "label": "Fig. 2 morph",
           "@type": "nex:FloatTree",
@@ -17471,13 +17401,11 @@
       },
       {
         "@type": "trees",
-        "about": "#Tb12763",
         "@id": "Tb12763",
         "label": "Fig 2: BI for DNA only (16, 18, 28S rRNA)",
         "otus": "Tls18428",
         "base": "http://purl.org/phylo/treebase/phylows/tree/TB2:",
         "tree": {
-          "about": "#Tr25302",
           "@id": "Tr25302",
           "label": "Fig. 2 DNA only",
           "@type": "nex:FloatTree",
@@ -19004,13 +18932,11 @@
       },
       {
         "@type": "trees",
-        "about": "#Tb12762",
         "@id": "Tb12762",
         "label": "Fig 1: BI for combined DNA-morphology",
         "otus": "Tls18428",
         "base": "http://purl.org/phylo/treebase/phylows/tree/TB2:",
         "tree": {
-          "about": "#Tr25300",
           "@id": "Tr25300",
           "label": "Fig. 1",
           "@type": "nex:FloatTree",
