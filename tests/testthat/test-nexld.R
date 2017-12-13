@@ -22,7 +22,11 @@ testthat::test_that("we can expand and compact successfully", {
 })
 
 testthat::test_that("we can go from json back to xml", {
+
+
   json <- parse_nexml(ex)
+
+  ## fails on json <- xml_to_json(ex)
   xml <- json_to_xml(json)
   expect_is(xml, "xml_document")
 })

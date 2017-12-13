@@ -1,8 +1,9 @@
 
+as_nexld <- function(x, ...) {UseMethod("as_nexld")}
 
-## override xml2 method
+## based on as_list xml2 method
 #' @importFrom xml2 xml_contents xml_name xml_attrs xml_type xml_text
-as_list.xml_node <- function(x, ns = character(), embed_attr=TRUE, ...) {
+as_nexld.xml_node <- function(x, ns = character(), embed_attr=TRUE, ...) {
   contents <- xml2::xml_contents(x)
   if (length(contents) == 0) {
     # Base case - contents
@@ -15,7 +16,7 @@ as_list.xml_node <- function(x, ns = character(), embed_attr=TRUE, ...) {
       return(paste("[", type, "]"))
     out <- list()
   } else {
-    out <- lapply(seq_along(contents), function(i) as_list(contents[[i]], ns = ns))
+    out <- lapply(seq_along(contents), function(i) as_nexld(contents[[i]], ns = ns))
     nms <- ifelse(xml_type(contents) == "element", xml_name(contents, ns = ns), "")
     if (any(nms != "")) {
       names(out) <- nms
@@ -34,8 +35,8 @@ as_list.xml_node <- function(x, ns = character(), embed_attr=TRUE, ...) {
 }
 
 ## override xml2 method
-as_list.xml_nodeset <- function(x, ns = character(), ...) {
-  out <- lapply(seq_along(x), function(i) as_list(x[[i]], ns = ns, ...))
+as_nexld.xml_nodeset <- function(x, ns = character(), ...) {
+  out <- lapply(seq_along(x), function(i) as_nexld(x[[i]], ns = ns, ...))
 
   ## re-attach names
   nms <- ifelse(xml_type(x) == "element", xml_name(x, ns = ns), "")
