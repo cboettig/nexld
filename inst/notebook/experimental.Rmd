@@ -21,6 +21,20 @@ json %>% write_json("example.json", pretty = TRUE, auto_unbox=TRUE)
 readr::read_lines("example.json", n_max = 10) %>% cat(sep="\n")
 ```
 
+
+```{r}
+nexld::xml_to_json(f, "example.json")
+readr::read_lines("example.json", n_max = 10) %>% cat(sep="\n")
+```
+
+```{r}
+x <- xml_to_json(f)
+json_to_xml(x, "ex.xml")
+  
+```
+
+
+
 ```{r}
 
 f <- system.file("extdata/ontotrace.xml", package = "nexld")

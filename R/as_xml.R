@@ -3,9 +3,15 @@
 #'
 #' json_to_xml
 #' @param x JSON-LD representation of NeXML, as json, character, or list object.
+#' @param file output filename. If NULL (default), will return xml_document
+#' @param ... additional arguments to xml2::write_xml
 #' @export
-json_to_xml <- function(x){
-  as_nexml_document(x)
+json_to_xml <- function(x, file = NULL, ...){
+  xml <- as_nexml_document(x)
+  if(!is.null(file))
+    xml2::write_xml(xml, file, ...)
+  else
+    xml
 }
 
 
@@ -52,48 +58,45 @@ as_nexml_document <- function(x, ...) {UseMethod("as_nexml_document")}
 
 #' @importFrom jsonlite fromJSON
 as_nexml_document.character <- function(x, ...){
-  as_nexml_document(jsonlite::fromJSON(x))
+  as_nexml_document(jsonlite::fromJSON(x, simplifyVector = FALSE))
 }
 as_nexml_document.json <- function(x, ...){
-  as_nexml_document.list(x)
+  as_nexml_document(jsonlite::fromJSON(x, simplifyVector = FALSE))
+}
+
+
+add_node <- function(x, parent, tag = NULL) {
+  if (is.atomic(x)) {
+    ## No use of xml_set_text please, we want atomic elements to be XML attribute values
+    ##return(xml_set_text(parent, as.character(x)))
+    return()
+  }
+
+  ## Add coercion into meta nodes first.  Should also alter the `about` tag of the parent
+  x <- into_meta(x)
+
+  if (!is.null(tag)) {
+    parent <- xml2::xml_add_child(parent, tag)
+    ## No use of R attributes please
+    #attr <- r_attrs_to_xml(attributes(x))
+    attr <- x[vapply(x, is.atomic, logical(1))]
+    for (i in seq_along(attr)) {
+      key <- gsub("^@(\\w+)", "\\1", names(attr)[[i]])
+      xml2::xml_set_attr(parent, key, attr[[i]])
+    }
+  }
+  for (i in seq_along(x)) {
+    add_node(x[[i]], parent, names(x)[[i]])
+  }
 }
 
 #' @importFrom xml2 xml_add_child xml_set_attr xml_new_document
 as_nexml_document.list <- function(x, ...) {
   if (length(x) > 1) {
     if(!is.null(x$nexml))
-      x <- x$nexml
+      x <- x["nexml"]
     else
       stop("Root nexml node not found", call. = FALSE)
-  }
-
-  ## FIXME drop/deal with @context node
-
-  add_node <- function(x, parent, tag = NULL) {
-    if (is.atomic(x)) {
-      ## No use of xml_set_text please, we want atomic elements to be XML attribute values
-      ##return(xml_set_text(parent, as.character(x)))
-      return()
-    }
-
-    ## Add coercion into meta nodes first.  Should also alter the `about` tag of the parent
-    x <- into_meta(x)
-
-    if (!is.null(tag)) {
-      parent <- xml2::xml_add_child(parent, tag)
-
-
-      ## No use of R attributes please
-      #attr <- r_attrs_to_xml(attributes(x))
-      attr <- x[vapply(x, is.atomic, logical(1))]
-      for (i in seq_along(attr)) {
-        key <- gsub("^@(\\w+)", "\\1", names(attr)[[i]])
-        xml2::xml_set_attr(parent, key, attr[[i]])
-      }
-    }
-    for (i in seq_along(x)) {
-      add_node(x[[i]], parent, names(x)[[i]])
-    }
   }
 
   doc <- xml2::xml_new_document()
