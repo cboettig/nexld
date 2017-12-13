@@ -4,12 +4,12 @@
 \alias{xml_to_json}
 \title{xml_to_json}
 \usage{
-xml_to_json(x, out = NULL)
+xml_to_json(x, file = NULL)
 }
 \arguments{
 \item{x}{path to a nexml file}
 
-\item{out}{output filename; optional, if ommitted will return JSON string}
+\item{file}{output filename; optional, if ommitted will return JSON string}
 }
 \value{
 json string or json output file
