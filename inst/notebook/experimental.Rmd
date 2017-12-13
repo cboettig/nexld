@@ -31,3 +31,7 @@ json %>% write_json("example.json", pretty = TRUE, auto_unbox=TRUE)
 readr::read_lines("example.json", n_max = 20) %>% cat(sep="\n")
 
 ```
+
+```{r}
+class(json)
+```
