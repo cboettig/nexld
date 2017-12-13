@@ -1,0 +1,4679 @@
+{
+  "@context": {
+    "@vocab": "http://www.nexml.org/2009/"
+  },
+  "nexml": {
+    "about": "#S12957",
+    "generator": "org.nexml.model.impl.DocumentImpl",
+    "@id": "S12957",
+    "version": "0.9",
+    "base": "http://purl.org/phylo/treebase/phylows/study/TB2:",
+    "xmlns:nex": "http://www.nexml.org/2009",
+    "xmlns": "http://www.nexml.org/2009",
+    "xmlns:dc": "http://purl.org/dc/elements/1.1/",
+    "xmlns:dcterms": "http://purl.org/dc/terms/",
+    "xmlns:prism": "http://prismstandard.org/namespaces/1.2/basic/",
+    "xmlns:rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xmlns:rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xmlns:skos": "http://www.w3.org/2004/02/skos/core#",
+    "xmlns:tb": "http://purl.org/phylo/treebase/2.0/terms#",
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema#",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "otus": {
+      "about": "#Tls26640",
+      "@id": "Tls26640",
+      "label": "Taxa",
+      "base": "http://purl.org/phylo/treebase/phylows/taxon/TB2:",
+      "otu": [
+        {
+          "@type": "otu",
+          "about": "#Tl838100",
+          "@id": "Tl838100",
+          "label": "Alestes baremoze",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/303973",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2486593",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838015",
+          "@id": "Tl838015",
+          "label": "Alestes dentex",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2486600",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838045",
+          "@id": "Tl838045",
+          "label": "Alestes macrophthalmus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2486604",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837989",
+          "@id": "Tl837989",
+          "label": "Alestopetersius caudalis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/304011",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2486615",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838093",
+          "@id": "Tl838093",
+          "label": "Outgroup",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:708365",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838003",
+          "@id": "Tl838003",
+          "label": "Alestopetersius hilgendorf",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838060",
+          "@id": "Tl838060",
+          "label": "Alestopetersius smykalai",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2504690",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838068",
+          "@id": "Tl838068",
+          "label": "Arnoldichthys spilopterus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/303978",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2487591",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837997",
+          "@id": "Tl837997",
+          "label": "Bathyaethiops caudomaculatus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3862995",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838078",
+          "@id": "Tl838078",
+          "label": "Brachypetersius altus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488812",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838022",
+          "@id": "Tl838022",
+          "label": "Brachypetersius gabonensis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488814",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838026",
+          "@id": "Tl838026",
+          "label": "Brachypetersius notospilus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488816",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838044",
+          "@id": "Tl838044",
+          "label": "Brycinus bimaculatus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2508479",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838057",
+          "@id": "Tl838057",
+          "label": "Brycinus brevis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488899",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838074",
+          "@id": "Tl838074",
+          "label": "Brycinus carolinae",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/303971",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488900",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837987",
+          "@id": "Tl837987",
+          "label": "Brycinus imberi",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/280777",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488901",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838092",
+          "@id": "Tl838092",
+          "label": "Brycinus kingsleyae",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/280776",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488903",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838095",
+          "@id": "Tl838095",
+          "label": "Brycinus lateralis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/280779",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2508488",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837994",
+          "@id": "Tl837994",
+          "label": "Brycinus leuciscus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488904",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838043",
+          "@id": "Tl838043",
+          "label": "Brycinus macrolepidotus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/206456",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488906",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838096",
+          "@id": "Tl838096",
+          "label": "Brycinus nurse",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/303981",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488908",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838028",
+          "@id": "Tl838028",
+          "label": "Brycinus sadleri",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2508492",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838055",
+          "@id": "Tl838055",
+          "label": "Bryconaethiops boulengeri",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488957",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838090",
+          "@id": "Tl838090",
+          "label": "Bryconaethiops macrops",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/206450",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488958",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838081",
+          "@id": "Tl838081",
+          "label": "Bryconaethiops microstoma",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/303984",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488959",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838047",
+          "@id": "Tl838047",
+          "label": "Bryconalestes derhami",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838019",
+          "@id": "Tl838019",
+          "label": "Bryconalestes intermedius",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838033",
+          "@id": "Tl838033",
+          "label": "Bryconalestes longipinnis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2535570",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838099",
+          "@id": "Tl838099",
+          "label": "Chalceus epakros",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4786461",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838046",
+          "@id": "Tl838046",
+          "label": "Chalceus erythrurus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/303992",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2489688",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838004",
+          "@id": "Tl838004",
+          "label": "Chalceus guaporensis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4786463",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838018",
+          "@id": "Tl838018",
+          "label": "Chalceus macrolepidotus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/42552",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2489689",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838011",
+          "@id": "Tl838011",
+          "label": "Chalceus spilogyros",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4786465",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838061",
+          "@id": "Tl838061",
+          "label": "Clupeocharax schoutedeni",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2490467",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837999",
+          "@id": "Tl837999",
+          "label": "Duboisialestes tumbensis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2491866",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837998",
+          "@id": "Tl837998",
+          "label": "Hemmigrammopetersius barnardi",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837991",
+          "@id": "Tl837991",
+          "label": "Hemmigrammopetersius intermedius",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838009",
+          "@id": "Tl838009",
+          "label": "Hydrocynus brevis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/304009",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2494273",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838027",
+          "@id": "Tl838027",
+          "label": "Hydrocynus forskahlii",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/304019",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2518653",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838038",
+          "@id": "Tl838038",
+          "label": "Ladigesia roloffi 2",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/304050",
+          "skos:altLabel": "Ladigesia roloffi",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2495078",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838066",
+          "@id": "Tl838066",
+          "label": "Lepidarchus adonis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2495279",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838052",
+          "@id": "Tl838052",
+          "label": "Micralestes acutidens",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/206418",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3864260",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838049",
+          "@id": "Tl838049",
+          "label": "Micralestes elongatus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2496431",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838013",
+          "@id": "Tl838013",
+          "label": "Micralestes lualabae",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2496434",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838002",
+          "@id": "Tl838002",
+          "label": "Micralestes occidentalis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/303972",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2496435",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838077",
+          "@id": "Tl838077",
+          "label": "Micralestes Sp",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/206417",
+          "skos:altLabel": "Micralestes",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:116631",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837988",
+          "@id": "Tl837988",
+          "label": "Nannopetersius ansorgii",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/206426",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2497065",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838029",
+          "@id": "Tl838029",
+          "label": "Petersius conserialis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2499040",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838076",
+          "@id": "Tl838076",
+          "label": "Phenacogrammus aurantiacus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/304076",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2499120",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838104",
+          "@id": "Tl838104",
+          "label": "Phenacogrammus major",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2499123",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838087",
+          "@id": "Tl838087",
+          "label": "Phenacogrammus urotaenia",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2499126",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838000",
+          "@id": "Tl838000",
+          "label": "Rhabdalestes eburneensis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2528975",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838007",
+          "@id": "Tl838007",
+          "label": "Rhabdalestes loenbergi",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838024",
+          "@id": "Tl838024",
+          "label": "Rhabdalestes rhodesiensis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2500851",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838050",
+          "@id": "Tl838050",
+          "label": "Rhabdalestes septentrionalis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2500852",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837992",
+          "@id": "Tl837992",
+          "label": "Tricuspidalestes caeruleus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2503313",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837996",
+          "@id": "Tl837996",
+          "label": "Virilia pabrensis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2534676",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837986",
+          "@id": "Tl837986",
+          "label": "Astyanax parahybae",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3324933",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838083",
+          "@id": "Tl838083",
+          "label": "Brycon falcatus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3855686",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838101",
+          "@id": "Tl838101",
+          "label": "Brycon pesu",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/387479",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488945",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838056",
+          "@id": "Tl838056",
+          "label": "Bryconops alburnoides",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488998",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838037",
+          "@id": "Tl838037",
+          "label": "Charax pauciradiatus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2489788",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838035",
+          "@id": "Tl838035",
+          "label": "Cheirodon interruptus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/681891",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2489889",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837990",
+          "@id": "Tl837990",
+          "label": "Crenuchus spilurus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3856321",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838017",
+          "@id": "Tl838017",
+          "label": "Hemiodus unimaculatus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2493883",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838067",
+          "@id": "Tl838067",
+          "label": "Hepsetus odoe",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/42563",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3857052",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838062",
+          "@id": "Tl838062",
+          "label": "Hoplias microlepis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2494200",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838008",
+          "@id": "Tl838008",
+          "label": "Piaractus mesopotamicus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/42528",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3861688",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838039",
+          "@id": "Tl838039",
+          "label": "Salminus hilarii",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2501280",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838054",
+          "@id": "Tl838054",
+          "label": "Serrasalmus rhombeus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/138556",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2501942",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838041",
+          "@id": "Tl838041",
+          "label": "Tetragonopterus argenteus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3859076",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838082",
+          "@id": "Tl838082",
+          "label": "Triportheus albus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2503393",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838091",
+          "@id": "Tl838091",
+          "label": "Xenocharax spilurus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/304088",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2503697",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838025",
+          "@id": "Tl838025",
+          "label": "Alestes liebrechtsii",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3862700",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838040",
+          "@id": "Tl838040",
+          "label": "Alestopetersius leopoldianus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2486618",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838036",
+          "@id": "Tl838036",
+          "label": "Brycinus aff. opisthotaenia",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/206451",
+          "skos:altLabel": "Brycinus opisthotaenia",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488909",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838070",
+          "@id": "Tl838070",
+          "label": "Bryconaethiops Sp.",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/206449",
+          "skos:altLabel": "Bryconaethiops",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:115133",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838064",
+          "@id": "Tl838064",
+          "label": "Brycinus intermedius",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488902",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838097",
+          "@id": "Tl838097",
+          "label": "Chalceus sp.",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/42490",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10142095",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838084",
+          "@id": "Tl838084",
+          "label": "Hydrocynus sp.",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/61321",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10148325",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838051",
+          "@id": "Tl838051",
+          "label": "Micralestes Sp.",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/206417",
+          "skos:altLabel": "Micralestes",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:116631",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838069",
+          "@id": "Tl838069",
+          "label": "Micralestes humilis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3864262",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837993",
+          "@id": "Tl837993",
+          "label": "Ctenolucius beani",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2491099",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838098",
+          "@id": "Tl838098",
+          "label": "Cyphocharax abramoides",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3856371",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838105",
+          "@id": "Tl838105",
+          "label": "Hoplerythrinus unitaeniatus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3857109",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838075",
+          "@id": "Tl838075",
+          "label": "Phenacogrammus Sp.",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/42485",
+          "skos:altLabel": "Phenacogrammus",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:117224",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838102",
+          "@id": "Tl838102",
+          "label": "Agoniates halecinus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2486509",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838034",
+          "@id": "Tl838034",
+          "label": "Agoniates anchovia",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2486508",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838016",
+          "@id": "Tl838016",
+          "label": "Acestrorhynchus microlepis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/639294",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2486359",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838063",
+          "@id": "Tl838063",
+          "label": "Attonitus bounites",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3324685",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838031",
+          "@id": "Tl838031",
+          "label": "Brycon alburnus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488911",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838094",
+          "@id": "Tl838094",
+          "label": "Brycon chagrensis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/190793",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488921",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838072",
+          "@id": "Tl838072",
+          "label": "Brycon coxeyi",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488923",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838006",
+          "@id": "Tl838006",
+          "label": "Brycon dentex",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488924",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838053",
+          "@id": "Tl838053",
+          "label": "Brycon guatemalensis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/190794",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488929",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838085",
+          "@id": "Tl838085",
+          "label": "Brycon insignis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/126312",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3859760",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838010",
+          "@id": "Tl838010",
+          "label": "Brycon melanopterus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488936",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838059",
+          "@id": "Tl838059",
+          "label": "Brycon oligolepis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/190790",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488941",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838021",
+          "@id": "Tl838021",
+          "label": "Brycon opalinus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/202829",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488942",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838048",
+          "@id": "Tl838048",
+          "label": "Brycon striatulus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/190795",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488952",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838032",
+          "@id": "Tl838032",
+          "label": "Catoprion mento",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/42538",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2489400",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838012",
+          "@id": "Tl838012",
+          "label": "Pseudochalceus Sp.",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:117464",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838065",
+          "@id": "Tl838065",
+          "label": "Lignobrycon myersi",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2822153",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838020",
+          "@id": "Tl838020",
+          "label": "Hollandichthys multifasciatus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2494147",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838080",
+          "@id": "Tl838080",
+          "label": "Creagrutus magoi",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3325535",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838086",
+          "@id": "Tl838086",
+          "label": "Chilobrycon deuterodon",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3855984",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838071",
+          "@id": "Tl838071",
+          "label": "Triportheus Sp.",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/42553",
+          "skos:altLabel": "Triportheus",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:118122",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838001",
+          "@id": "Tl838001",
+          "label": "Characidium sp.",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/42561",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10142112",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838014",
+          "@id": "Tl838014",
+          "label": "Boulengerella lateristriga",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488766",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838088",
+          "@id": "Tl838088",
+          "label": "Boulengerella sp.",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/27692",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10136043",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838073",
+          "@id": "Tl838073",
+          "label": "Hoplias cf. malabaricus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/27720",
+          "skos:altLabel": "Hoplias malabaricus",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2494198",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838089",
+          "@id": "Tl838089",
+          "label": "Brycon aff. meeki",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/190788",
+          "skos:altLabel": "Brycon meeki",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3855687",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838023",
+          "@id": "Tl838023",
+          "label": "Rhabdalestes cf. loenbergi",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838042",
+          "@id": "Tl838042",
+          "label": "Alestopetersius hilgendorfi",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/304080",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2486617",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838079",
+          "@id": "Tl838079",
+          "label": "Brycinus aff. nurse",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/303981",
+          "skos:altLabel": "Brycinus nurse",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2488908",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838058",
+          "@id": "Tl838058",
+          "label": "Hydrocynus cf. brevis",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/304009",
+          "skos:altLabel": "Hydrocynus brevis",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2494273",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838030",
+          "@id": "Tl838030",
+          "label": "Ladigesia roloffi",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/304050",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2495078",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838103",
+          "@id": "Tl838103",
+          "label": "Micralestes cf. acutidens",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/206418",
+          "skos:altLabel": "Micralestes acutidens",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3864260",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl837995",
+          "@id": "Tl837995",
+          "label": "Micralestes cf. elongatus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:altLabel": "Micralestes elongatus",
+          "skos:closeMatch": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2496431",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        },
+        {
+          "@type": "otu",
+          "about": "#Tl838005",
+          "@id": "Tl838005",
+          "label": "Phenacogrammus cf. interruptus",
+          "tb:identifier.taxon": {},
+          "tb:identifier.taxonVariant": {},
+          "skos:closeMatch": "http://purl.uniprot.org/taxonomy/42486",
+          "skos:altLabel": "Phenacogrammus interruptus",
+          "skos:closeMatch.1": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2499122",
+          "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+        }
+      ],
+      "skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@4b380c35 $Rev: 1040 $"
+    },
+    "characters": {
+      "about": "#M13527",
+      "@id": "M13527",
+      "label": "Alestidae",
+      "otus": "Tls26640",
+      "base": "http://purl.org/phylo/treebase/phylows/matrix/TB2:",
+      "@type": "nex:StandardSeqs",
+      "format": {
+        "states": {
+          "@id": "states726714",
+          "state": [
+            {
+              "@type": "state",
+              "@id": "Dcs347686",
+              "label": "3",
+              "symbol": "3"
+            },
+            {
+              "@type": "state",
+              "@id": "Dcs347688",
+              "label": "2",
+              "symbol": "2"
+            },
+            {
+              "@type": "state",
+              "@id": "Dcs347689",
+              "label": "1",
+              "symbol": "1"
+            },
+            {
+              "@type": "state",
+              "@id": "Dcs347685",
+              "label": "0",
+              "symbol": "0"
+            },
+            {
+              "@type": "state",
+              "@id": "Dcs347687",
+              "label": "4",
+              "symbol": "4"
+            }
+          ],
+          "uncertain_state_set": [
+            {
+              "@type": "uncertain_state_set",
+              "@id": "uncertain_state_set726720",
+              "label": "-",
+              "symbol": "-"
+            },
+            {
+              "@type": "uncertain_state_set",
+              "@id": "uncertain_state_set726721",
+              "label": "?",
+              "symbol": "?",
+              "member": [
+                {
+                  "@type": "member",
+                  "state": "Dcs347685"
+                },
+                {
+                  "@type": "member",
+                  "state": "Dcs347688"
+                },
+                {
+                  "@type": "member",
+                  "state": "Dcs347687"
+                },
+                {
+                  "@type": "member",
+                  "state": "Dcs347686"
+                },
+                {
+                  "@type": "member",
+                  "state": "uncertain_state_set726720"
+                },
+                {
+                  "@type": "member",
+                  "state": "Dcs347689"
+                }
+              ]
+            }
+          ]
+        },
+        "char": [
+          {
+            "@type": "char",
+            "@id": "Col41591735",
+            "label": "Presence or absence of antorbital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591736",
+            "label": "Presence or absence of supraorbital bone",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591737",
+            "label": "Form of ventral surface of supraorbital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591738",
+            "label": "Form of supraorbital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591739",
+            "label": "Continuity of orbital ring",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591740",
+            "label": "Relative position of anterior portion of first infraorbital and antorbital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591741",
+            "label": "Degree of development of first infraorbital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591742",
+            "label": "Degree of anterior extension of first and second infraorbitals",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591743",
+            "label": "Sensory canal of first and second infraorbitals",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591744",
+            "label": "Presence or absence of dorsomedial process of second infraorbital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591745",
+            "label": "Presence or absence of third infraorbital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591746",
+            "label": "Presence or absence of fourth infraorbital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591747",
+            "label": "Shape of fourth infraorbital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591748",
+            "label": "Presence or absence of ossified fifth infraorbital and associated laterosensory canal",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591749",
+            "label": "Presence or absence of sixth infraorbital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591750",
+            "label": "Junction of fifth and sixth infraorbitals along margin of orbit",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591751",
+            "label": "Presence or absence of nasal bone",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591752",
+            "label": "Position of anterior margin of nasal",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591753",
+            "label": "Form of mesethmoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591754",
+            "label": "Degree of development of anterior portion of mesethmoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591755",
+            "label": "Lateral margin of anterior portion of mesethmoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591756",
+            "label": "Ventral diverging lamellae of mesethmoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591757",
+            "label": "Degree of development of lateral wings of mesethmoid (= lateral ethmoid wings of Weitzman, 1962:  19)",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591758",
+            "label": "Form of lateral portion of mesethmoid wings",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591759",
+            "label": "Ventrolateral expansion of projection of vomer extending from main body of bone",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591760",
+            "label": "Orientation of inferior lamella of lateral ethmoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591761",
+            "label": "Extent of development of inferior lamella of lateral ethmoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591762",
+            "label": "Posteriorly directed, pointed process on posterior surface of lateral wing of lateral ethmoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591763",
+            "label": "Posterior bony tube on lateral ethmoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591764",
+            "label": "Posterior portion of lateral ethmoid with narrow process not associated with olfactory tract contacting orbitosphenoid ventrally",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591765",
+            "label": "Presence or absence of rhinosphenoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591766",
+            "label": "Presence or absence of distinct ridge on anterodorsal portion of orbitosphenoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591767",
+            "label": "Degree of lateral expansion of orbitosphenoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591768",
+            "label": "Degree of contribution of orbital lamella of frontal to articulation between orbitosphenoid and frontal",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591769",
+            "label": "Alignment of orbital lamella of frontal and adjoining portions of orbitosphenoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591770",
+            "label": "Presence and degree of development of frontal fontanel",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591771",
+            "label": "Presence or absence of parietal fontanel",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591772",
+            "label": "Presence or absence of contact between frontal and  pterotic",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591773",
+            "label": "Position of sphenotic spine relative to anterior portion of articular fossa for hyomandibular on sphenotic and prootic",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591774",
+            "label": "Form of ventral portion of sphenotic spine",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591775",
+            "label": "Form of parasphenoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591776",
+            "label": "Presence or absence of intercalar",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591777",
+            "label": "Presence or absence of third post-temporal fossa located entirely in epioccipital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591778",
+            "label": "Relative size of post-temporal fossae",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591779",
+            "label": "Presence or absence of lateral occipital foramen",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591780",
+            "label": "Presence or absence of paired, vertically elongate processes along posterior margin of supraoccipital,  which envelope anterodorsal portion of neural complex",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591781",
+            "label": "Relative position of ventral margin of lagenar portion of basioccipital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591782",
+            "label": "Area of insertion of Baudelot?s ligament on neurocranium",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591783",
+            "label": "Number of tooth cusps",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591784",
+            "label": "Ontogenetic shift from tricuspid to unicuspid teeth in anterior portion of jaws",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591785",
+            "label": "Presence or absence of compressed jaw teeth",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591786",
+            "label": "Form of posterolateral portion of premaxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591787",
+            "label": "Form of posterior portion of premaxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591788",
+            "label": "Presence or absence of ascending process of premaxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591789",
+            "label": "Presence or absence of interdigitations between contralateral premaxillae",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591790",
+            "label": "Form of articulation between premaxillae and mesethmoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591791",
+            "label": "Number of functional rows of teeth on premaxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591792",
+            "label": "Separation of inner and outer tooth rows on premaxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591793",
+            "label": "Number of teeth in outer tooth row of premaxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591794",
+            "label": "Composition of inner tooth row on premaxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591795",
+            "label": "Number of teeth in inner tooth row of premaxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591796",
+            "label": "Degree of development of posterior portion of third tooth of inner premaxillary tooth row",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591797",
+            "label": "Distribution of cusps on distal margin of first through third teeth of inner premaxillary tooth row",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591798",
+            "label": "Included cusps on first through third teeth on inner tooth row on premaxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591799",
+            "label": "Association of premaxilla and maxillas",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591800",
+            "label": "Area of insertion of premaxillary-maxillary ligament on maxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591801",
+            "label": "Anterodorsal portion of ascending process of maxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591802",
+            "label": "Alignment of ascending process of maxilla when viewed dorsally",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591803",
+            "label": "Relative length of ascending process of maxilla with respect to greatest length of lamellar portion of maxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591804",
+            "label": "Presence of distinct dorsolateral expansion on ascending process of maxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591805",
+            "label": "Extent of expanded portion of ascending arm of  maxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591806",
+            "label": "Position of posterior margin of maxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591807",
+            "label": "Presence or absence of process along posterodorsal margin of maxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591808",
+            "label": "Profile of posterodorsal portion of maxilla in lateral view",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591809",
+            "label": "Canal running through maxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591810",
+            "label": "Ridge on lateral surface of maxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591811",
+            "label": "Wavy ridges on lateral surface of maxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591812",
+            "label": "Teeth on maxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591813",
+            "label": "Relative size of anterior teeth on maxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591814",
+            "label": "Form and area of attachment of primordial ligament",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591815",
+            "label": "Presence or absence of supramaxilla",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591816",
+            "label": "Form of dentary symphysis",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591817",
+            "label": "Form of interdigitating processes in symphyseal dentary processes",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591818",
+            "label": "Number of dentary teeth",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591819",
+            "label": "Change in relative size of teeth on dentary",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591820",
+            "label": "Form of second dentary tooth and relationship of second and third dentary teeth",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591821",
+            "label": "Form and spacing of dentary teeth",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591822",
+            "label": "Presence or absence of inner row tooth proximate to dentary symphysis",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591823",
+            "label": "Relative size of tooth of inner dentary tooth row",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591824",
+            "label": "Replacement tooth trench or crypt in dentary",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591825",
+            "label": "Orientation of developing dentary replacement teeth and structure, when present, of replacement tooth cavity in dentary",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591826",
+            "label": "Site of attachment on dentary of main portion of tendon from adductor mandibulae muscle",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591827",
+            "label": "Position of articulation between angulo-articular and quadrate",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591828",
+            "label": "Presence or absence of ossified palatine",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591829",
+            "label": "Form of posterolateral margin of palatine",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591830",
+            "label": "Area of articulation of palatine on neurocranium",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591831",
+            "label": "Relative extent of area of contact of ectopterygoid with palatine",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591832",
+            "label": "Size and form of ectopterygoid",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591833",
+            "label": "Presence or absence of ligamentous attachment of ectopterygoid to neurocranium",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591834",
+            "label": "Area of attachment on neurocranium of ligament extending from anterodorsal portion of suspensorium to anteroventral portion of neurocranium",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591835",
+            "label": "Area of attachment on suspensorium of ligament extending from anterodorsal portion of suspensorium to anteroventral portion of neurocranium",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591836",
+            "label": "Form of metapterygoid-quadrate fenestra and degree of contribution of symplectic to border of that opening",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591837",
+            "label": "Presence or absence of ridge on lateral surface of hyomandibular",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591838",
+            "label": "Presence or absence of hyomandibular spine",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591839",
+            "label": "Presence or absence of process on ridge on lateral surface of hyomandibular",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591840",
+            "label": "Presence or absence of ossified portion of laterosensory canal dorsal to main body of preopercle",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591841",
+            "label": "Position of suprapreopercle relative to opercle",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591842",
+            "label": "Position of laterosensory canal segment in vertical arm of preopercle",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591843",
+            "label": "Presence or absence of basihyal tooth plate",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591844",
+            "label": "Presence or absence of fossa on anterior ceratohyal receiving the head of the third branchiostegal ray",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591845",
+            "label": "Presence or absence of foramen on the posterodorsal portion of the anterior ceratohyal",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591846",
+            "label": "Number of branchiostegal rays",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591847",
+            "label": "Degree of development of lateral lamellae of urohyal",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591848",
+            "label": "Position of anterior tip of transverse process of third vertebra",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591849",
+            "label": "Medially directed, elongate process arising distinct distance from base of first rib",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591850",
+            "label": "Presence or absence of posteriorly directed projection near base of first rib",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591851",
+            "label": "Presence or absence of medially directed process on base of second rib",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591852",
+            "label": "Presence or absence of medial process on central portion of body of first rib",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591853",
+            "label": "Presence or absence of posteriorly directed process on posterodorsal margin of upper portions of first through eighth ribs",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591854",
+            "label": "Form of parapophyses of fifth and subsequent vertebrae",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591855",
+            "label": "Number of intermediate-type vertebrae",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591856",
+            "label": "Presence or absence of supraneural anterior to neural spine associated with fourth vertebrae",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591857",
+            "label": "Position of first intermuscular bones",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591858",
+            "label": "Presence or absence of small ossification associated with first proximal dorsal-fin radial",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591859",
+            "label": "Number of dorsal-fin proximal radials",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591860",
+            "label": "Number of fin rays supported by posteriormost proximal radial of dorsal fin",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591861",
+            "label": "Presence or absence of extrascapular",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591862",
+            "label": "Separation or fusion of post-temporal and supracleithrum",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591863",
+            "label": "Size and form of post-temporal",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591864",
+            "label": "Presence or absence of medially directed, spine-like process on post-temporal",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591865",
+            "label": "Presence or absence of spine-like, medially directed process on medial surface of supracleithrum",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591866",
+            "label": "Presence or absence of postcleithrum 1",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591867",
+            "label": "Presence or absence of postcleithrum 2",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591868",
+            "label": "Presence or absence of postcleithrum 3",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591869",
+            "label": "Form of postcleithrum 3 when present",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591870",
+            "label": "Presence or absence of narrow ring-like process of scapula forming anterior border of scapular foramen",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591871",
+            "label": "Degree of development of dorsal process on base of first branched pectoral-fin ray",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591872",
+            "label": "Number of unbranched plus branched pelvic-fin rays",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591873",
+            "label": "Form of pelvic bone",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591874",
+            "label": "Degree of development of rod-shaped portion of lateral surface of pelvic bone",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591875",
+            "label": "Separation and mode of contact of medial portions of ischiatic processes on contralateral pelvic bones",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591876",
+            "label": "Number of unbranched anal-fin rays",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591877",
+            "label": "Form of basal portion of first proximal radial of anal fin",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591878",
+            "label": "Form of proximal radials of anal fin",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591879",
+            "label": "Relative length of posterior proximal radials of anal fin",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591880",
+            "label": "Orientation of posterior proximal anal-fin radials",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591881",
+            "label": "Anal-fin stay",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591882",
+            "label": "Number of epural bones",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591883",
+            "label": "Number of uroneural bones",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591884",
+            "label": "Presence or absence of bony caudal-fin stays",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591885",
+            "label": "Presence or absence of laterosensory canal segment in fourth infraorbital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591886",
+            "label": "Presence or absence of laterosensory canal segment in fifth infraorbital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591887",
+            "label": "Complexity of laterosensory canal system in sixth infraorbital",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591888",
+            "label": "Connection between posterior component of sensory canal in sixth infraorbital and laterosensory canals on neurocranium",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591889",
+            "label": "Form of epiphyseal branch of supraorbital canal",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591890",
+            "label": "Degree of development of parietal branch of supraorbital laterosensory canal",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591891",
+            "label": "Presence or absence of laterosensory canal in parietal",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591892",
+            "label": "Presence or absence of supratemporal laterosensory canal",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591893",
+            "label": "Presence or absence of laterosensory canal segment in pterotic",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591894",
+            "label": "Presence or absence of laterosensory canal segment in post-temporal",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591895",
+            "label": "Presence or absence of laterosensory canal segment in supracleithrum",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591896",
+            "label": "Degree of development of lateral line",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591897",
+            "label": "Length of laterosensory canal system of lateral line",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591898",
+            "label": "Relative position of laterosensory canal of lateral line on body",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591899",
+            "label": "Morphology of sensory canal on lateral-line scales in portion of scale proximate to region of overlap of sequential scales",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591900",
+            "label": "Morphology of sensory canal segment of lateral-line scales in portion of scale distinctly posterior to limit of overlap of sequential scales",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591901",
+            "label": "Presence or absence of scales on body",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591902",
+            "label": "Arrangement of scales along posterodorsal margin of head",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591903",
+            "label": "Relative size of scales dorsal and ventral to lateral line",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591904",
+            "label": "Relative size of scales along lateral line",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591905",
+            "label": "Circuli on exposed portion of scales",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591906",
+            "label": "Position of scale radii",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591907",
+            "label": "Presence or absence of deep-lying midlateral stripe extending along body onto caudal peduncle",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591908",
+            "label": "Presence or absence of band of dark chromatophores above anal fin",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591909",
+            "label": "Extent of development of dark pigmentation on dorsal fin",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591910",
+            "label": "Sexual dimorphism in degree of development of first through third pectoral-fin rays",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591911",
+            "label": "Sexual dimorphism in degree of development of anterior branched dorsal-fin rays",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591912",
+            "label": "Sexually dimorphic elongation of pelvic-fin rays in males",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591913",
+            "label": "Degree of development of fifth through eighth anal fin rays and form of margin of fin in males",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591914",
+            "label": "Sexual dimorphism in degree of development of fourth through eighth branched anal-fin rays",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591915",
+            "label": "Sexual dimorphism in lengths of anterior vs. posterior anal-fin rays",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591916",
+            "label": "Distinct posterior curvature of third unbranched anal-fin ray and basal portions of immediately following rays",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591917",
+            "label": "Distinct anteroposterior thickening of third unbranched anal-fin ray",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591918",
+            "label": "Form and degree of posterior expansion of basal portions of anterior branched anal-fin rays in males",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591919",
+            "label": "Form and degree of anterior expansion of basal portions of anterior branched anal-fin rays in males",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591920",
+            "label": "Area of attachment of ligaments of erector muscles on anterior branched anal-fin rays of males",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591921",
+            "label": "Area of attachment of ligaments of erector muscles on branched anal-fin rays",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591922",
+            "label": "Nearly dorsally directed, distally bifurcated digitiform process on anterior region of basal portion of anterior and middle branched anal-fin rays",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591923",
+            "label": "Presence or absence of anterodorsally directed, triangular extension of anterior region of basal portion of anterior and middle branched anal-fin rays",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591924",
+            "label": "Posterodorsal extension of basal portions of anterior and middle branched anal-fin rays",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591925",
+            "label": "Presence or absence of fusion of medial and proximal anal-fin radials",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591926",
+            "label": "Presence or absence of sexually dimorphic patterns of dark pigmentation of stripes vs. spot on anal fin",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591927",
+            "label": "Presence or absence of sexual dimorphism in form of stripe and spot on fin rays vs. basal stripe on anal fin",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591928",
+            "label": "Sexual dimorphism in dark pigmentation of pelvic fin",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591929",
+            "label": "Sexually dimorphic dark pigmentation on body",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591930",
+            "label": "Position of olfactory bulb",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591931",
+            "label": "Adipose eyelid covering part of eye",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591932",
+            "label": "Presence or absence of membranous keel extending between pelvic-fin insertion and vent",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591933",
+            "label": "Presence or absence of pseudotympanum",
+            "states": "states726714"
+          },
+          {
+            "@type": "char",
+            "@id": "Col41591934",
+            "label": "Position of posterior limit of posterior chamber of swimbladder",
+            "states": "states726714"
+          }
+        ]
+      },
+      "matrix": {
+        "row": [
+          {
+            "@type": "row",
+            "@id": "Row1013540",
+            "otu": "Tl838100",
+            "seq": [
+              "001010100000000100000010000000101001000110101110200101101030111101111000011000-1011101010001100110110110001100011001000100113000000000101111111011011100011000000001000000010000000000000000001000011001"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013541",
+            "otu": "Tl838015",
+            "seq": [
+              "001010100000000100000010000000101001000110101110200101101030111101111000011000-101110101000110011011011000110001100100010011300000000010111111101101110001100000000100000001000000000000000000?000011001"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013542",
+            "otu": "Tl838045",
+            "seq": [
+              "000010100000000100000010000010101001000110101110200101101030111101111000011000-10111010100011001101101100011000110010000001130000000001011100110010111000?1000000001100000010000000000000000001000011001"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013543",
+            "otu": "Tl837989",
+            "seq": [
+              "000000100000100000001010000000100001000010101101200101001040100001011000001100-101010000-000100110110110001100011101000001013000001000110210010100011000100110000001000000010000100000000001001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013544",
+            "otu": "Tl838093",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013545",
+            "otu": "Tl838003",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013546",
+            "otu": "Tl838060",
+            "seq": [
+              "000000100000100000001010000000100001000010101101200101001040100001011000001100-101010000-00010011011011000110001110100000101300000100011021001010001100010011000000100000001000010000000000?00?000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013547",
+            "otu": "Tl838068",
+            "seq": [
+              "001010100000000001000000000000100112100010001000200001101030000000000001001010-001000010-000000010100110001100011010000001011000000000001210020000010?00000000000000000111110000000000000000101100000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013548",
+            "otu": "Tl837997",
+            "seq": [
+              "000000100000100000001010000000100000000010101101200101001040100001011000001100-10101000110001001101101000011000111010000010130000110001102100?01000110001001100000--00000001000000000000000100?000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013549",
+            "otu": "Tl838078",
+            "seq": [
+              "000000100000100000001010000000100001000010101101200101001040100001011000001100-1011100011000100110110110001100011101000001013000001000110210010100011000100110000001000000010000000000000001001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013550",
+            "otu": "Tl838022",
+            "seq": [
+              "000000100000100001001010000000100001000010101101200101001040100001011000001100-10100000?1000100110110110001100011101000001013000011000110210010000111000100000000001000000110000000010000001001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013551",
+            "otu": "Tl838026",
+            "seq": [
+              "000010100000100001001010000000100001000010101101200101001040100001011000001100-101000001100010011011011000110001110100000101300000100011021001000001100010000000000100000001000000001000000?001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013552",
+            "otu": "Tl838044",
+            "seq": [
+              "000110100000000000000010000000101002100010101100200101101020111101111000011000-1011101010001100110110110001100011001000000013000000000001110010000111100000000000001000100110000001000000000001000010000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013553",
+            "otu": "Tl838057",
+            "seq": [
+              "000110100000000000000010000000111002100010101100200101101020111101111000011000-101110101000110011011011010110001100100000101300000000000111001000011110000000000000100010011000000000000000000?000010000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013554",
+            "otu": "Tl838074",
+            "seq": [
+              "000010100000000000000010000000111002100010101100200101101020111101111000011000-1011101010001100110110110101100011001000000013000000000001110010000111100000000000001000100110000001000000000001000010000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013555",
+            "otu": "Tl837987",
+            "seq": [
+              "000010100000000000000010000000111002100010101100200101101020111101111000011000-1011101010001100110110110101100011001000000013000000000001110010000111100000000000001000100110000001000000000001000010000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013556",
+            "otu": "Tl838092",
+            "seq": [
+              "000010100000000000000010000000101002100010101100200101101020111101111000011000-1011101010001100110110110001100011001000000013000000000001110010000111100000000000001000100110000001000000000001000010000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013557",
+            "otu": "Tl838095",
+            "seq": [
+              "000010100000000000000010000000101001000010101100200101101020111101111000011000-1011101010001100110110110101100011001000000013000000000001110010000111100000000000001000000111000001000000000001000010000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013558",
+            "otu": "Tl837994",
+            "seq": [
+              "000010100000000000000010000000101001000010101100200101101030111101111000011000-1011101010001100110110110001100011001000000013000000000001110010000111100000000000001000000111000001000000000001000010000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013559",
+            "otu": "Tl838043",
+            "seq": [
+              "000110100000000000000010000000101002100010101100200101101010111101111000011000-1011101010001100110110110001100011001000001113000000000101110010000111100000000000001000100110000000000000000001000010000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013560",
+            "otu": "Tl838096",
+            "seq": [
+              "000010100000000000000010000000111002100010101100200101101020111101111000011000-1011101010001100110110110101100011001000000013000000000001110010000111100000000000001000100110000001000000000001000010000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013561",
+            "otu": "Tl838028",
+            "seq": [
+              "000010100000000000000010000000101001000010101100200101101020111101111000011000-1011101010001100110110110101100011001000000013000000000001110010000111100000000000001000000111000001000000000001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013562",
+            "otu": "Tl838055",
+            "seq": [
+              "001010100000000101000010000000101001000010101110200101102030111101111100011000-1011101010001100110110110001100011101000000013000000000001100010000011100000000000000000000010000100000000010001000011000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013563",
+            "otu": "Tl838090",
+            "seq": [
+              "001010100000000101000010000000101001000010101110200101102030111101111100011000-1011101010001100110110110001100011001000000013000000000001100010000011100000000000000000000010000100000000010001000011000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013564",
+            "otu": "Tl838081",
+            "seq": [
+              "00101010000000010?000010000000101001000010101110200101102030111101111100011000-101110101000110011011011000110001100100000001300000000000110001000001110000000000000000000001100010000000001000?000011000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013565",
+            "otu": "Tl838047",
+            "seq": [
+              "001010100000100000000010000000100001000010101101200101001030101001111000001000-1011101010000100110110110001100011101000000013000001000001210010000111100000000000001000000010000110000000000101000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013566",
+            "otu": "Tl838019",
+            "seq": [
+              "001010100000100000000010000000100001000010101101200101001030101001111000001000-1011101011000100110110110001100011101000000013000001000001210010000111100100000000001000000010000110000000000101000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013567",
+            "otu": "Tl838033",
+            "seq": [
+              "001010100000100000000010000000100001000010101101200101001030101001111000001000-1011101010000100110110110001100011101000000013000001000001210010000111100000000000001000000010000110000000000101000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013568",
+            "otu": "Tl838099",
+            "seq": [
+              "00000000010000000100010000000010011210001000100020000110200000000000000100100100110000110000000010100000001000011010100000111000000000001110010000011000000000000001010111111000000000000000000000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013569",
+            "otu": "Tl838046",
+            "seq": [
+              "0000010000000000010001000000001001110000100010002000011020000000000000010010011011000011000000001010000000100001101010000011100000000000111001000001?000000000000001010111110000000000000000000000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013570",
+            "otu": "Tl838004",
+            "seq": [
+              "00000000010000000100010000000010011210000000100020000110200000000000000100100100110000110000000010100000001000011010100000111000000000001210010000011000000000000001010111111000000000000000000000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013571",
+            "otu": "Tl838018",
+            "seq": [
+              "00000100010000000100010000000010011100001000100020000110200000000000000100100110110000110000000010100000001000011010100000111000000000001110010000011000000000000001010111110000000000000000000000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013572",
+            "otu": "Tl838011",
+            "seq": [
+              "00000100010000000100010000000010011100001000100020000110200000000000000100100110110000110000000010100000001000011010100000111000000000?0111001000001?000000000000001010111110000000000000000000000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013573",
+            "otu": "Tl838061",
+            "seq": [
+              "000000000000101-0010-01001-000100001000010101101000101000-------00010000000000-001000000-1-010010011011001-100010101000001013000011001-10210010100011000--01101?01--000000010000000000000001001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013574",
+            "otu": "Tl837999",
+            "seq": [
+              "000000100000100000001010000000100001000010101101201101001040100001011000001100-101010000-0001001101101100011000111010000010130000010001102100101000110001001100000--000000010000100000000001001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013575",
+            "otu": "Tl837998",
+            "seq": [
+              "01--001000001000000010100-1000100001000010101101200101001140100000011000001000-101010000-000100110110110001100011101000001013000011001-012100100000111001000100001--00000001110000000111010001?000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013576",
+            "otu": "Tl837991",
+            "seq": [
+              "01--001000001000000010100-1000100001000010101101200101001140100000011000001000-101000000-0001001101101100011000111010000010130000000001012100100000111001000000001--00000001110000000111010001?000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013577",
+            "otu": "Tl838009",
+            "seq": [
+              "000010110000000000-10011000000101002101100101110210110110-------111110111-1000-201000000-0100000111110?1001101011001000110113000000000101110010000011100001000000001000000010000000000000000001000011000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013578",
+            "otu": "Tl838027",
+            "seq": [
+              "000010110000000000-10011000000101002101100101110210110110-------111110111-1000-201000000-0100000111110?1001101011001000110113000000000101110010000011100011000000001000000010000000000000000001000011000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013579",
+            "otu": "Tl838038",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013580",
+            "otu": "Tl838066",
+            "seq": [
+              "11--0-001011-11-1-10-01001-000100000010011010001000001000-------00010000000000-000-00000-10001-1011?010001-100010110100001012111?101001002100001000100----01111111----2-----0000000000000001001011100110"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013581",
+            "otu": "Tl838052",
+            "seq": [
+              "01--00100000100000001010000000100001000010101101200101001030100001111000001000-1010100011000101110110110001100011101000001013000001000101210010000011100110000000001000000111110000000000000001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013582",
+            "otu": "Tl838049",
+            "seq": [
+              "01--00100000100000001010000100100001000010101101200101001030100001111000001000-1010100011000101110110110001100011101000001113000001000101210010000011100100000000001000000011100000000000000001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013583",
+            "otu": "Tl838013",
+            "seq": [
+              "01--00100000100000001010000000100001000010101101200101001030100001111000101000-1010100011000101110110110001100011101001001113000000000101210010000011100110000000001000000011100000000000000001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013584",
+            "otu": "Tl838002",
+            "seq": [
+              "01--00100000100000001010000000100001000010101101200101001030100001111000001000-101010000-000100110110110001100011101000000013000000000101210010000011100110000000001000000111110000000000000001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013585",
+            "otu": "Tl838077",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013586",
+            "otu": "Tl837988",
+            "seq": [
+              "000000100000100000001010000000100001000010101101200101001040100001011000001100-1010100011000100110110110101100011101000001013000001000110210010100011000100110000001000000010001110100000001001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013587",
+            "otu": "Tl838029",
+            "seq": [
+              "00001010000000000000?010??????1????200??1?????1?200101001040100001111?000?1000-101?10?00-00?10???????????011???1??01??00000130000???00???110?1000011?100000?0000?001000000010000001000000??00010000?0000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013588",
+            "otu": "Tl838076",
+            "seq": [
+              "000000100000100000001010000000100001000010101101200101001040100001011000001100-10101000110001001101101101011000111010000010130000110001102100101000110001001100001--000000010000100000000001001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013589",
+            "otu": "Tl838104",
+            "seq": [
+              "000000100100100000001010000000100001000010101101200101001040100001011000001100-10101000110001001101101101011000101010000010130000010001102100101000110001001100001--000000010000100000000001001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013590",
+            "otu": "Tl838087",
+            "seq": [
+              "000000100000100000001010000000100001000010101101200101001040100001011000001100-10111000110001001101101101011000111010000010130000010001102100101000110001001100001--000000010000100000000001001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013591",
+            "otu": "Tl838000",
+            "seq": [
+              "01--00100000100000001010000000100001000010101101200101001030100001111000001000-101010000-000100110110110001100011101000001013000001000101210010000011100100000000001000000011100000001110100011000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013592",
+            "otu": "Tl838007",
+            "seq": [
+              "01--00100000100000001010000000100001000010101101200101001140100001011000001000-101010000-000100110110110001100011101000001013000001000101210010000011100100000000001000000011100000001110100011000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013593",
+            "otu": "Tl838024",
+            "seq": [
+              "01--00100000100000001010000000100001000010101101200101001140100001011000001000-101010000-000100110110110001100011101000001013000011011-01210010000011100100000000001000000011100000001110100011000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013594",
+            "otu": "Tl838050",
+            "seq": [
+              "000000100000100000001010000100100001000010101101200101001130100001011000001000-101010000-0001001101101100011000111010000010130000000001012100100000111001000000000010000000111000000011???000?1000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013595",
+            "otu": "Tl837992",
+            "seq": [
+              "000000000000101-0010-01001-000100001000010101101200101001140?00000010000000000-001000001100010010011011001-100010101010001013110011000100210010100011011--01111101--000000010000000000000001001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013596",
+            "otu": "Tl837996",
+            "seq": [
+              "01--001000001000000010100-2000100001000010101101000101001140100001011000001100-10100000110001001101101100011000111010000010130000110001012100100000111001000000001--000000011100000001210100011000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013597",
+            "otu": "Tl837986",
+            "seq": [
+              "01--010000000000010001100000000000000000100010002000010010200000000000010010010001001000-000000000000000000010110001000001002100000000000210020000000000100000000000000000001000000000000000000000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013598",
+            "otu": "Tl838083",
+            "seq": [
+              "00001100000000000100011010000000000000001000100020000110200110000000000100100100010010011000000000000000000010011010000000002100000000101210020000001000000000000010100000000000000000000000000000010000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013599",
+            "otu": "Tl838101",
+            "seq": [
+              "00001100000000000100011010000000000210001000100020000110200110000000000100100100010010010000000000000000001010011010000000002100000000101210020000001000010000000010000100000000000000000000000000010000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013600",
+            "otu": "Tl838056",
+            "seq": [
+              "000001000000100001000110000000000000000010001010200001001000000000000001001000-001001000-000000000000000000010011100000000012100000000101110020000001000000000000000000000001000000000000000000000001000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013601",
+            "otu": "Tl838037",
+            "seq": [
+              "01--01000000?00001000110000000100000001010001000000001000-------000000020010010001001000-000000000000000000010110000000001012100000000000210020000000000100000000000000000000000000000000000000000000010"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013602",
+            "otu": "Tl838035",
+            "seq": [
+              "01--0100000000000?000110000000000001000010001000200001000-------000000010010010001000000-0000000000000000000101110010000010021000000001003100201000000001000100001--000000000000000000000000000000000010"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013603",
+            "otu": "Tl837990",
+            "seq": [
+              "01--0000000000000??000??000000000011000010001000200001000-------00000001001000-001000000-00000000000001001-000000110000001000100000000-001100100000100001000000001--000000100000000000000000000000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013604",
+            "otu": "Tl838017",
+            "seq": [
+              "00001000000000000??000??000000000000000110100000200001000-------0?000?000000010000-----0-000000000000000001100001010100000002000000000001010020000011000000000000000000000000000000000000000000000001000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013605",
+            "otu": "Tl838067",
+            "seq": [
+              "0000110000000000010000??0??00010000210100000000000000100?-------000000020010010001000000-000000000000000001000000000000000004100000011-011100100000100000-0110000000000100010000000000000000000000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013606",
+            "otu": "Tl838062",
+            "seq": [
+              "11--0-000000000001000010000000100012101000000000000001000-------000000020010010001000000-00000000000000001-1000010000000010001000000001?-211010000000000000000000000000100110000000000000000000000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013607",
+            "otu": "Tl838008",
+            "seq": [
+              "00000100000000000100011000000110000000001000100020000110101010000?000001001000-0011000010000000000000000000010001001000000000100000000001210020000001000000000000000000000000000000000000000000000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013608",
+            "otu": "Tl838039",
+            "seq": [
+              "00001100000000000100011010000010000?0010000010100000010010000000000000020010010001000000-000000000000000000010011000000000002100000000101210020000001000000000000010000000000000000000000000000000010000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013609",
+            "otu": "Tl838054",
+            "seq": [
+              "000001000000?00001000110?000011000000010100-1000200001000-------0?000001001000-?01000000-00000000000000000001001100100000001010000000000131-020000001000100000000000000000000000000000000000000000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013610",
+            "otu": "Tl838041",
+            "seq": [
+              "01--010000000000010001100000000000000000100010002000010010000000000000010010010001001000-000000000000000000010110001000001002100000000001210020000000000000000000000000000000000000000000000000000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013611",
+            "otu": "Tl838082",
+            "seq": [
+              "000011000000000001000110100000000000000010001000200001102000001000000001001001000100100100001000000000000001000111--000000112100000011-00311120000001000000000000010000000010000000000000000000000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013612",
+            "otu": "Tl838091",
+            "seq": [
+              "00000000000000000??000??0000001000000000100010001000000010000000000000010000010000-00000-000000000000010000000011001000000000000000000-0000?0200000000000-00000000000000000-0000000000000000000000010000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013613",
+            "otu": "Tl838025",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013614",
+            "otu": "Tl838040",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013615",
+            "otu": "Tl838036",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013616",
+            "otu": "Tl838070",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013617",
+            "otu": "Tl838064",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013618",
+            "otu": "Tl838097",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013619",
+            "otu": "Tl838084",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013620",
+            "otu": "Tl838051",
+            "seq": [
+              "01--00100000100000001010000000100001000010101101200101001030100001111000001000-101010001000010011011011000110001110100000101300000100010121001000001110011000000000100000001110000000000000000?000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013621",
+            "otu": "Tl838069",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013622",
+            "otu": "Tl837993",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013623",
+            "otu": "Tl838098",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013624",
+            "otu": "Tl838105",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013625",
+            "otu": "Tl838075",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013626",
+            "otu": "Tl838102",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013627",
+            "otu": "Tl838034",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013628",
+            "otu": "Tl838016",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013629",
+            "otu": "Tl838063",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013630",
+            "otu": "Tl838031",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013631",
+            "otu": "Tl838094",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013632",
+            "otu": "Tl838072",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013633",
+            "otu": "Tl838006",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013634",
+            "otu": "Tl838053",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013635",
+            "otu": "Tl838085",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013636",
+            "otu": "Tl838010",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013637",
+            "otu": "Tl838059",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013638",
+            "otu": "Tl838021",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013639",
+            "otu": "Tl838048",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013640",
+            "otu": "Tl838032",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013641",
+            "otu": "Tl838012",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013642",
+            "otu": "Tl838065",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013643",
+            "otu": "Tl838020",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013644",
+            "otu": "Tl838080",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013645",
+            "otu": "Tl838086",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013646",
+            "otu": "Tl838071",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013647",
+            "otu": "Tl838001",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013648",
+            "otu": "Tl838014",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013649",
+            "otu": "Tl838088",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013650",
+            "otu": "Tl838073",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013651",
+            "otu": "Tl838089",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013652",
+            "otu": "Tl838023",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013653",
+            "otu": "Tl838042",
+            "seq": [
+              "000000100000100000001010000000100001000010101101200101001040100001011000001100-101010000-000100110110110001100011101000001013000001000110210010100011000100110000001000000010000100000000001001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013654",
+            "otu": "Tl838079",
+            "seq": [
+              "001010100000100000000010000000100001000010101101200101001030101001111000001000?1011101010000100110110110001100011101000000013000001000001210010000111100000000000001000000010000110000000000101000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013655",
+            "otu": "Tl838058",
+            "seq": [
+              "01??001000001000000010100?1000100001000010101101200101001140100000011000001000?101010000?000100110110110001100011101000001013000011001?012100100000111001000100001??00000001110000000111010001?000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013656",
+            "otu": "Tl838030",
+            "seq": [
+              "01--00100001-11-00001010000000100001000011001101200101001140100001011000001000-101000000-00010011011010001-1000211010000010131101100001002100000000110----01111101--001-00010100000000001000001000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013657",
+            "otu": "Tl838103",
+            "seq": [
+              "01??00100000100000001010000000100001000010101101200101001030100001111000001000?101010001000010011011011000110001110100000101300000100010121001000001110011000000000100000001110000000000000000?000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013658",
+            "otu": "Tl837995",
+            "seq": [
+              "01??001000001000000010100?2000100001000010101101200101001140100001011000001100?10100000110001001101101100011000111010000010130000110001012100100000111001000000001??000000011100000001210100011000000000"
+            ]
+          },
+          {
+            "@type": "row",
+            "@id": "Row1013659",
+            "otu": "Tl838005",
+            "seq": [
+              "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+            ]
+          }
+        ]
+      },
+      "skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@40ca15d8 $Rev: 1056 $",
+      "tb:identifier.matrix": {},
+      "tb:nchar.matrix": 200,
+      "tb:ntax.matrix": 120,
+      "tb:type.matrix": "Standard"
+    },
+    "trees": {
+      "about": "#Tb17975",
+      "@id": "Tb17975",
+      "label": "Alestidae",
+      "otus": "Tls26640",
+      "base": "http://purl.org/phylo/treebase/phylows/tree/TB2:",
+      "tree": {
+        "about": "#Tr54785",
+        "@id": "Tr54785",
+        "label": "Fig. 43+",
+        "@type": "nex:FloatTree",
+        "node": [
+          {
+            "@type": "node",
+            "@id": "Tn9039867"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039854",
+            "label": "Outgroup",
+            "otu": "Tl838093"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039801"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039803"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039842"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039862",
+            "label": "Chalceus epakros",
+            "otu": "Tl838099"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039790",
+            "label": "Chalceus guaporensis",
+            "otu": "Tl838004"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039845"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039869",
+            "label": "Chalceus macrolepidotus",
+            "otu": "Tl838018"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039794",
+            "label": "Chalceus erythrurus",
+            "otu": "Tl838046"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039870",
+            "label": "Chalceus spilogyros",
+            "otu": "Tl838011"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039833"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039848",
+            "label": "Arnoldichthys spilopterus",
+            "otu": "Tl838068"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039855"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039879"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039836",
+            "label": "Hydrocynus brevis",
+            "otu": "Tl838009"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039840",
+            "label": "Hydrocynus forskahlii",
+            "otu": "Tl838027"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039792"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039798",
+            "label": "Petersius conserialis",
+            "otu": "Tl838029"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039808"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039796"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039812"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039814"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039834",
+            "label": "Alestes macrophthalmus",
+            "otu": "Tl838045"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039823"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039827",
+            "label": "Alestes baremoze",
+            "otu": "Tl838100"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039847",
+            "label": "Alestes dentex",
+            "otu": "Tl838015"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039873"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039831",
+            "label": "Bryconaethiops boulengeri",
+            "otu": "Tl838055"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039828",
+            "label": "Bryconaethiops microstoma",
+            "otu": "Tl838081"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039841",
+            "label": "Bryconaethiops macrops",
+            "otu": "Tl838090"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039805"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039835",
+            "label": "Brycinus sadleri",
+            "otu": "Tl838028"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039818",
+            "label": "Brycinus lateralis",
+            "otu": "Tl838095"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039839",
+            "label": "Brycinus leuciscus",
+            "otu": "Tl837994"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039824"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039809",
+            "label": "Brycinus kingsleyae",
+            "otu": "Tl838092"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039837"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039876",
+            "label": "Brycinus bimaculatus",
+            "otu": "Tl838044"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039793"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039810",
+            "label": "Brycinus brevis",
+            "otu": "Tl838057"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039816",
+            "label": "Brycinus macrolepidotus",
+            "otu": "Tl838043"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039880"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039826",
+            "label": "Brycinus carolinae",
+            "otu": "Tl838074"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039800",
+            "label": "Brycinus imberi",
+            "otu": "Tl837987"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039820",
+            "label": "Brycinus nurse",
+            "otu": "Tl838096"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039883"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039868"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039853",
+            "label": "Bryconalestes derhami",
+            "otu": "Tl838047"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039871",
+            "label": "Bryconalestes intermedius",
+            "otu": "Tl838019"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039843",
+            "label": "Bryconalestes longipinnis",
+            "otu": "Tl838033"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039857"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039832"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039861",
+            "label": "Micralestes sp",
+            "otu": "Tl838077"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039829"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039813",
+            "label": "Micralestes acutidens",
+            "otu": "Tl838052"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039787",
+            "label": "Micralestes occidentalis",
+            "otu": "Tl838002"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039811"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039878",
+            "label": "Micralestes elongatus",
+            "otu": "Tl838049"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039802",
+            "label": "Micralestes lualabae",
+            "otu": "Tl838013"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039866"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039819",
+            "label": "Rhabdalestes eburneensis",
+            "otu": "Tl838000"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039858"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039884",
+            "label": "Rhabdalestes septentrionalis",
+            "otu": "Tl838050"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039786"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039874",
+            "label": "Rhabdalestes loenbergi",
+            "otu": "Tl838007"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039875"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039846",
+            "label": "Rhabdalestes rhodesiensis",
+            "otu": "Tl838024"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039881"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039830",
+            "label": "Hemmigrammopetersius barnardi",
+            "otu": "Tl837998"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039859",
+            "label": "Hemmigrammopetersius intermedius",
+            "otu": "Tl837991"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039844",
+            "label": "Virilia pabrensis",
+            "otu": "Tl837996"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039851"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039806"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039788",
+            "label": "Brachypetersius gabonensis",
+            "otu": "Tl838022"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039804",
+            "label": "Brachypetersius notospilus",
+            "otu": "Tl838026"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039789"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039849",
+            "label": "Brachypetersius altus",
+            "otu": "Tl838078"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039852"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039860",
+            "label": "Bathyaethiops caudomaculatus",
+            "otu": "Tl837997"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039877"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039856",
+            "label": "Clupeocharax schoutedeni",
+            "otu": "Tl838061"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039799"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039882",
+            "label": "Tricuspidalestes caeruleus",
+            "otu": "Tl837992"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039797"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039815",
+            "label": "Ladigesia rolofﬁ",
+            "otu": "Tl838038"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039863",
+            "label": "Lepidarchus adonis",
+            "otu": "Tl838066"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039822"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039864"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039795",
+            "label": "Alestopetersius caudalis",
+            "otu": "Tl837989"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039865",
+            "label": "Alestopetersius hilgendorﬁ",
+            "otu": "Tl838003"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039807",
+            "label": "Alestopetersius smykalai",
+            "otu": "Tl838060"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039825",
+            "label": "Duboisialestes tumbensis",
+            "otu": "Tl837999"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039850"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039872",
+            "label": "Nannopetersius ansorgii",
+            "otu": "Tl837988"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039817"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039821",
+            "label": "Phenacogrammus aurantiacus",
+            "otu": "Tl838076"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039838",
+            "label": "Phenacogrammus major",
+            "otu": "Tl838104"
+          },
+          {
+            "@type": "node",
+            "@id": "Tn9039791",
+            "label": "Phenacogrammus urotaenia",
+            "otu": "Tl838087"
+          }
+        ],
+        "edge": [
+          {
+            "@type": "edge",
+            "@id": "edge727053",
+            "source": "Tn9039867",
+            "target": "Tn9039854"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727055",
+            "source": "Tn9039867",
+            "target": "Tn9039801"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727057",
+            "source": "Tn9039801",
+            "target": "Tn9039803"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727059",
+            "source": "Tn9039803",
+            "target": "Tn9039842"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727061",
+            "source": "Tn9039842",
+            "target": "Tn9039862"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727063",
+            "source": "Tn9039842",
+            "target": "Tn9039790"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727065",
+            "source": "Tn9039803",
+            "target": "Tn9039845"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727067",
+            "source": "Tn9039845",
+            "target": "Tn9039869"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727069",
+            "source": "Tn9039845",
+            "target": "Tn9039794"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727071",
+            "source": "Tn9039845",
+            "target": "Tn9039870"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727073",
+            "source": "Tn9039801",
+            "target": "Tn9039833"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727075",
+            "source": "Tn9039833",
+            "target": "Tn9039848"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727077",
+            "source": "Tn9039833",
+            "target": "Tn9039855"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727079",
+            "source": "Tn9039855",
+            "target": "Tn9039879"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727081",
+            "source": "Tn9039879",
+            "target": "Tn9039836"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727083",
+            "source": "Tn9039879",
+            "target": "Tn9039840"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727085",
+            "source": "Tn9039855",
+            "target": "Tn9039792"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727087",
+            "source": "Tn9039792",
+            "target": "Tn9039798"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727089",
+            "source": "Tn9039792",
+            "target": "Tn9039808"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727091",
+            "source": "Tn9039808",
+            "target": "Tn9039796"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727093",
+            "source": "Tn9039796",
+            "target": "Tn9039812"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727095",
+            "source": "Tn9039812",
+            "target": "Tn9039814"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727097",
+            "source": "Tn9039814",
+            "target": "Tn9039834"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727099",
+            "source": "Tn9039814",
+            "target": "Tn9039823"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727101",
+            "source": "Tn9039823",
+            "target": "Tn9039827"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727103",
+            "source": "Tn9039823",
+            "target": "Tn9039847"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727105",
+            "source": "Tn9039812",
+            "target": "Tn9039873"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727107",
+            "source": "Tn9039873",
+            "target": "Tn9039831"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727109",
+            "source": "Tn9039873",
+            "target": "Tn9039828"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727111",
+            "source": "Tn9039873",
+            "target": "Tn9039841"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727113",
+            "source": "Tn9039796",
+            "target": "Tn9039805"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727115",
+            "source": "Tn9039805",
+            "target": "Tn9039835"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727117",
+            "source": "Tn9039805",
+            "target": "Tn9039818"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727119",
+            "source": "Tn9039805",
+            "target": "Tn9039839"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727121",
+            "source": "Tn9039805",
+            "target": "Tn9039824"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727123",
+            "source": "Tn9039824",
+            "target": "Tn9039809"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727125",
+            "source": "Tn9039824",
+            "target": "Tn9039837"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727127",
+            "source": "Tn9039837",
+            "target": "Tn9039876"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727129",
+            "source": "Tn9039837",
+            "target": "Tn9039793"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727131",
+            "source": "Tn9039793",
+            "target": "Tn9039810"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727133",
+            "source": "Tn9039793",
+            "target": "Tn9039816"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727135",
+            "source": "Tn9039824",
+            "target": "Tn9039880"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727137",
+            "source": "Tn9039880",
+            "target": "Tn9039826"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727139",
+            "source": "Tn9039880",
+            "target": "Tn9039800"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727141",
+            "source": "Tn9039880",
+            "target": "Tn9039820"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727143",
+            "source": "Tn9039808",
+            "target": "Tn9039883"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727145",
+            "source": "Tn9039883",
+            "target": "Tn9039868"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727147",
+            "source": "Tn9039868",
+            "target": "Tn9039853"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727149",
+            "source": "Tn9039868",
+            "target": "Tn9039871"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727151",
+            "source": "Tn9039868",
+            "target": "Tn9039843"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727153",
+            "source": "Tn9039883",
+            "target": "Tn9039857"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727155",
+            "source": "Tn9039857",
+            "target": "Tn9039832"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727157",
+            "source": "Tn9039832",
+            "target": "Tn9039861"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727159",
+            "source": "Tn9039832",
+            "target": "Tn9039829"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727161",
+            "source": "Tn9039829",
+            "target": "Tn9039813"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727163",
+            "source": "Tn9039829",
+            "target": "Tn9039787"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727165",
+            "source": "Tn9039832",
+            "target": "Tn9039811"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727167",
+            "source": "Tn9039811",
+            "target": "Tn9039878"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727169",
+            "source": "Tn9039811",
+            "target": "Tn9039802"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727171",
+            "source": "Tn9039832",
+            "target": "Tn9039866"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727173",
+            "source": "Tn9039866",
+            "target": "Tn9039819"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727175",
+            "source": "Tn9039866",
+            "target": "Tn9039858"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727177",
+            "source": "Tn9039858",
+            "target": "Tn9039884"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727179",
+            "source": "Tn9039858",
+            "target": "Tn9039786"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727181",
+            "source": "Tn9039786",
+            "target": "Tn9039874"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727183",
+            "source": "Tn9039786",
+            "target": "Tn9039875"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727185",
+            "source": "Tn9039875",
+            "target": "Tn9039846"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727187",
+            "source": "Tn9039875",
+            "target": "Tn9039881"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727189",
+            "source": "Tn9039881",
+            "target": "Tn9039830"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727191",
+            "source": "Tn9039881",
+            "target": "Tn9039859"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727193",
+            "source": "Tn9039881",
+            "target": "Tn9039844"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727195",
+            "source": "Tn9039857",
+            "target": "Tn9039851"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727197",
+            "source": "Tn9039851",
+            "target": "Tn9039806"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727199",
+            "source": "Tn9039806",
+            "target": "Tn9039788"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727201",
+            "source": "Tn9039806",
+            "target": "Tn9039804"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727203",
+            "source": "Tn9039851",
+            "target": "Tn9039789"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727205",
+            "source": "Tn9039789",
+            "target": "Tn9039849"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727207",
+            "source": "Tn9039789",
+            "target": "Tn9039852"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727209",
+            "source": "Tn9039852",
+            "target": "Tn9039860"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727211",
+            "source": "Tn9039852",
+            "target": "Tn9039877"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727213",
+            "source": "Tn9039877",
+            "target": "Tn9039856"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727215",
+            "source": "Tn9039877",
+            "target": "Tn9039799"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727217",
+            "source": "Tn9039799",
+            "target": "Tn9039882"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727219",
+            "source": "Tn9039799",
+            "target": "Tn9039797"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727221",
+            "source": "Tn9039797",
+            "target": "Tn9039815"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727223",
+            "source": "Tn9039797",
+            "target": "Tn9039863"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727225",
+            "source": "Tn9039789",
+            "target": "Tn9039822"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727227",
+            "source": "Tn9039822",
+            "target": "Tn9039864"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727229",
+            "source": "Tn9039864",
+            "target": "Tn9039795"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727231",
+            "source": "Tn9039864",
+            "target": "Tn9039865"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727233",
+            "source": "Tn9039864",
+            "target": "Tn9039807"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727235",
+            "source": "Tn9039864",
+            "target": "Tn9039825"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727237",
+            "source": "Tn9039822",
+            "target": "Tn9039850"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727239",
+            "source": "Tn9039850",
+            "target": "Tn9039872"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727241",
+            "source": "Tn9039850",
+            "target": "Tn9039817"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727243",
+            "source": "Tn9039817",
+            "target": "Tn9039821"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727245",
+            "source": "Tn9039817",
+            "target": "Tn9039838"
+          },
+          {
+            "@type": "edge",
+            "@id": "edge727247",
+            "source": "Tn9039817",
+            "target": "Tn9039791"
+          }
+        ],
+        "tb:ntax.tree": 57,
+        "tb:quality.tree": "Unrated",
+        "tb:type.tree": "Single",
+        "tb:kind.tree": "Species Tree",
+        "rdfs:isDefinedBy": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
+      },
+      "skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@37938de7 $Rev: 1040 $",
+      "rdfs:isDefinedBy": "S12957"
+    },
+    "skos:changeNote": "Generated on Sun Feb 17 16:02:25 EST 2013",
+    "skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@456d853a $Rev: 1060 $",
+    "prism:number": "1",
+    "prism:volume": "145",
+    "dc:publisher": "Zoological Journal of the Linnean Society",
+    "prism:publicationName": "Zoological Journal of the Linnean Society",
+    "dc:subject": "African Characidae; Chalceus; Sindacharax; fossil evidence; gigantism; miniaturization; phylogeny",
+    "prism:pageRange": "1-144",
+    "prism:endingPage": "144",
+    "prism:startingPage": "1",
+    "prism:doi": "",
+    "prism:publicationDate": "2005",
+    "dc:contributor": "Vari R.P.",
+    "dc:contributor.1": "Zanata A.M.",
+    "dc:creator": "Zanata A.M., & Vari R.P.",
+    "dc:title": "The family Alestidae (Ostariophysi, Characiformes): a phylogenetic analysis of a trans-Atlantic clade.",
+    "dcterms:bibliographicCitation": "Zanata A.M., & Vari R.P. 2005. The family Alestidae (Ostariophysi, Characiformes): a phylogenetic analysis of a trans-Atlantic clade. Zoological Journal of the Linnean Society, 145(1): 1-144.",
+    "prism:creationDate": "2012-07-02",
+    "prism:modificationDate": "2012-07-10",
+    "dc:date": "2012-07-10",
+    "tb:title.study": "The family Alestidae (Ostariophysi, Characiformes): a phylogenetic analysis of a trans-Atlantic clade.",
+    "tb:identifier.study.tb1": {},
+    "tb:identifier.study": "12957",
+    "prism:section": "Study"
+  }
+}
