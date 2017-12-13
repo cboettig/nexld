@@ -4,10 +4,14 @@
 \alias{json_to_xml}
 \title{json_to_xml}
 \usage{
-json_to_xml(x)
+json_to_xml(x, file = NULL, ...)
 }
 \arguments{
 \item{x}{JSON-LD representation of NeXML, as json, character, or list object.}
+
+\item{file}{output filename. If NULL (default), will return xml_document}
+
+\item{...}{additional arguments to xml2::write_xml}
 }
 \description{
 json_to_xml

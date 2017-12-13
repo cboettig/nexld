@@ -73,20 +73,34 @@ add_node <- function(x, parent, tag = NULL) {
   }
 
   ## Add coercion into meta nodes first.  Should also alter the `about` tag of the parent
+
+  ## FIXME need to handle head <nexml> elements separately -- the xmlns: attributes
+  ## are somehow being turned into metas too
   x <- into_meta(x)
+
+  ## FIXME: Still have to turn structures like: otu: [ {}, {}, {}] back into
+  ## named lists, i.e. otu = {}, otu = {}, otu = {}.
+  ## (JSON doesn't like repeated keys but they are fine in R lists)
+  ## Basically, need to turn `@type` into tag
 
   if (!is.null(tag)) {
     parent <- xml2::xml_add_child(parent, tag)
-    ## No use of R attributes please
-    #attr <- r_attrs_to_xml(attributes(x))
+
+    ## While xml2 as_xml_doc uses R attributes -> xml attributes,
+    ## we want to treat atomic elements in a list as the xml attributes:
     attr <- x[vapply(x, is.atomic, logical(1))]
     for (i in seq_along(attr)) {
-      key <- gsub("^@(\\w+)", "\\1", names(attr)[[i]])
+      key <- gsub("^@(\\w+)", "\\1", names(attr)[[i]]) # drop json-ld `@`
       xml2::xml_set_attr(parent, key, attr[[i]])
     }
   }
   for (i in seq_along(x)) {
-    add_node(x[[i]], parent, names(x)[[i]])
+    if(!is.null(names(x))){
+      tag <- names(x)[[i]]
+    } else {
+      tag <- xml_name(parent)
+    }
+    add_node(x[[i]], parent, tag)
   }
 }
 

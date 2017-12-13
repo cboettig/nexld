@@ -12,7 +12,9 @@
 #'
 #' ex <- system.file("extdata/example.xml", package = "nexld")
 #' xml_to_json(ex)
-#'
+#' 
+#' ex1 <- system.file("extdata/ontotrace.xml", package = "nexld")
+#' xml_to_json(ex1)
 xml_to_json <- function(x, file = NULL){
   json <- parse_nexml(x)
   if(is.null(file)){
@@ -34,14 +36,36 @@ parse_nexml <- function(x){
   ## Drop comment nodes.
   xml2::xml_remove(xml2::xml_find_all(xml, "//comment()"))
 
+  ## strip about attributes
+  res <- xml2::xml_find_all(xml, '//*[@about]')
+  invisible(xml2::xml_remove(res))
+
   ## Main transform, map XML to list using a modification of the xml2::as_list convention
   ## See as_list.R
   json <- as_nexld(xml)
 
   ## Set up the JSON-LD context
-  json <- c(list("@context" = list("@vocab" = "http://www.nexml.org/2009/")), json)
-  xmlns <- grepl("^xmlns", names(json))
-  json <- json[!xmlns]   # just drop namespaces for now, should be appended to context
+  # json <- c(list("@context" = list("@vocab" = "http://www.nexml.org/2009/")), json)
+  # xmlns <- grepl("^xmlns", names(json))
+  # json <- json[!xmlns]   # just drop namespaces for now, should be appended to context
+  con <- list()
+  if ("base" %in% names(json$nexml)) {
+    con$base <- json$nexml$base
+    json$nexml$base <- NULL
+  }
+  con$`@vocab` <- json$nexml$xmlns
+  json$nexml$xmlns <- NULL
+  nss <- json$nexml[grepl("xmlns\\:", names(json$nexml))]
+  con <- c(con, 
+    stats::setNames(nss, 
+      vapply(names(nss), function(x) strsplit(x, split = ":")[[1]][[2]], character(1))
+    )
+  )
+  xmlns <- grepl("^xmlns", names(json$nexml))
+  json$nexml <- json$nexml[!xmlns]
+  json$`@context` <- con
+  # order names so @context shows up first
+  json <- json[order(names(json))]
 
-  json
+  return(json)
 }
