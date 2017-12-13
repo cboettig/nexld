@@ -22,4 +22,6 @@ Convert an NeXML file into a json file/string
 ex <- system.file("extdata/example.xml", package = "nexld")
 xml_to_json(ex)
 
+ex1 <- system.file("extdata/ontotrace.xml", package = "nexld")
+xml_to_json(ex1)
 }
