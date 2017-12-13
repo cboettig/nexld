@@ -39,6 +39,7 @@ into_meta <- function(x){
     if(is_URI(x[[n]]))  # ResourceMeta
       x[[n]] <- list(rel = names(x[n]), href = x[[n]])
     else # LiteralMeta
+      # FIXME: set `xsi:type="LiteralMeta` and datatype
       x[[n]] <- list(property = names(x[n]), content = x[[n]])
     names(x)[n] <- "meta"
   }
@@ -64,6 +65,7 @@ as_nexml_document.list <- function(x, ...) {
     #stop("Root nodes must be of length 1", call. = FALSE)
   }
 
+  ## FIXME drop/deal with @context node
 
   add_node <- function(x, parent, tag = NULL) {
     if (is.atomic(x)) {
@@ -83,7 +85,8 @@ as_nexml_document.list <- function(x, ...) {
       #attr <- r_attrs_to_xml(attributes(x))
       attr <- x[vapply(x, is.atomic, logical(1))]
       for (i in seq_along(attr)) {
-        xml2::xml_set_attr(parent, names(attr)[[i]], attr[[i]])
+        key <- gsub("^@(\\w+)", "\\1", names(attr)[[i]])
+        xml2::xml_set_attr(parent, key, attr[[i]])
       }
     }
     for (i in seq_along(x)) {

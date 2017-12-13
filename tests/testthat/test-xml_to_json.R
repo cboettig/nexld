@@ -2,10 +2,14 @@ testthat::context("xml to json")
 
 library(nexld)
 
-ex <- system.file("extdata/example.xml", package = "nexld")
 
 testthat::test_that("we can parse xml into a json-list", {
+  ex <- system.file("extdata/example.xml", package = "nexld")
+
   json <- xml_to_json(ex)
   expect_is(json, "json")
+
+  nexld <- parse_nexml(ex)
+  expect_equal(nexld$trees$tree[["@id"]], "tree1")
 })
 
