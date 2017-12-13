@@ -50,7 +50,7 @@ parse_nexml <- function(x){
   # json <- json[!xmlns]   # just drop namespaces for now, should be appended to context
   con <- list()
   if ("base" %in% names(json$nexml)) {
-    con$base <- json$nexml$base
+    con$`@base` <- json$nexml$base
     json$nexml$base <- NULL
   }
   con$`@vocab` <- json$nexml$xmlns
