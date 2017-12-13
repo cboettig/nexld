@@ -36,7 +36,7 @@ parse_nexml <- function(x){
 
   ## Main transform, map XML to list using a modification of the xml2::as_list convention
   ## See as_list.R
-  json <- as_list(xml)
+  json <- as_nexld(xml)
 
   ## Set up the JSON-LD context
   json <- c(list("@context" = list("@vocab" = "http://www.nexml.org/2009/")), json)

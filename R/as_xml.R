@@ -61,8 +61,10 @@ as_nexml_document.json <- function(x, ...){
 #' @importFrom xml2 xml_add_child xml_set_attr xml_new_document
 as_nexml_document.list <- function(x, ...) {
   if (length(x) > 1) {
-    x <- list(nexml = x)
-    #stop("Root nodes must be of length 1", call. = FALSE)
+    if(!is.null(x$nexml))
+      x <- x$nexml
+    else
+      stop("Root nexml node not found", call. = FALSE)
   }
 
   ## FIXME drop/deal with @context node
