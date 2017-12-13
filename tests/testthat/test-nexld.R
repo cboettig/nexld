@@ -1,12 +1,22 @@
 testthat::context("test-nexld: basic tests")
 
 library(nexld)
+library(jsonlite)
 
 ex <- system.file("extdata/example.xml", package = "nexld")
 
 testthat::test_that("we can parse xml into a json-list", {
   json <- xml_to_json(ex)
   testthat::expect_is(json, "json")
+})
+
+testthat::test_that("@context is created", {
+  json <- xml_to_json(ex)
+  jl <- jsonlite::fromJSON(json)
+  expect_named(jl, c('@context', 'nexml'))
+  expect_is(jl$`@context`, 'list')
+  expect_is(jl$`@context`$base, 'character')
+  expect_match(jl$`@context`$base, 'http')
 })
 
 library(jsonld)
