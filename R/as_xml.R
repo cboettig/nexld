@@ -1,5 +1,8 @@
 
-
+#' json_to_xml
+#'
+#' json_to_xml
+#' @param x JSON-LD representation of NeXML, as json, character, or list object.
 #' @export
 json_to_xml <- function(x){
   as_nexml_document(x)
@@ -54,7 +57,7 @@ as_nexml_document.json <- function(x, ...){
   as_nexml_document.list(x)
 }
 
-## Here we go
+#' @importFrom xml2 xml_add_child xml_set_attr xml_new_document
 as_nexml_document.list <- function(x, ...) {
   if (length(x) > 1) {
     x <- list(nexml = x)
@@ -73,14 +76,14 @@ as_nexml_document.list <- function(x, ...) {
     x <- into_meta(x)
 
     if (!is.null(tag)) {
-      parent <- xml_add_child(parent, tag)
+      parent <- xml2::xml_add_child(parent, tag)
 
 
       ## No use of R attributes please
       #attr <- r_attrs_to_xml(attributes(x))
       attr <- x[vapply(x, is.atomic, logical(1))]
       for (i in seq_along(attr)) {
-        xml_set_attr(parent, names(attr)[[i]], attr[[i]])
+        xml2::xml_set_attr(parent, names(attr)[[i]], attr[[i]])
       }
     }
     for (i in seq_along(x)) {
@@ -88,23 +91,25 @@ as_nexml_document.list <- function(x, ...) {
     }
   }
 
-  doc <- xml_new_document()
+  doc <- xml2::xml_new_document()
   add_node(x, doc)
-  xml_root(doc)
+  xml2::xml_root(doc)
 }
 
+
+## Identical to as_xml_document methods
+
+#' @importFrom xml2 xml_new_root
 as_nexml_document.xml_node <- function(x, ...) {
-  xml_new_root(.value = x, ..., .copy = TRUE)
+  xml2::xml_new_root(.value = x, ..., .copy = TRUE)
 }
-
 as_nexml_document.xml_nodeset <- function(x, root, ...) {
-  doc <- xml_new_root(.value = root, ..., .copy = TRUE)
+  doc <- xml2::xml_new_root(.value = root, ..., .copy = TRUE)
   for (i in seq_along(x)) {
-    xml_add_child(doc, x[[i]], .copy = TRUE)
+    xml2::xml_add_child(doc, x[[i]], .copy = TRUE)
   }
   doc
 }
-
 as_nexml_document.xml_document <- function(x, ...) {
   x
 }
