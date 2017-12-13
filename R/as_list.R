@@ -15,7 +15,7 @@ as_nexld.xml_document <- function(x, ns = character(), ...) {
 }
 
 ## based on xml2::as_list method
-#' @importFrom xml2 xml_contents xml_name xml_attrs xml_type xml_text
+#' @importFrom xml2 xml_contents xml_name xml_attrs xml_type xml_text xml_set_attrs xml_find_all
 as_nexld.xml_node <- function(x, ns = character(), embed_attr=TRUE, ...) {
   contents <- xml2::xml_contents(x)
   if (length(contents) == 0) {
