@@ -11,6 +11,7 @@
 	xsi:schemaLocation="http://www.nexml.org/2009 ../xsd/nexml.xsd"
 	xmlns:nex="http://www.nexml.org/2009"
 	xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 	xmlns="http://www.nexml.org/2009">
   <meta xsi:type="LiteralMeta" property="dc:title" datatype="xsd:string" content="My test title"/>

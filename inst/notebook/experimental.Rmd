@@ -11,6 +11,31 @@ library(jsonld)
 library(magrittr)
 ```
 
+Look, we can roundtrip without breaking validity!
+
+```{r}
+
+  ex <- system.file("extdata/example.xml", package = "nexld")
+  xml_to_json(ex, "ex.json")
+
+  json <- parse_nexml(ex)
+  xml <- json_to_xml(json)
+  
+  xml2::write_xml(xml, "ex.xml")
+  RNeXML::nexml_validate("ex.xml")
+  #unlink("ex.xml")
+```
+
+Time for some fun.  
+
+```{r}
+
+
+```
+
+
+
+
 
 ```{r}
 
@@ -18,7 +43,7 @@ f <- system.file("extdata/example.xml", package = "nexld")
 json <- nexld::parse_nexml(f)
 
 json %>% write_json("example.json", pretty = TRUE, auto_unbox=TRUE)
-readr::read_lines("example.json", n_max = 10) %>% cat(sep="\n")
+readr::read_lines("example.json", n_max = 20) %>% cat(sep="\n")
 ```
 
 

@@ -46,12 +46,10 @@ testthat::test_that("we can go from json back to xml", {
 testthat::test_that("we can validate after roundtrip", {
 
   ex <- system.file("extdata/example.xml", package = "nexld")
-  json <- parse_nexml(ex)
-  xml <- json_to_xml(json)
-  testthat::expect_is(xml, "xml_document")
-  xml2::write_xml(xml, "ex.xml")
+  json <- xml_to_json(ex)
+  xml <- json_to_xml(json, "ex.xml")
 
-  #testthat::expect_true(RNeXML::nexml_validate("ex.xml"))
+  testthat::expect_true(RNeXML::nexml_validate("ex.xml"))
   unlink("ex.xml")
 })
 

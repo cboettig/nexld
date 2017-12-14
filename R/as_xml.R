@@ -7,7 +7,29 @@
 #' @param ... additional arguments to xml2::write_xml
 #' @export
 json_to_xml <- function(x, file = NULL, ...){
+
+  ## Step 0: Render nexld S3/list to json object
+  if(is.list(x))
+    x <- jsonlite::toJSON(x, auto_unbox = TRUE)
+
+  ## Step 1: Compact the `nexml` element into `nexml` vocab alone
+  ## This will leave non-nexml properties (i.e. meta properties) with
+  ## their original prefixes in place.
+  nexml_only <- '{"@vocab": "http://www.nexml.org/2009"}'
+  compacted <- jsonld::jsonld_compact(x, context = nexml_only)
+
+  ## Step 2a: Parse compacted JSON back into  S3/list,
+  compacted <- jsonlite::fromJSON(compacted, simplifyVector = FALSE)
+
+  ## Step 2b: Sort S3/list elements according to NeXML ordering requirements
+
+  ## Step 3: Serialize S3/list into XML
   xml <- as_nexml_document(x)
+
+  ## Step 4: Add namespaces from the original context as xmlns:prefix=""
+
+
+
   if(!is.null(file))
     xml2::write_xml(xml, file, ...)
   else
