@@ -9,25 +9,35 @@
 json_to_xml <- function(x, file = NULL, ...){
 
   ## Step 0: Render nexld S3/list to json object
-  if(is.list(x))
+  if(is.list(x)){
+    context <- x[["@context"]]
     x <- jsonlite::toJSON(x, auto_unbox = TRUE)
+  } else if(is(x,"json")){
+    context <- fromJSON(x, simplifyVector = FALSE)[["@context"]]
+  }
 
-  ## Step 1: Compact the `nexml` element into `nexml` vocab alone
-  ## This will leave non-nexml properties (i.e. meta properties) with
-  ## their original prefixes in place.
-  nexml_only <- '{"@vocab": "http://www.nexml.org/2009"}'
-  compacted <- jsonld::jsonld_compact(x, context = nexml_only)
+  ## Step 1: Frame, using the original context (where non-nexml properties are prefixed)
+  frame <- toJSON(list("@context" = context, nexml = NULL), auto_unbox = TRUE, pretty = TRUE)
+  framed <- jsonld::jsonld_frame(x, frame)
 
   ## Step 2a: Parse compacted JSON back into  S3/list,
-  compacted <- jsonlite::fromJSON(compacted, simplifyVector = FALSE)
+  y <- jsonlite::fromJSON(framed, simplifyVector = FALSE)
 
   ## Step 2b: Sort S3/list elements according to NeXML ordering requirements
 
   ## Step 3: Serialize S3/list into XML
-  xml <- as_nexml_document(x)
+  xml <- as_nexml_document(list(nexml = y[["@graph"]][[1]][["nexml"]]))
+  root <- xml_root(xml)
 
   ## Step 4: Add namespaces from the original context as xmlns:prefix=""
-
+  for(ns in names(context)){
+    if(ns == "@vocab")
+      xml_set_attr(root, "xmlns", context[[ns]])
+    else if(ns == "@base")
+      xml_set_attr(root, "xml:base", context[[ns]])
+    else
+      xml_set_attr(root, paste("xmlns", ns, sep=":"), context[[ns]])
+  }
 
 
   if(!is.null(file))
@@ -94,19 +104,15 @@ add_node <- function(x, parent, tag = NULL) {
     return()
   }
 
-  ## Add coercion into meta nodes first.  Should also alter the `about` tag of the parent
 
-  ## FIXME need to handle head <nexml> elements separately -- the xmlns: attributes
-  ## are somehow being turned into metas too
   x <- into_meta(x)
 
-  ## FIXME: Still have to turn structures like: otu: [ {}, {}, {}] back into
-  ## named lists, i.e. otu = {}, otu = {}, otu = {}.
-  ## (JSON doesn't like repeated keys but they are fine in R lists)
-  ## Basically, need to turn `@type` into tag
+
 
   if (!is.null(tag)) {
-    parent <- xml2::xml_add_child(parent, tag)
+
+    if(!is.null(names(x)))
+      parent <- xml2::xml_add_child(parent, tag)
 
     ## While xml2 as_xml_doc uses R attributes -> xml attributes,
     ## we want to treat atomic elements in a list as the xml attributes:
@@ -120,7 +126,8 @@ add_node <- function(x, parent, tag = NULL) {
     if(!is.null(names(x))){
       tag <- names(x)[[i]]
     } else {
-      tag <- xml_name(parent)
+      #tag <- xml_name(parent)
+      ## FIXME if tag name comes from parent, parent should not be created as a node!
     }
     add_node(x[[i]], parent, tag)
   }

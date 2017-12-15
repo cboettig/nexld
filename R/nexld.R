@@ -12,7 +12,7 @@
 #'
 #' ex <- system.file("extdata/example.xml", package = "nexld")
 #' xml_to_json(ex)
-#' 
+#'
 #' ex1 <- system.file("extdata/ontotrace.xml", package = "nexld")
 #' xml_to_json(ex1)
 xml_to_json <- function(x, file = NULL){
@@ -45,19 +45,16 @@ parse_nexml <- function(x){
   json <- as_nexld(xml)
 
   ## Set up the JSON-LD context
-  # json <- c(list("@context" = list("@vocab" = "http://www.nexml.org/2009/")), json)
-  # xmlns <- grepl("^xmlns", names(json))
-  # json <- json[!xmlns]   # just drop namespaces for now, should be appended to context
   con <- list()
   if ("base" %in% names(json$nexml)) {
-    con$base <- json$nexml$base
+    con$`@base` <- json$nexml$base
     json$nexml$base <- NULL
   }
-  con$`@vocab` <- json$nexml$xmlns
+  con$`@vocab` <- paste0(json$nexml$xmlns, "/") # FIXME close only if needed
   json$nexml$xmlns <- NULL
   nss <- json$nexml[grepl("xmlns\\:", names(json$nexml))]
-  con <- c(con, 
-    stats::setNames(nss, 
+  con <- c(con,
+    stats::setNames(nss,
       vapply(names(nss), function(x) strsplit(x, split = ":")[[1]][[2]], character(1))
     )
   )
