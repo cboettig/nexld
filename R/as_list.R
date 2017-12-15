@@ -61,8 +61,6 @@ as_nexld.xml_nodeset <- function(x, ns = character(), ...) {
 }
 
 
-## FIXME: elements with meta children are being dropped!!!
-
 ## regroup repeated element names into a node list
 #' @importFrom stats setNames
 regroup <- function(out){
@@ -88,8 +86,6 @@ regroup <- function(out){
 
 
 remap_meta <- function(nodelist){
-
-  ## FIXME Handles case of meta: [], must also handle and meta: {} (nonlist)
 
   is_meta <- names(nodelist) %in% "meta"
 
@@ -155,7 +151,6 @@ special_jsonld_attrs <- function(x) {
     return(NULL)
   }
   # escape special names
-  ## FIXME: apply/enforce URI format to @id
   special <- names(x) %in% ld_attributes
   names(x)[special] <- paste0("@", names(x)[special])
   r_attrs_to_xml(as.list(x))
