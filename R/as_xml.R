@@ -1,4 +1,3 @@
-
 #' json_to_xml
 #'
 #' json_to_xml
@@ -26,10 +25,13 @@ json_to_xml <- function(x, file = NULL, ...){
   ## Step 2a: Parse compacted JSON back into  S3/list,
   y <- jsonlite::fromJSON(framed, simplifyVector = FALSE)
 
+  nexml_list <- y[["@graph"]][[1]][["nexml"]]
+  nexml <- sort_nexml(nexml_list)
   ## Step 2b: Sort S3/list elements according to NeXML ordering requirements
 
+
   ## Step 3: Serialize S3/list into XML
-  xml <- as_nexml_document(list(nexml = y[["@graph"]][[1]][["nexml"]]))
+  xml <- as_nexml_document(list(nexml = nexml))
   root <- xml2::xml_root(xml)
 
   ## Step 4: Add namespaces from the original context as xmlns:prefix=""
@@ -47,6 +49,31 @@ json_to_xml <- function(x, file = NULL, ...){
     xml2::write_xml(xml, file, ...)
   else
     xml
+}
+
+
+## use this instead
+sort_nexml <- function(nexml_list){
+  who <- names(nexml_list)
+
+  attr <- grep("(schemaLocation|version)", who)
+  meta <- grep("\\w+:\\w", who)
+  otus <- grep("otus", who)
+  trees <- grep("trees", who)
+  characters <- grep("characters", who)
+
+  ## Nodes before edges
+  sort_trees <- lapply(nexml_list[trees], function(trees){
+    lapply(trees, function(tree){
+      node <- grep("node", names(tree))
+      if(length(node)>0)
+        c(tree[node], tree[-node])
+      else
+        tree
+    })
+  })
+ out <- c(nexml_list[attr], nexml_list[meta], nexml_list[otus], sort_trees, nexml_list[characters])
+ out
 }
 
 
@@ -121,7 +148,10 @@ add_node <- function(x, parent, tag = NULL) {
     ## we want to treat atomic elements in a list as the xml attributes:
     attr <- x[vapply(x, is.atomic, logical(1))]
     for (i in seq_along(attr)) {
+      ## Handle special attributes
       key <- gsub("^@(\\w+)", "\\1", names(attr)[[i]]) # drop json-ld `@`
+      ## assumes xsi: is the prefix, should be confirmed / set explicitly as such!
+      if(key == "type") key <- paste0("xsi:", key)
       xml2::xml_set_attr(parent, key, attr[[i]])
     }
   }
@@ -170,27 +200,3 @@ as_nexml_document.xml_document <- function(x, ...) {
 
 
 
-
-
-## Frame: follow this framing order as well as nesting order
-# nexml
-#  - otus
-#     - otu
-#  - trees
-#    - tree
-#       - node
-#       - edge
-#  - characters
-#    - format
-#       - states
-#       - char
-#    - matrix
-#       - row
-#       - cell
-
-## Use order given in json frame(?)
-fix_node_order <- function(nexld){
-
-
-
-}

@@ -60,6 +60,9 @@ as_nexld.xml_nodeset <- function(x, ns = character(), ...) {
 
 }
 
+
+## FIXME: elements with meta children are being dropped!!!
+
 ## regroup repeated element names into a node list
 #' @importFrom stats setNames
 regroup <- function(out){
@@ -72,15 +75,7 @@ regroup <- function(out){
       i <- names(out) == p
       out <- out[!i]
 
-      ## Assumes type matches property name.  FIXME other choices possible
-      tmp <- lapply(orig[i], function(x){
-        if(is.null(x[["@type"]]))
-          c("@type" = p, x)
-        else
-          x
-      })
-
-      out <- c(out, setNames(list(unname(tmp)), p))
+      out <- c(out, setNames(list(unname(orig[i])), p))
     }
   }
 
