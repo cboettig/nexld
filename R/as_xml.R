@@ -6,6 +6,9 @@
 #' @param file output filename. If NULL (default), will return xml_document
 #' @param ... additional arguments to xml2::write_xml
 #' @export
+#' @importFrom methods is
+#' @importFrom jsonlite toJSON fromJSON
+#' @importFrom xml2 xml_root xml_set_attr write_xml
 json_to_xml <- function(x, file = NULL, ...){
 
   ## Step 0: Render nexld S3/list to json object
@@ -13,11 +16,11 @@ json_to_xml <- function(x, file = NULL, ...){
     context <- x[["@context"]]
     x <- jsonlite::toJSON(x, auto_unbox = TRUE)
   } else if(is(x,"json")){
-    context <- fromJSON(x, simplifyVector = FALSE)[["@context"]]
+    context <- jsonlite::fromJSON(x, simplifyVector = FALSE)[["@context"]]
   }
 
   ## Step 1: Frame, using the original context (where non-nexml properties are prefixed)
-  frame <- toJSON(list("@context" = context, nexml = NULL), auto_unbox = TRUE, pretty = TRUE)
+  frame <- jsonlite::toJSON(list("@context" = context, nexml = NULL), auto_unbox = TRUE, pretty = TRUE)
   framed <- jsonld::jsonld_frame(x, frame)
 
   ## Step 2a: Parse compacted JSON back into  S3/list,
@@ -27,16 +30,16 @@ json_to_xml <- function(x, file = NULL, ...){
 
   ## Step 3: Serialize S3/list into XML
   xml <- as_nexml_document(list(nexml = y[["@graph"]][[1]][["nexml"]]))
-  root <- xml_root(xml)
+  root <- xml2::xml_root(xml)
 
   ## Step 4: Add namespaces from the original context as xmlns:prefix=""
   for(ns in names(context)){
     if(ns == "@vocab")
-      xml_set_attr(root, "xmlns", context[[ns]])
+      xml2::xml_set_attr(root, "xmlns", context[[ns]])
     else if(ns == "@base")
-      xml_set_attr(root, "xml:base", context[[ns]])
+      xml2::xml_set_attr(root, "xml:base", context[[ns]])
     else
-      xml_set_attr(root, paste("xmlns", ns, sep=":"), context[[ns]])
+      xml2::xml_set_attr(root, paste("xmlns", ns, sep=":"), context[[ns]])
   }
 
 

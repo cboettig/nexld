@@ -15,8 +15,8 @@ testthat::test_that("@context is created", {
   jl <- jsonlite::fromJSON(json)
   expect_named(jl, c('@context', 'nexml'))
   expect_is(jl$`@context`, 'list')
-  expect_is(jl$`@context`$base, 'character')
-  expect_match(jl$`@context`$base, 'http')
+  expect_is(jl$`@context`$`@base`, 'character')
+  expect_match(jl$`@context`$`@base`, 'http')
 })
 
 library(jsonld)
