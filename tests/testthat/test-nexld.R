@@ -48,7 +48,7 @@ testthat::test_that("we can validate after roundtrip", {
   ex <- system.file("extdata/example.xml", package = "nexld")
   json <- xml_to_json(ex)
   xml <- json_to_xml(json, "ex.xml")
-  testthat::expect_true(RNeXML::nexml_validate("ex.xml"))
+  testthat::expect_true(nexml_validate("ex.xml"))
   unlink("ex.xml")
 })
 

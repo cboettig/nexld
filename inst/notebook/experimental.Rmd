@@ -22,7 +22,7 @@ Look, we can roundtrip without breaking validity!
   xml <- json_to_xml(json)
   
   xml2::write_xml(xml, "ex.xml")
-  RNeXML::nexml_validate("ex.xml")
+  nexld::nexml_validate("ex.xml")
   #unlink("ex.xml")
 ```
 

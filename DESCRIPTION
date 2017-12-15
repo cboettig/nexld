@@ -17,10 +17,10 @@ LazyData: true
 RoxygenNote: 6.0.1
 Imports: xml2,
     jsonlite,
-    methods
+    methods,
+    httr
 Suggests: 
     testthat,
     jsonld,
     readr,
-    magrittr,
-    RNeXML
+    magrittr
