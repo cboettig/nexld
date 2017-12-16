@@ -50,12 +50,16 @@ parse_nexml <- function(x){
     con$`@base` <- json$nexml$base
     json$nexml$base <- NULL
   }
-  con$`@vocab` <- paste0(json$nexml$xmlns, "/") # FIXME close only if needed
+  # closing slash on url only if needed
+  con$`@vocab` <- gsub("(\\w)$", "\\1/", json$nexml$xmlns)
   json$nexml$xmlns <- NULL
   nss <- json$nexml[grepl("xmlns\\:", names(json$nexml))]
   con <- c(con,
-    stats::setNames(nss,
-      vapply(names(nss), function(x) strsplit(x, split = ":")[[1]][[2]], character(1))
+    stats::setNames(gsub("(\\w)$", "\\1/", nss),
+      vapply(names(nss),
+             function(x)
+               strsplit(x, split = ":")[[1]][[2]],
+             character(1))
     )
   )
   xmlns <- grepl("^xmlns", names(json$nexml))
