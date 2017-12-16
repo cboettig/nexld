@@ -10,6 +10,7 @@ test_roundtrip <- function(f){
   {
   #testthat::expect_true(nexml_validate(f))
   out <- basename(f)
+  # xml_to_json(f, file.path("inst/jsonld_examples", gsub("\\.xml", ".json", out)))
   json <- xml_to_json(f)
   json_to_xml(json, out)
   testthat::expect_true(nexml_validate(out))
