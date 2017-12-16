@@ -1,6 +1,6 @@
 testthat::context("Test round trip validation")
 
-suite <- list.files(system.file("test_nexml", package="nexld"), full.names = TRUE)
+suite <- list.files(system.file("nexml_examples", package="nexld"), full.names = TRUE)
 
 
 test_roundtrip <- function(f){
