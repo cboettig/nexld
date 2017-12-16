@@ -9,7 +9,13 @@
 #' @importFrom jsonlite toJSON fromJSON
 #' @importFrom xml2 xml_root xml_set_attr write_xml
 json_to_xml <- function(x, file = NULL, ...){
-
+  if(is.character(x)){
+    if(file.exists(x)){  ## Read from file
+      x <- jsonlite::read_json(x)
+    } else { ## Read from string
+      x <- jsonlite::fromJSON(x, simplifyVector = FALSE)
+    }
+  }
   ## Step 0: Render nexld S3/list to json object
   if(is.list(x)){
     context <- x[["@context"]]
@@ -126,6 +132,7 @@ as_nexml_document.json <- function(x, ...){
   as_nexml_document(jsonlite::fromJSON(x, simplifyVector = FALSE))
 }
 
+textTypeNodes <- c("seq")
 
 add_node <- function(x, parent, tag = NULL) {
   if (is.atomic(x)) {
@@ -134,13 +141,9 @@ add_node <- function(x, parent, tag = NULL) {
     return()
   }
 
-
   x <- into_meta(x)
 
-
-
   if (!is.null(tag)) {
-
     if(!is.null(names(x)))
       parent <- xml2::xml_add_child(parent, tag)
 
@@ -152,7 +155,13 @@ add_node <- function(x, parent, tag = NULL) {
       key <- gsub("^@(\\w+)", "\\1", names(attr)[[i]]) # drop json-ld `@`
       ## assumes xsi: is the prefix, should be confirmed / set explicitly as such!
       if(key == "type") key <- paste0("xsi:", key)
-      xml2::xml_set_attr(parent, key, attr[[i]])
+
+      if(key %in% textTypeNodes){
+        textType <- xml2::xml_add_child(parent, key)
+        xml2::xml_set_text(textType, attr[[i]])
+      } else {
+        xml2::xml_set_attr(parent, key, attr[[i]])
+      }
     }
   }
   for (i in seq_along(x)) {
