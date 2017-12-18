@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "@vocab": "http://www.nexml.org/2009/",
+    "nex": "http://www.nexml.org/2009/",
+
+    "xsi": "http://www.w3.org/2001/XMLSchema-instance/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+
+    "schema": "http://schema.org/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+
+    "prism": "http://prismstandard.org/namespaces/1.2/basic/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+
+    "map": "http://purl.org/phylo/phylomap/terms#",
+    "dwc": "http://rs.tdwg.org/dwc/terms/",
+    "cdao": "http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#",
+    "tb": "http://treebase.org/terms#",
+
+    "otus": {"@id": "nex:otus", "@type": "@id"},
+    "otu": {"@id": "nex:otu", "@type": "@id"},
+    "trees": {"@id": "nex:trees", "@type": "@id"},
+    "tree": {"@id": "nex:tree", "@type": "@id"},
+    "node": {"@id": "nex:node", "@type": "@id"},
+    "edge": {"@id": "nex:edge", "@type": "@id"},
+    "source": {"@id": "nex:source", "@type": "@id"},
+    "target": {"@id": "nex:target", "@type": "@id"},
+    "characters": {"@id": "nex:characters", "@type": "@id"},
+    "states": {"@id": "nex:states", "@type": "@id"},
+    "state": {"@id": "nex:state", "@type": "@id"},
+    "char": {"@id": "nex:char", "@type": "@id"}
+    }
+}

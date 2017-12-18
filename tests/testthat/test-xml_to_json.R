@@ -9,6 +9,6 @@ testthat::test_that("we can parse xml into a json-list", {
   json <- xml_to_json(ex)
   testthat::expect_is(json, "json")
   nexld <- parse_nexml(ex)
-  testthat::expect_equal(nexld$nexml$trees$tree[["@id"]], "tree1")
+  testthat::expect_equal(nexld$trees$tree[["@id"]], "tree1")
 })
 

@@ -8,49 +8,47 @@
 #' @importFrom methods is
 #' @importFrom jsonlite toJSON fromJSON
 #' @importFrom xml2 xml_root xml_set_attr write_xml
-json_to_xml <- function(x, file = NULL, ...){
-  if(is.character(x)){
-    if(file.exists(x)){  ## Read from file
-      x <- jsonlite::read_json(x)
-    } else { ## Read from string
-      x <- jsonlite::fromJSON(x, simplifyVector = FALSE)
-    }
+json_to_xml <- function(x, file = NULL, ...){ UseMethod("json_to_xml")}
+
+#' @export
+json_to_xml.character <- function(x, file = NULL, ...){
+  if(file.exists(x)){  ## Read from file
+    x <- jsonlite::read_json(x)
+  } else { ## Read from string
+    x <- jsonlite::fromJSON(x, simplifyVector = FALSE)
   }
-  ## Step 0: Render nexld S3/list to json object
-  if(is.list(x)){
-    context <- x[["@context"]]
-    x <- jsonlite::toJSON(x, auto_unbox = TRUE)
-  } else if(is(x,"json")){
-    context <- jsonlite::fromJSON(x, simplifyVector = FALSE)[["@context"]]
-  }
+  json_to_xml(x, file, ...)
+}
 
-  ## Step 1: Frame, using the original context (where non-nexml properties are prefixed)
-  frame <- jsonlite::toJSON(list("@context" = context, nexml = NULL), auto_unbox = TRUE, pretty = TRUE)
-  framed <- jsonld::jsonld_frame(x, frame)
+#' @export
+json_to_xml.json <- function(x, file = NULL, ...){
+  x <- jsonlite::fromJSON(x, simplifyVector = FALSE)
+  json_to_xml(x, file, ...)
+}
 
-  ## Step 2a: Parse compacted JSON back into  S3/list,
-  y <- jsonlite::fromJSON(framed, simplifyVector = FALSE)
+#' @export
+json_to_xml.list <- function(x, file = NULL, ...){
 
-  nexml_list <- y[["@graph"]][[1]][["nexml"]]
+  ## Frame/compact into original context for a standardized structure
+  nexml_list <- frame.nexld(x)
+
+  ## Sort S3/list elements according to NeXML ordering requirements
   nexml <- sort_nexml(nexml_list)
-  ## Step 2b: Sort S3/list elements according to NeXML ordering requirements
-
 
   ## Step 3: Serialize S3/list into XML
   xml <- as_nexml_document(list(nexml = nexml))
-  root <- xml2::xml_root(xml)
 
   ## Step 4: Add namespaces from the original context as xmlns:prefix=""
+  context <- x[["@context"]]
+  root <- xml2::xml_root(xml)
   for(ns in names(context)){
-    if(ns == "@vocab")
-      xml2::xml_set_attr(root, "xmlns", context[[ns]])
-    else if(ns == "@base")
-      xml2::xml_set_attr(root, "xml:base", context[[ns]])
-    else
-      xml2::xml_set_attr(root, paste("xmlns", ns, sep=":"), context[[ns]])
+    switch(ns,
+           "@vocab" = xml2::xml_set_attr(root, "xmlns", context[[ns]]),
+           "@base" = xml2::xml_set_attr(root, "xml:base", context[[ns]]),
+           xml2::xml_set_attr(root, paste("xmlns", ns, sep=":"), context[[ns]]))
   }
 
-
+  ## Serialize to file if desired
   if(!is.null(file))
     xml2::write_xml(xml, file, ...)
   else

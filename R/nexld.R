@@ -43,17 +43,18 @@ parse_nexml <- function(x){
   ## Main transform, map XML to list using a modification of the xml2::as_list convention
   ## See as_list.R
   json <- as_nexld(xml)
+  nexml <- json$nexml
 
   ## Set up the JSON-LD context
   con <- list()
-  if ("base" %in% names(json$nexml)) {
-    con$`@base` <- json$nexml$base
-    json$nexml$base <- NULL
+  if ("base" %in% names(nexml)) {
+    con$`@base` <- nexml$base
+    nexml$base <- NULL
   }
   # closing slash on url only if needed
-  con$`@vocab` <- gsub("(\\w)$", "\\1/", json$nexml$xmlns)
-  json$nexml$xmlns <- NULL
-  nss <- json$nexml[grepl("xmlns\\:", names(json$nexml))]
+  con$`@vocab` <- gsub("(\\w)$", "\\1/", nexml$xmlns)
+  nexml$xmlns <- NULL
+  nss <- nexml[grepl("xmlns\\:", names(nexml))]
   con <- c(con,
     stats::setNames(gsub("(\\w)$", "\\1/", nss),
       vapply(names(nss),
@@ -62,11 +63,15 @@ parse_nexml <- function(x){
              character(1))
     )
   )
-  xmlns <- grepl("^xmlns", names(json$nexml))
-  json$nexml <- json$nexml[!xmlns]
-  json$`@context` <- con
+  xmlns <- grepl("^xmlns", names(nexml))
+  nexml <- nexml[!xmlns]
+  nexml$`@context` <- con
+  nexml$`@type` <- "nexml"
   # order names so @context shows up first
-  json <- json[order(names(json))]
+  nexml <- nexml[order(names(nexml))]
 
-  return(json)
+  return(nexml)
 }
+
+
+
