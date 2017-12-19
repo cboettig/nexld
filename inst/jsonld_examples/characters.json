@@ -1,1291 +1,1293 @@
 {
-  "@context": {
-    "@base": "http://example.org/",
-    "@vocab": "http://www.nexml.org/2009/",
-    "xsi": "http://www.w3.org/2001/XMLSchema-instance/",
-    "nex": "http://www.nexml.org/2009/"
-  },
-  "nexml": {
-    "version": "0.9",
-    "schemaLocation": "http://www.nexml.org/2009 ../xsd/nexml.xsd",
-    "otus": {
-      "@id": "taxa1",
-      "label": "Primary taxa block",
-      "otu": [
-        {
-          "@id": "t1",
-          "label": "Homo sapiens"
+  "@context": [
+    "https://raw.githubusercontent.com/cboettig/nexld/master/inst/context/nexml.json",
+    {
+      "@base": "http://example.org/",
+      "@vocab": "http://www.nexml.org/2009/",
+      "xsi": "http://www.w3.org/2001/XMLSchema-instance/",
+      "nex": "http://www.nexml.org/2009/"
+    }
+  ],
+  "@type": "nexml",
+  "characters": [
+    {
+      "otus": "taxa1",
+      "@id": "m1",
+      "@type": "nex:RestrictionSeqs",
+      "label": "Restriction site sequences",
+      "format": {
+        "states": {
+          "@id": "RestrictionSiteStateSet",
+          "state": [
+            {
+              "@id": "Absent",
+              "symbol": "0"
+            },
+            {
+              "@id": "Present",
+              "symbol": "1"
+            }
+          ]
         },
-        {
-          "@id": "t2",
-          "label": "Pan paniscus"
-        },
-        {
-          "@id": "t3",
-          "label": "Pan troglodytes"
-        },
-        {
-          "@id": "t4",
-          "label": "Gorilla gorilla"
-        },
-        {
-          "@id": "t5",
-          "label": "Pongo pygmaeus"
-        }
-      ]
+        "char": [
+          {
+            "@id": "Site1",
+            "states": "RestrictionSiteStateSet"
+          },
+          {
+            "@id": "Site2",
+            "states": "RestrictionSiteStateSet"
+          },
+          {
+            "@id": "Site3",
+            "states": "RestrictionSiteStateSet"
+          },
+          {
+            "@id": "Site4",
+            "states": "RestrictionSiteStateSet"
+          }
+        ]
+      },
+      "matrix": {
+        "row": [
+          {
+            "otu": "t1",
+            "@id": "RestrictionSiteRow1",
+            "seq": [
+              "0101"
+            ]
+          },
+          {
+            "otu": "t2",
+            "@id": "RestrictionSiteRow2",
+            "seq": [
+              "0101"
+            ]
+          },
+          {
+            "otu": "t3",
+            "@id": "RestrictionSiteRow3",
+            "seq": [
+              "0101"
+            ]
+          },
+          {
+            "otu": "t4",
+            "@id": "RestrictionSiteRow4",
+            "seq": [
+              "0101"
+            ]
+          },
+          {
+            "otu": "t5",
+            "@id": "RestrictionSiteRow5",
+            "seq": [
+              "0101"
+            ]
+          }
+        ]
+      }
     },
-    "characters": [
-      {
-        "otus": "taxa1",
-        "@id": "m1",
-        "@type": "nex:RestrictionSeqs",
-        "label": "Restriction site sequences",
-        "format": {
-          "states": {
-            "@id": "RestrictionSiteStateSet",
-            "state": [
+    {
+      "otus": "taxa1",
+      "@id": "m2",
+      "@type": "nex:StandardCells",
+      "label": "Categorical characters",
+      "format": {
+        "states": {
+          "@id": "StandardCategoricalStateSet1",
+          "polymorphic_state_set": {
+            "symbol": "4",
+            "@id": "StandardCategoricalState4",
+            "member": [
               {
-                "@id": "Absent",
-                "symbol": "0"
+                "state": "StandardCategoricalState2"
               },
               {
-                "@id": "Present",
-                "symbol": "1"
+                "state": "StandardCategoricalState3"
               }
             ]
           },
-          "char": [
+          "uncertain_state_set": {
+            "symbol": "5",
+            "@id": "StandardCategoricalState5",
+            "member": [
+              {
+                "state": "StandardCategoricalState1"
+              },
+              {
+                "state": "StandardCategoricalState2"
+              }
+            ]
+          },
+          "state": [
             {
-              "@id": "Site1",
-              "states": "RestrictionSiteStateSet"
+              "@id": "StandardCategoricalState1",
+              "symbol": "1"
             },
             {
-              "@id": "Site2",
-              "states": "RestrictionSiteStateSet"
+              "@id": "StandardCategoricalState2",
+              "symbol": "2"
             },
             {
-              "@id": "Site3",
-              "states": "RestrictionSiteStateSet"
-            },
-            {
-              "@id": "Site4",
-              "states": "RestrictionSiteStateSet"
+              "@id": "StandardCategoricalState3",
+              "symbol": "3"
             }
           ]
         },
-        "matrix": {
-          "row": [
-            {
-              "otu": "t1",
-              "@id": "RestrictionSiteRow1",
-              "seq": [
-                "0101"
-              ]
-            },
-            {
-              "otu": "t2",
-              "@id": "RestrictionSiteRow2",
-              "seq": [
-                "0101"
-              ]
-            },
-            {
-              "otu": "t3",
-              "@id": "RestrictionSiteRow3",
-              "seq": [
-                "0101"
-              ]
-            },
-            {
-              "otu": "t4",
-              "@id": "RestrictionSiteRow4",
-              "seq": [
-                "0101"
-              ]
-            },
-            {
-              "otu": "t5",
-              "@id": "RestrictionSiteRow5",
-              "seq": [
-                "0101"
-              ]
-            }
-          ]
-        }
+        "char": [
+          {
+            "states": "StandardCategoricalStateSet1",
+            "@id": "StandardCharacter1"
+          },
+          {
+            "states": "StandardCategoricalStateSet1",
+            "@id": "StandardCharacter2"
+          }
+        ]
       },
-      {
-        "otus": "taxa1",
-        "@id": "m2",
-        "@type": "nex:StandardCells",
-        "label": "Categorical characters",
-        "format": {
-          "states": {
-            "@id": "StandardCategoricalStateSet1",
-            "polymorphic_state_set": {
-              "symbol": "4",
-              "@id": "StandardCategoricalState4",
+      "matrix": {
+        "row": [
+          {
+            "@id": "StandardCategoricalStateCellsRow1",
+            "otu": "t1",
+            "cell": [
+              {
+                "char": "StandardCharacter1",
+                "state": "StandardCategoricalState1"
+              },
+              {
+                "char": "StandardCharacter2",
+                "state": "StandardCategoricalState2"
+              }
+            ]
+          },
+          {
+            "@id": "StandardCategoricalStateCellsRow2",
+            "otu": "t2",
+            "cell": [
+              {
+                "char": "StandardCharacter1",
+                "state": "StandardCategoricalState2"
+              },
+              {
+                "char": "StandardCharacter2",
+                "state": "StandardCategoricalState2"
+              }
+            ]
+          },
+          {
+            "@id": "StandardCategoricalStateCellsRow3",
+            "otu": "t3",
+            "cell": [
+              {
+                "char": "StandardCharacter1",
+                "state": "StandardCategoricalState3"
+              },
+              {
+                "char": "StandardCharacter2",
+                "state": "StandardCategoricalState4"
+              }
+            ]
+          },
+          {
+            "@id": "StandardCategoricalStateCellsRow4",
+            "otu": "t4",
+            "cell": [
+              {
+                "char": "StandardCharacter1",
+                "state": "StandardCategoricalState2"
+              },
+              {
+                "char": "StandardCharacter2",
+                "state": "StandardCategoricalState3"
+              }
+            ]
+          },
+          {
+            "@id": "StandardCategoricalStateCellsRow5",
+            "otu": "t5",
+            "cell": [
+              {
+                "char": "StandardCharacter1",
+                "state": "StandardCategoricalState4"
+              },
+              {
+                "char": "StandardCharacter2",
+                "state": "StandardCategoricalState1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "otus": "taxa1",
+      "@id": "m3",
+      "@type": "nex:ContinuousCells",
+      "label": "Continuous characters",
+      "format": {
+        "char": [
+          {
+            "@id": "ContinuousCharacter1",
+            "label": "this is character 1"
+          },
+          {
+            "@id": "ContinuousCharacter2"
+          },
+          {
+            "@id": "ContinuousCharacter3"
+          },
+          {
+            "@id": "ContinuousCharacter4"
+          },
+          {
+            "@id": "ContinuousCharacter5"
+          }
+        ]
+      },
+      "matrix": {
+        "row": [
+          {
+            "@id": "ContinuousCellsRow1",
+            "otu": "t1",
+            "cell": [
+              {
+                "char": "ContinuousCharacter1",
+                "state": "-1.545414144070023"
+              },
+              {
+                "char": "ContinuousCharacter2",
+                "state": "-2.3905621575431044"
+              },
+              {
+                "char": "ContinuousCharacter3",
+                "state": "-2.9610221833467265"
+              },
+              {
+                "char": "ContinuousCharacter4",
+                "state": "0.7868662069161243"
+              },
+              {
+                "char": "ContinuousCharacter5",
+                "state": "0.22968509237534918"
+              }
+            ]
+          },
+          {
+            "@id": "ContinuousCellsRow2",
+            "otu": "t2",
+            "cell": [
+              {
+                "char": "ContinuousCharacter1",
+                "state": "-1.6259836379710066"
+              },
+              {
+                "char": "ContinuousCharacter2",
+                "state": "3.649352410850134"
+              },
+              {
+                "char": "ContinuousCharacter3",
+                "state": "1.778885099660406"
+              },
+              {
+                "char": "ContinuousCharacter4",
+                "state": "-1.2580877968480846"
+              },
+              {
+                "char": "ContinuousCharacter5",
+                "state": "0.22335354995610862"
+              }
+            ]
+          },
+          {
+            "@id": "ContinuousCellsRow3",
+            "otu": "t3",
+            "cell": [
+              {
+                "char": "ContinuousCharacter1",
+                "state": "-1.5798979984134964"
+              },
+              {
+                "char": "ContinuousCharacter2",
+                "state": "2.9548251411133157"
+              },
+              {
+                "char": "ContinuousCharacter3",
+                "state": "1.522005675256233"
+              },
+              {
+                "char": "ContinuousCharacter4",
+                "state": "-0.8642016921755289"
+              },
+              {
+                "char": "ContinuousCharacter5",
+                "state": "-0.938129801832388"
+              }
+            ]
+          },
+          {
+            "@id": "ContinuousCellsRow4",
+            "otu": "t4",
+            "cell": [
+              {
+                "char": "ContinuousCharacter1",
+                "state": "2.7436692306788086"
+              },
+              {
+                "char": "ContinuousCharacter2",
+                "state": "-0.7151148143399818"
+              },
+              {
+                "char": "ContinuousCharacter3",
+                "state": "4.592207937774776"
+              },
+              {
+                "char": "ContinuousCharacter4",
+                "state": "-0.6898841440534845"
+              },
+              {
+                "char": "ContinuousCharacter5",
+                "state": "0.5769509574453064"
+              }
+            ]
+          },
+          {
+            "@id": "ContinuousCellsRow5",
+            "otu": "t5",
+            "cell": [
+              {
+                "char": "ContinuousCharacter1",
+                "state": "3.1060827493657683"
+              },
+              {
+                "char": "ContinuousCharacter2",
+                "state": "-1.0453787389160105"
+              },
+              {
+                "char": "ContinuousCharacter3",
+                "state": "2.67416332763427"
+              },
+              {
+                "char": "ContinuousCharacter4",
+                "state": "-1.4045634106692808"
+              },
+              {
+                "char": "ContinuousCharacter5",
+                "state": "0.019890469925520196"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "otus": "taxa1",
+      "@id": "characters3",
+      "@type": "nex:DnaSeqs",
+      "label": "DNA sequences",
+      "format": {
+        "states": {
+          "@id": "IUPACDNAStateSet1",
+          "state": [
+            {
+              "@id": "NucA",
+              "symbol": "A"
+            },
+            {
+              "@id": "NucC",
+              "symbol": "C"
+            },
+            {
+              "@id": "NucG",
+              "symbol": "G"
+            },
+            {
+              "@id": "NucT",
+              "symbol": "T"
+            }
+          ],
+          "uncertain_state_set": [
+            {
+              "@id": "SymK",
+              "symbol": "K",
               "member": [
                 {
-                  "state": "StandardCategoricalState2"
+                  "state": "NucG"
                 },
                 {
-                  "state": "StandardCategoricalState3"
+                  "state": "NucT"
                 }
               ]
             },
-            "uncertain_state_set": {
-              "symbol": "5",
-              "@id": "StandardCategoricalState5",
+            {
+              "@id": "SymM",
+              "symbol": "M",
               "member": [
                 {
-                  "state": "StandardCategoricalState1"
+                  "state": "NucA"
                 },
                 {
-                  "state": "StandardCategoricalState2"
-                }
-              ]
-            },
-            "state": [
-              {
-                "@id": "StandardCategoricalState1",
-                "symbol": "1"
-              },
-              {
-                "@id": "StandardCategoricalState2",
-                "symbol": "2"
-              },
-              {
-                "@id": "StandardCategoricalState3",
-                "symbol": "3"
-              }
-            ]
-          },
-          "char": [
-            {
-              "states": "StandardCategoricalStateSet1",
-              "@id": "StandardCharacter1"
-            },
-            {
-              "states": "StandardCategoricalStateSet1",
-              "@id": "StandardCharacter2"
-            }
-          ]
-        },
-        "matrix": {
-          "row": [
-            {
-              "@id": "StandardCategoricalStateCellsRow1",
-              "otu": "t1",
-              "cell": [
-                {
-                  "char": "StandardCharacter1",
-                  "state": "StandardCategoricalState1"
-                },
-                {
-                  "char": "StandardCharacter2",
-                  "state": "StandardCategoricalState2"
+                  "state": "NucC"
                 }
               ]
             },
             {
-              "@id": "StandardCategoricalStateCellsRow2",
-              "otu": "t2",
-              "cell": [
-                {
-                  "char": "StandardCharacter1",
-                  "state": "StandardCategoricalState2"
-                },
-                {
-                  "char": "StandardCharacter2",
-                  "state": "StandardCategoricalState2"
-                }
-              ]
-            },
-            {
-              "@id": "StandardCategoricalStateCellsRow3",
-              "otu": "t3",
-              "cell": [
-                {
-                  "char": "StandardCharacter1",
-                  "state": "StandardCategoricalState3"
-                },
-                {
-                  "char": "StandardCharacter2",
-                  "state": "StandardCategoricalState4"
-                }
-              ]
-            },
-            {
-              "@id": "StandardCategoricalStateCellsRow4",
-              "otu": "t4",
-              "cell": [
-                {
-                  "char": "StandardCharacter1",
-                  "state": "StandardCategoricalState2"
-                },
-                {
-                  "char": "StandardCharacter2",
-                  "state": "StandardCategoricalState3"
-                }
-              ]
-            },
-            {
-              "@id": "StandardCategoricalStateCellsRow5",
-              "otu": "t5",
-              "cell": [
-                {
-                  "char": "StandardCharacter1",
-                  "state": "StandardCategoricalState4"
-                },
-                {
-                  "char": "StandardCharacter2",
-                  "state": "StandardCategoricalState1"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "otus": "taxa1",
-        "@id": "m3",
-        "@type": "nex:ContinuousCells",
-        "label": "Continuous characters",
-        "format": {
-          "char": [
-            {
-              "@id": "ContinuousCharacter1",
-              "label": "this is character 1"
-            },
-            {
-              "@id": "ContinuousCharacter2"
-            },
-            {
-              "@id": "ContinuousCharacter3"
-            },
-            {
-              "@id": "ContinuousCharacter4"
-            },
-            {
-              "@id": "ContinuousCharacter5"
-            }
-          ]
-        },
-        "matrix": {
-          "row": [
-            {
-              "@id": "ContinuousCellsRow1",
-              "otu": "t1",
-              "cell": [
-                {
-                  "char": "ContinuousCharacter1",
-                  "state": "-1.545414144070023"
-                },
-                {
-                  "char": "ContinuousCharacter2",
-                  "state": "-2.3905621575431044"
-                },
-                {
-                  "char": "ContinuousCharacter3",
-                  "state": "-2.9610221833467265"
-                },
-                {
-                  "char": "ContinuousCharacter4",
-                  "state": "0.7868662069161243"
-                },
-                {
-                  "char": "ContinuousCharacter5",
-                  "state": "0.22968509237534918"
-                }
-              ]
-            },
-            {
-              "@id": "ContinuousCellsRow2",
-              "otu": "t2",
-              "cell": [
-                {
-                  "char": "ContinuousCharacter1",
-                  "state": "-1.6259836379710066"
-                },
-                {
-                  "char": "ContinuousCharacter2",
-                  "state": "3.649352410850134"
-                },
-                {
-                  "char": "ContinuousCharacter3",
-                  "state": "1.778885099660406"
-                },
-                {
-                  "char": "ContinuousCharacter4",
-                  "state": "-1.2580877968480846"
-                },
-                {
-                  "char": "ContinuousCharacter5",
-                  "state": "0.22335354995610862"
-                }
-              ]
-            },
-            {
-              "@id": "ContinuousCellsRow3",
-              "otu": "t3",
-              "cell": [
-                {
-                  "char": "ContinuousCharacter1",
-                  "state": "-1.5798979984134964"
-                },
-                {
-                  "char": "ContinuousCharacter2",
-                  "state": "2.9548251411133157"
-                },
-                {
-                  "char": "ContinuousCharacter3",
-                  "state": "1.522005675256233"
-                },
-                {
-                  "char": "ContinuousCharacter4",
-                  "state": "-0.8642016921755289"
-                },
-                {
-                  "char": "ContinuousCharacter5",
-                  "state": "-0.938129801832388"
-                }
-              ]
-            },
-            {
-              "@id": "ContinuousCellsRow4",
-              "otu": "t4",
-              "cell": [
-                {
-                  "char": "ContinuousCharacter1",
-                  "state": "2.7436692306788086"
-                },
-                {
-                  "char": "ContinuousCharacter2",
-                  "state": "-0.7151148143399818"
-                },
-                {
-                  "char": "ContinuousCharacter3",
-                  "state": "4.592207937774776"
-                },
-                {
-                  "char": "ContinuousCharacter4",
-                  "state": "-0.6898841440534845"
-                },
-                {
-                  "char": "ContinuousCharacter5",
-                  "state": "0.5769509574453064"
-                }
-              ]
-            },
-            {
-              "@id": "ContinuousCellsRow5",
-              "otu": "t5",
-              "cell": [
-                {
-                  "char": "ContinuousCharacter1",
-                  "state": "3.1060827493657683"
-                },
-                {
-                  "char": "ContinuousCharacter2",
-                  "state": "-1.0453787389160105"
-                },
-                {
-                  "char": "ContinuousCharacter3",
-                  "state": "2.67416332763427"
-                },
-                {
-                  "char": "ContinuousCharacter4",
-                  "state": "-1.4045634106692808"
-                },
-                {
-                  "char": "ContinuousCharacter5",
-                  "state": "0.019890469925520196"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "otus": "taxa1",
-        "@id": "characters3",
-        "@type": "nex:DnaSeqs",
-        "label": "DNA sequences",
-        "format": {
-          "states": {
-            "@id": "IUPACDNAStateSet1",
-            "state": [
-              {
-                "@id": "NucA",
-                "symbol": "A"
-              },
-              {
-                "@id": "NucC",
-                "symbol": "C"
-              },
-              {
-                "@id": "NucG",
-                "symbol": "G"
-              },
-              {
-                "@id": "NucT",
-                "symbol": "T"
-              }
-            ],
-            "uncertain_state_set": [
-              {
-                "@id": "SymK",
-                "symbol": "K",
-                "member": [
-                  {
-                    "state": "NucG"
-                  },
-                  {
-                    "state": "NucT"
-                  }
-                ]
-              },
-              {
-                "@id": "SymM",
-                "symbol": "M",
-                "member": [
-                  {
-                    "state": "NucA"
-                  },
-                  {
-                    "state": "NucC"
-                  }
-                ]
-              },
-              {
-                "@id": "SymR",
-                "symbol": "R",
-                "member": [
-                  {
-                    "state": "NucA"
-                  },
-                  {
-                    "state": "NucG"
-                  }
-                ]
-              },
-              {
-                "@id": "SymS",
-                "symbol": "S",
-                "member": [
-                  {
-                    "state": "NucC"
-                  },
-                  {
-                    "state": "NucG"
-                  }
-                ]
-              },
-              {
-                "@id": "SymW",
-                "symbol": "W",
-                "member": [
-                  {
-                    "state": "NucA"
-                  },
-                  {
-                    "state": "NucT"
-                  }
-                ]
-              },
-              {
-                "@id": "SymY",
-                "symbol": "Y",
-                "member": [
-                  {
-                    "state": "NucC"
-                  },
-                  {
-                    "state": "NucT"
-                  }
-                ]
-              },
-              {
-                "@id": "SymB",
-                "symbol": "B",
-                "member": [
-                  {
-                    "state": "NucC"
-                  },
-                  {
-                    "state": "NucG"
-                  },
-                  {
-                    "state": "NucT"
-                  }
-                ]
-              },
-              {
-                "@id": "SymD",
-                "symbol": "D",
-                "member": [
-                  {
-                    "state": "NucA"
-                  },
-                  {
-                    "state": "NucG"
-                  },
-                  {
-                    "state": "NucT"
-                  }
-                ]
-              },
-              {
-                "@id": "SymH",
-                "symbol": "H",
-                "member": [
-                  {
-                    "state": "NucA"
-                  },
-                  {
-                    "state": "NucC"
-                  },
-                  {
-                    "state": "NucT"
-                  }
-                ]
-              },
-              {
-                "@id": "SymV",
-                "symbol": "V",
-                "member": [
-                  {
-                    "state": "NucA"
-                  },
-                  {
-                    "state": "NucC"
-                  },
-                  {
-                    "state": "NucG"
-                  }
-                ]
-              },
-              {
-                "@id": "SymN",
-                "symbol": "N",
-                "member": [
-                  {
-                    "state": "NucA"
-                  },
-                  {
-                    "state": "NucC"
-                  },
-                  {
-                    "state": "NucG"
-                  },
-                  {
-                    "state": "NucT"
-                  }
-                ]
-              },
-              {
-                "@id": "SymX",
-                "symbol": "X",
-                "member": [
-                  {
-                    "state": "NucA"
-                  },
-                  {
-                    "state": "NucC"
-                  },
-                  {
-                    "state": "NucG"
-                  },
-                  {
-                    "state": "NucT"
-                  }
-                ]
-              },
-              {
-                "@id": "SymGap",
-                "symbol": "-"
-              },
-              {
-                "@id": "SymMiss",
-                "symbol": "?",
-                "member": [
-                  {
-                    "state": "NucA"
-                  },
-                  {
-                    "state": "NucC"
-                  },
-                  {
-                    "state": "NucG"
-                  },
-                  {
-                    "state": "NucT"
-                  },
-                  {
-                    "state": "SymK"
-                  },
-                  {
-                    "state": "SymM"
-                  },
-                  {
-                    "state": "SymR"
-                  },
-                  {
-                    "state": "SymS"
-                  },
-                  {
-                    "state": "SymW"
-                  },
-                  {
-                    "state": "SymY"
-                  },
-                  {
-                    "state": "SymB"
-                  },
-                  {
-                    "state": "SymD"
-                  },
-                  {
-                    "state": "SymH"
-                  },
-                  {
-                    "state": "SymV"
-                  },
-                  {
-                    "state": "SymN"
-                  },
-                  {
-                    "state": "SymX"
-                  },
-                  {
-                    "state": "SymGap"
-                  }
-                ]
-              }
-            ]
-          },
-          "char": [
-            {
-              "@id": "ResidueCol1",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol2",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol3",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol4",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol5",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol6",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol7",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol8",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol9",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol10",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol11",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol12",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol13",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol14",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol15",
-              "states": "IUPACDNAStateSet1"
-            },
-            {
-              "@id": "ResidueCol16",
-              "states": "IUPACDNAStateSet1"
-            }
-          ]
-        },
-        "matrix": {
-          "row": [
-            {
-              "otu": "t1",
-              "@id": "DNASequence1",
-              "seq": [
-                "A C G C T C G C A T C G C A T C"
-              ]
-            },
-            {
-              "otu": "t2",
-              "@id": "DNASequence2",
-              "seq": [
-                "A C G C T C G C A T C G C A T C"
-              ]
-            },
-            {
-              "otu": "t3",
-              "@id": "DNASequence3",
-              "seq": [
-                "A C G C T C G C A T C G C A T C"
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "otus": "taxa1",
-        "@id": "rnaseqs4",
-        "@type": "nex:RnaSeqs",
-        "label": "RNA sequences",
-        "format": {
-          "states": {
-            "@id": "rnastates",
-            "state": [
-              {
-                "@id": "rna1",
-                "symbol": "A"
-              },
-              {
-                "@id": "rna2",
-                "symbol": "C"
-              },
-              {
-                "@id": "rna3",
-                "symbol": "G"
-              },
-              {
-                "@id": "rna4",
-                "symbol": "U"
-              }
-            ],
-            "uncertain_state_set": [
-              {
-                "@id": "rna5",
-                "symbol": "K",
-                "member": [
-                  {
-                    "state": "rna3"
-                  },
-                  {
-                    "state": "rna4"
-                  }
-                ]
-              },
-              {
-                "@id": "rna6",
-                "symbol": "M",
-                "member": [
-                  {
-                    "state": "rna1"
-                  },
-                  {
-                    "state": "rna2"
-                  }
-                ]
-              },
-              {
-                "@id": "rna7",
-                "symbol": "R",
-                "member": [
-                  {
-                    "state": "rna1"
-                  },
-                  {
-                    "state": "rna3"
-                  }
-                ]
-              },
-              {
-                "@id": "rna8",
-                "symbol": "S",
-                "member": [
-                  {
-                    "state": "rna2"
-                  },
-                  {
-                    "state": "rna3"
-                  }
-                ]
-              },
-              {
-                "@id": "rna9",
-                "symbol": "W",
-                "member": [
-                  {
-                    "state": "rna1"
-                  },
-                  {
-                    "state": "rna4"
-                  }
-                ]
-              },
-              {
-                "@id": "rna10",
-                "symbol": "Y",
-                "member": [
-                  {
-                    "state": "rna2"
-                  },
-                  {
-                    "state": "rna4"
-                  }
-                ]
-              },
-              {
-                "@id": "rna11",
-                "symbol": "B",
-                "member": [
-                  {
-                    "state": "rna2"
-                  },
-                  {
-                    "state": "rna3"
-                  },
-                  {
-                    "state": "rna4"
-                  }
-                ]
-              },
-              {
-                "@id": "rna12",
-                "symbol": "D",
-                "member": [
-                  {
-                    "state": "rna1"
-                  },
-                  {
-                    "state": "rna3"
-                  },
-                  {
-                    "state": "rna4"
-                  }
-                ]
-              },
-              {
-                "@id": "rna13",
-                "symbol": "H",
-                "member": [
-                  {
-                    "state": "rna1"
-                  },
-                  {
-                    "state": "rna2"
-                  },
-                  {
-                    "state": "rna4"
-                  }
-                ]
-              },
-              {
-                "@id": "rna14",
-                "symbol": "V",
-                "member": [
-                  {
-                    "state": "rna1"
-                  },
-                  {
-                    "state": "rna2"
-                  },
-                  {
-                    "state": "rna3"
-                  }
-                ]
-              },
-              {
-                "@id": "rna15",
-                "symbol": "N",
-                "member": [
-                  {
-                    "state": "rna3"
-                  },
-                  {
-                    "state": "rna1"
-                  },
-                  {
-                    "state": "rna4"
-                  },
-                  {
-                    "state": "rna2"
-                  }
-                ]
-              },
-              {
-                "@id": "rna16",
-                "symbol": "X",
-                "member": [
-                  {
-                    "state": "rna3"
-                  },
-                  {
-                    "state": "rna1"
-                  },
-                  {
-                    "state": "rna4"
-                  },
-                  {
-                    "state": "rna2"
-                  }
-                ]
-              },
-              {
-                "@id": "rna17",
-                "symbol": "-"
-              },
-              {
-                "@id": "rna18",
-                "symbol": "?",
-                "member": [
-                  {
-                    "state": "rna1"
-                  },
-                  {
-                    "state": "rna2"
-                  },
-                  {
-                    "state": "rna3"
-                  },
-                  {
-                    "state": "rna4"
-                  },
-                  {
-                    "state": "rna5"
-                  },
-                  {
-                    "state": "rna6"
-                  },
-                  {
-                    "state": "rna7"
-                  },
-                  {
-                    "state": "rna8"
-                  },
-                  {
-                    "state": "rna9"
-                  },
-                  {
-                    "state": "rna10"
-                  },
-                  {
-                    "state": "rna11"
-                  },
-                  {
-                    "state": "rna12"
-                  },
-                  {
-                    "state": "rna13"
-                  },
-                  {
-                    "state": "rna14"
-                  },
-                  {
-                    "state": "rna15"
-                  },
-                  {
-                    "state": "rna16"
-                  },
-                  {
-                    "state": "rna17"
-                  }
-                ]
-              }
-            ]
-          },
-          "char": [
-            {
-              "@id": "rnachar1",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar2",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar3",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar4",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar5",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar6",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar7",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar8",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar9",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar10",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar11",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar12",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar13",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar14",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar15",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar16",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar17",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar18",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar19",
-              "states": "rnastates"
-            },
-            {
-              "@id": "rnachar20",
-              "states": "rnastates"
-            }
-          ]
-        },
-        "matrix": {
-          "row": [
-            {
-              "otu": "t1",
-              "@id": "rnarow1",
-              "seq": [
-                "ACGCUCGCAUCGCAUC"
-              ]
-            },
-            {
-              "otu": "t2",
-              "@id": "rnarow2",
-              "seq": [
-                "ACGCUCGCAUCGCAUC"
-              ]
-            },
-            {
-              "otu": "t3",
-              "@id": "rnarow3",
-              "seq": [
-                "ACGCUCGCAUCGCAUC"
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "otus": "taxa1",
-        "@id": "contchars5",
-        "@type": "nex:ContinuousSeqs",
-        "label": "Continuous sequences",
-        "format": {
-          "char": [
-            {
-              "@id": "contchar1"
-            },
-            {
-              "@id": "contchar2"
-            },
-            {
-              "@id": "contchar3"
-            },
-            {
-              "@id": "contchar4"
-            },
-            {
-              "@id": "contchar5"
-            }
-          ]
-        },
-        "matrix": {
-          "row": [
-            {
-              "@id": "controw1",
-              "otu": "t1",
-              "seq": [
-                "-1.545414144070023 -2.3905621575431044 -2.9610221833467265 0.7868662069161243 0.22968509237534918"
-              ]
-            },
-            {
-              "@id": "controw2",
-              "otu": "t2",
-              "seq": [
-                "-1.6259836379710066 3.649352410850134 1.778885099660406 -1.2580877968480846 0.22335354995610862"
-              ]
-            },
-            {
-              "@id": "controw3",
-              "otu": "t3",
-              "seq": [
-                "-1.5798979984134964 2.9548251411133157 1.522005675256233 -0.8642016921755289 -0.938129801832388"
-              ]
-            },
-            {
-              "@id": "controw4",
-              "otu": "t4",
-              "seq": [
-                "2.7436692306788086 -0.7151148143399818 4.592207937774776 -0.6898841440534845 0.5769509574453064"
-              ]
-            },
-            {
-              "@id": "controw5",
-              "otu": "t5",
-              "seq": [
-                "3.1060827493657683 -1.0453787389160105 2.67416332763427 -1.4045634106692808 0.019890469925520196"
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "otus": "taxa1",
-        "@id": "standardchars6",
-        "@type": "nex:StandardSeqs",
-        "label": "Standard sequences",
-        "format": {
-          "states": {
-            "@id": "standardstateset1",
-            "polymorphic_state_set": {
-              "symbol": "4",
-              "@id": "standardstates4",
+              "@id": "SymR",
+              "symbol": "R",
               "member": [
                 {
-                  "state": "standardstates1"
+                  "state": "NucA"
                 },
                 {
-                  "state": "standardstates2"
+                  "state": "NucG"
                 }
               ]
             },
-            "uncertain_state_set": {
-              "symbol": "5",
-              "@id": "standardstates5",
+            {
+              "@id": "SymS",
+              "symbol": "S",
               "member": [
                 {
-                  "state": "standardstates3"
+                  "state": "NucC"
                 },
                 {
-                  "state": "standardstates1"
+                  "state": "NucG"
                 }
               ]
             },
-            "state": [
-              {
-                "@id": "standardstates1",
-                "symbol": "1"
-              },
-              {
-                "@id": "standardstates2",
-                "symbol": "2"
-              },
-              {
-                "@id": "standardstates3",
-                "symbol": "3"
-              }
-            ]
-          },
-          "char": [
             {
-              "states": "standardstateset1",
-              "@id": "standardc1"
+              "@id": "SymW",
+              "symbol": "W",
+              "member": [
+                {
+                  "state": "NucA"
+                },
+                {
+                  "state": "NucT"
+                }
+              ]
             },
             {
-              "states": "standardstateset1",
-              "@id": "standardc2"
+              "@id": "SymY",
+              "symbol": "Y",
+              "member": [
+                {
+                  "state": "NucC"
+                },
+                {
+                  "state": "NucT"
+                }
+              ]
+            },
+            {
+              "@id": "SymB",
+              "symbol": "B",
+              "member": [
+                {
+                  "state": "NucC"
+                },
+                {
+                  "state": "NucG"
+                },
+                {
+                  "state": "NucT"
+                }
+              ]
+            },
+            {
+              "@id": "SymD",
+              "symbol": "D",
+              "member": [
+                {
+                  "state": "NucA"
+                },
+                {
+                  "state": "NucG"
+                },
+                {
+                  "state": "NucT"
+                }
+              ]
+            },
+            {
+              "@id": "SymH",
+              "symbol": "H",
+              "member": [
+                {
+                  "state": "NucA"
+                },
+                {
+                  "state": "NucC"
+                },
+                {
+                  "state": "NucT"
+                }
+              ]
+            },
+            {
+              "@id": "SymV",
+              "symbol": "V",
+              "member": [
+                {
+                  "state": "NucA"
+                },
+                {
+                  "state": "NucC"
+                },
+                {
+                  "state": "NucG"
+                }
+              ]
+            },
+            {
+              "@id": "SymN",
+              "symbol": "N",
+              "member": [
+                {
+                  "state": "NucA"
+                },
+                {
+                  "state": "NucC"
+                },
+                {
+                  "state": "NucG"
+                },
+                {
+                  "state": "NucT"
+                }
+              ]
+            },
+            {
+              "@id": "SymX",
+              "symbol": "X",
+              "member": [
+                {
+                  "state": "NucA"
+                },
+                {
+                  "state": "NucC"
+                },
+                {
+                  "state": "NucG"
+                },
+                {
+                  "state": "NucT"
+                }
+              ]
+            },
+            {
+              "@id": "SymGap",
+              "symbol": "-"
+            },
+            {
+              "@id": "SymMiss",
+              "symbol": "?",
+              "member": [
+                {
+                  "state": "NucA"
+                },
+                {
+                  "state": "NucC"
+                },
+                {
+                  "state": "NucG"
+                },
+                {
+                  "state": "NucT"
+                },
+                {
+                  "state": "SymK"
+                },
+                {
+                  "state": "SymM"
+                },
+                {
+                  "state": "SymR"
+                },
+                {
+                  "state": "SymS"
+                },
+                {
+                  "state": "SymW"
+                },
+                {
+                  "state": "SymY"
+                },
+                {
+                  "state": "SymB"
+                },
+                {
+                  "state": "SymD"
+                },
+                {
+                  "state": "SymH"
+                },
+                {
+                  "state": "SymV"
+                },
+                {
+                  "state": "SymN"
+                },
+                {
+                  "state": "SymX"
+                },
+                {
+                  "state": "SymGap"
+                }
+              ]
             }
           ]
         },
-        "matrix": {
-          "row": [
+        "char": [
+          {
+            "@id": "ResidueCol1",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol2",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol3",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol4",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol5",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol6",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol7",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol8",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol9",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol10",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol11",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol12",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol13",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol14",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol15",
+            "states": "IUPACDNAStateSet1"
+          },
+          {
+            "@id": "ResidueCol16",
+            "states": "IUPACDNAStateSet1"
+          }
+        ]
+      },
+      "matrix": {
+        "row": [
+          {
+            "otu": "t1",
+            "@id": "DNASequence1",
+            "seq": [
+              "A C G C T C G C A T C G C A T C"
+            ]
+          },
+          {
+            "otu": "t2",
+            "@id": "DNASequence2",
+            "seq": [
+              "A C G C T C G C A T C G C A T C"
+            ]
+          },
+          {
+            "otu": "t3",
+            "@id": "DNASequence3",
+            "seq": [
+              "A C G C T C G C A T C G C A T C"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "otus": "taxa1",
+      "@id": "rnaseqs4",
+      "@type": "nex:RnaSeqs",
+      "label": "RNA sequences",
+      "format": {
+        "states": {
+          "@id": "rnastates",
+          "state": [
             {
-              "@id": "standardr1",
-              "otu": "t1",
-              "seq": [
-                "1 2"
+              "@id": "rna1",
+              "symbol": "A"
+            },
+            {
+              "@id": "rna2",
+              "symbol": "C"
+            },
+            {
+              "@id": "rna3",
+              "symbol": "G"
+            },
+            {
+              "@id": "rna4",
+              "symbol": "U"
+            }
+          ],
+          "uncertain_state_set": [
+            {
+              "@id": "rna5",
+              "symbol": "K",
+              "member": [
+                {
+                  "state": "rna3"
+                },
+                {
+                  "state": "rna4"
+                }
               ]
             },
             {
-              "@id": "standardr2",
-              "otu": "t2",
-              "seq": [
-                "2 2"
+              "@id": "rna6",
+              "symbol": "M",
+              "member": [
+                {
+                  "state": "rna1"
+                },
+                {
+                  "state": "rna2"
+                }
               ]
             },
             {
-              "@id": "standardr3",
-              "otu": "t3",
-              "seq": [
-                "3 4"
+              "@id": "rna7",
+              "symbol": "R",
+              "member": [
+                {
+                  "state": "rna1"
+                },
+                {
+                  "state": "rna3"
+                }
               ]
             },
             {
-              "@id": "standardr4",
-              "otu": "t4",
-              "seq": [
-                "2 3"
+              "@id": "rna8",
+              "symbol": "S",
+              "member": [
+                {
+                  "state": "rna2"
+                },
+                {
+                  "state": "rna3"
+                }
               ]
             },
             {
-              "@id": "standardr5",
-              "otu": "t5",
-              "seq": [
-                "4 1"
+              "@id": "rna9",
+              "symbol": "W",
+              "member": [
+                {
+                  "state": "rna1"
+                },
+                {
+                  "state": "rna4"
+                }
+              ]
+            },
+            {
+              "@id": "rna10",
+              "symbol": "Y",
+              "member": [
+                {
+                  "state": "rna2"
+                },
+                {
+                  "state": "rna4"
+                }
+              ]
+            },
+            {
+              "@id": "rna11",
+              "symbol": "B",
+              "member": [
+                {
+                  "state": "rna2"
+                },
+                {
+                  "state": "rna3"
+                },
+                {
+                  "state": "rna4"
+                }
+              ]
+            },
+            {
+              "@id": "rna12",
+              "symbol": "D",
+              "member": [
+                {
+                  "state": "rna1"
+                },
+                {
+                  "state": "rna3"
+                },
+                {
+                  "state": "rna4"
+                }
+              ]
+            },
+            {
+              "@id": "rna13",
+              "symbol": "H",
+              "member": [
+                {
+                  "state": "rna1"
+                },
+                {
+                  "state": "rna2"
+                },
+                {
+                  "state": "rna4"
+                }
+              ]
+            },
+            {
+              "@id": "rna14",
+              "symbol": "V",
+              "member": [
+                {
+                  "state": "rna1"
+                },
+                {
+                  "state": "rna2"
+                },
+                {
+                  "state": "rna3"
+                }
+              ]
+            },
+            {
+              "@id": "rna15",
+              "symbol": "N",
+              "member": [
+                {
+                  "state": "rna3"
+                },
+                {
+                  "state": "rna1"
+                },
+                {
+                  "state": "rna4"
+                },
+                {
+                  "state": "rna2"
+                }
+              ]
+            },
+            {
+              "@id": "rna16",
+              "symbol": "X",
+              "member": [
+                {
+                  "state": "rna3"
+                },
+                {
+                  "state": "rna1"
+                },
+                {
+                  "state": "rna4"
+                },
+                {
+                  "state": "rna2"
+                }
+              ]
+            },
+            {
+              "@id": "rna17",
+              "symbol": "-"
+            },
+            {
+              "@id": "rna18",
+              "symbol": "?",
+              "member": [
+                {
+                  "state": "rna1"
+                },
+                {
+                  "state": "rna2"
+                },
+                {
+                  "state": "rna3"
+                },
+                {
+                  "state": "rna4"
+                },
+                {
+                  "state": "rna5"
+                },
+                {
+                  "state": "rna6"
+                },
+                {
+                  "state": "rna7"
+                },
+                {
+                  "state": "rna8"
+                },
+                {
+                  "state": "rna9"
+                },
+                {
+                  "state": "rna10"
+                },
+                {
+                  "state": "rna11"
+                },
+                {
+                  "state": "rna12"
+                },
+                {
+                  "state": "rna13"
+                },
+                {
+                  "state": "rna14"
+                },
+                {
+                  "state": "rna15"
+                },
+                {
+                  "state": "rna16"
+                },
+                {
+                  "state": "rna17"
+                }
               ]
             }
           ]
-        }
+        },
+        "char": [
+          {
+            "@id": "rnachar1",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar2",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar3",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar4",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar5",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar6",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar7",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar8",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar9",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar10",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar11",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar12",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar13",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar14",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar15",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar16",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar17",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar18",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar19",
+            "states": "rnastates"
+          },
+          {
+            "@id": "rnachar20",
+            "states": "rnastates"
+          }
+        ]
+      },
+      "matrix": {
+        "row": [
+          {
+            "otu": "t1",
+            "@id": "rnarow1",
+            "seq": [
+              "ACGCUCGCAUCGCAUC"
+            ]
+          },
+          {
+            "otu": "t2",
+            "@id": "rnarow2",
+            "seq": [
+              "ACGCUCGCAUCGCAUC"
+            ]
+          },
+          {
+            "otu": "t3",
+            "@id": "rnarow3",
+            "seq": [
+              "ACGCUCGCAUCGCAUC"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "otus": "taxa1",
+      "@id": "contchars5",
+      "@type": "nex:ContinuousSeqs",
+      "label": "Continuous sequences",
+      "format": {
+        "char": [
+          {
+            "@id": "contchar1"
+          },
+          {
+            "@id": "contchar2"
+          },
+          {
+            "@id": "contchar3"
+          },
+          {
+            "@id": "contchar4"
+          },
+          {
+            "@id": "contchar5"
+          }
+        ]
+      },
+      "matrix": {
+        "row": [
+          {
+            "@id": "controw1",
+            "otu": "t1",
+            "seq": [
+              "-1.545414144070023 -2.3905621575431044 -2.9610221833467265 0.7868662069161243 0.22968509237534918"
+            ]
+          },
+          {
+            "@id": "controw2",
+            "otu": "t2",
+            "seq": [
+              "-1.6259836379710066 3.649352410850134 1.778885099660406 -1.2580877968480846 0.22335354995610862"
+            ]
+          },
+          {
+            "@id": "controw3",
+            "otu": "t3",
+            "seq": [
+              "-1.5798979984134964 2.9548251411133157 1.522005675256233 -0.8642016921755289 -0.938129801832388"
+            ]
+          },
+          {
+            "@id": "controw4",
+            "otu": "t4",
+            "seq": [
+              "2.7436692306788086 -0.7151148143399818 4.592207937774776 -0.6898841440534845 0.5769509574453064"
+            ]
+          },
+          {
+            "@id": "controw5",
+            "otu": "t5",
+            "seq": [
+              "3.1060827493657683 -1.0453787389160105 2.67416332763427 -1.4045634106692808 0.019890469925520196"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "otus": "taxa1",
+      "@id": "standardchars6",
+      "@type": "nex:StandardSeqs",
+      "label": "Standard sequences",
+      "format": {
+        "states": {
+          "@id": "standardstateset1",
+          "polymorphic_state_set": {
+            "symbol": "4",
+            "@id": "standardstates4",
+            "member": [
+              {
+                "state": "standardstates1"
+              },
+              {
+                "state": "standardstates2"
+              }
+            ]
+          },
+          "uncertain_state_set": {
+            "symbol": "5",
+            "@id": "standardstates5",
+            "member": [
+              {
+                "state": "standardstates3"
+              },
+              {
+                "state": "standardstates1"
+              }
+            ]
+          },
+          "state": [
+            {
+              "@id": "standardstates1",
+              "symbol": "1"
+            },
+            {
+              "@id": "standardstates2",
+              "symbol": "2"
+            },
+            {
+              "@id": "standardstates3",
+              "symbol": "3"
+            }
+          ]
+        },
+        "char": [
+          {
+            "states": "standardstateset1",
+            "@id": "standardc1"
+          },
+          {
+            "states": "standardstateset1",
+            "@id": "standardc2"
+          }
+        ]
+      },
+      "matrix": {
+        "row": [
+          {
+            "@id": "standardr1",
+            "otu": "t1",
+            "seq": [
+              "1 2"
+            ]
+          },
+          {
+            "@id": "standardr2",
+            "otu": "t2",
+            "seq": [
+              "2 2"
+            ]
+          },
+          {
+            "@id": "standardr3",
+            "otu": "t3",
+            "seq": [
+              "3 4"
+            ]
+          },
+          {
+            "@id": "standardr4",
+            "otu": "t4",
+            "seq": [
+              "2 3"
+            ]
+          },
+          {
+            "@id": "standardr5",
+            "otu": "t5",
+            "seq": [
+              "4 1"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "otus": {
+    "@id": "taxa1",
+    "label": "Primary taxa block",
+    "otu": [
+      {
+        "@id": "t1",
+        "label": "Homo sapiens"
+      },
+      {
+        "@id": "t2",
+        "label": "Pan paniscus"
+      },
+      {
+        "@id": "t3",
+        "label": "Pan troglodytes"
+      },
+      {
+        "@id": "t4",
+        "label": "Gorilla gorilla"
+      },
+      {
+        "@id": "t5",
+        "label": "Pongo pygmaeus"
       }
     ]
-  }
+  },
+  "schemaLocation": "http://www.nexml.org/2009 ../xsd/nexml.xsd",
+  "version": "0.9"
 }

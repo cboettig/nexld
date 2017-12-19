@@ -7,12 +7,12 @@
     "otus": { "@embed": "@never"},
     "tree": {
       "@id": {},
-      "@default": [],
+      "@default": {},
       "node": {
         "@id": {},
-        "@default": [],
+        "@default": {},
         "otu": {
-          "@default": [],
+          "@default": {},
           "@embed": "@never"
         }
       }
@@ -28,16 +28,13 @@
         "@default": {},
         "uncertain_state_set": {
           "@id": {},
-          "@default": [],
-          "member": {
-            "@id": {},
-            "state": {"@embed": "@never"}
-          }
+          "@default": {},
+          "member": {"@id": {}, "@default": {}, "state": {"@embed": "@never"}}
         },
         "polymorphic_state_set": {
           "@id": {},
-          "@default": [],
-          "member": {"@id": {}, "state": {"@embed": "@never"}}
+          "@default": {},
+          "member": {"@id": {}, "@default": {}, "state": {"@embed": "@never"}}
         }
       },
       "char": {
@@ -54,7 +51,7 @@
         "otu": {"@embed": "@never"},
         "cell": {
           "@id": {},
-          "@default": [],
+          "@default": {},
           "char": {
             "@id": {},
             "states": { "@embed": "@never"}

@@ -1,37 +1,39 @@
 {
-  "@context": {
-    "@vocab": "http://www.nexml.org/2009/",
-    "xsi": "http://www.w3.org/2001/XMLSchema-instance/",
-    "xlink": "http://www.w3.org/1999/xlink/",
-    "nex": "http://www.nexml.org/2009/"
-  },
-  "nexml": {
-    "version": "0.9",
-    "generator": "mesquite",
-    "schemaLocation": "http://www.nexml.org/2009 ../xsd/nexml.xsd",
-    "otus": {
-      "@id": "taxa1",
-      "label": "My taxa block",
-      "base": "http://example.org/",
-      "lang": "EN",
-      "href": "#taxa1",
-      "otu": [
-        {
-          "@id": "t1"
-        },
-        {
-          "@id": "t2"
-        },
-        {
-          "@id": "t3"
-        },
-        {
-          "@id": "t4"
-        },
-        {
-          "@id": "t5"
-        }
-      ]
+  "@context": [
+    "https://raw.githubusercontent.com/cboettig/nexld/master/inst/context/nexml.json",
+    {
+      "@vocab": "http://www.nexml.org/2009/",
+      "xsi": "http://www.w3.org/2001/XMLSchema-instance/",
+      "xlink": "http://www.w3.org/1999/xlink/",
+      "nex": "http://www.nexml.org/2009/"
     }
-  }
+  ],
+  "@type": "nexml",
+  "generator": "mesquite",
+  "otus": {
+    "@id": "taxa1",
+    "label": "My taxa block",
+    "base": "http://example.org/",
+    "lang": "EN",
+    "href": "#taxa1",
+    "otu": [
+      {
+        "@id": "t1"
+      },
+      {
+        "@id": "t2"
+      },
+      {
+        "@id": "t3"
+      },
+      {
+        "@id": "t4"
+      },
+      {
+        "@id": "t5"
+      }
+    ]
+  },
+  "schemaLocation": "http://www.nexml.org/2009 ../xsd/nexml.xsd",
+  "version": "0.9"
 }
