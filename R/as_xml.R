@@ -183,7 +183,7 @@ add_node <- function(x, parent, tag = NULL) {
   x <- into_meta(x)
 
   if (!is.null(tag)) {
-    if(!is.null(names(x)))
+    if(!is.null(names(x)) & length(x) > 0)
       parent <- xml2::xml_add_child(parent, tag)
 
     ## While xml2 as_xml_doc uses R attributes -> xml attributes,
