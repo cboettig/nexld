@@ -1,0 +1,67 @@
+{
+  "@context": "https://raw.githubusercontent.com/cboettig/nexld/master/inst/context/nexml.json",
+  "@type": "nexml",
+  "otus": {"@embed": "@always"},
+  "trees": {
+    "@id": {},
+    "otus": { "@embed": "@never"},
+    "tree": {
+      "@id": {},
+      "@default": [],
+      "node": {
+        "@id": {},
+        "@default": [],
+        "otu": {
+          "@default": [],
+          "@embed": "@never"
+        }
+      }
+    }
+  },
+  "characters": {
+    "@id": {},
+    "otus": {"@embed": "@never"},
+    "format": {
+      "@id": {},
+      "states": {
+        "@id": {},
+        "@default": {},
+        "uncertain_state_set": {
+          "@id": {},
+          "@default": [],
+          "member": {
+            "@id": {},
+            "state": {"@embed": "@never"}
+          }
+        },
+        "polymorphic_state_set": {
+          "@id": {},
+          "@default": [],
+          "member": {"@id": {}, "state": {"@embed": "@never"}}
+        }
+      },
+      "char": {
+        "@embed": "@always",
+        "@default": {},
+        "@id": {},
+        "states": {"@default": {}, "@embed": "@never"}
+      }
+    },
+    "matrix": {
+      "@id": {},
+      "row": {
+        "@id": {},
+        "otu": {"@embed": "@never"},
+        "cell": {
+          "@id": {},
+          "@default": [],
+          "char": {
+            "@id": {},
+            "states": { "@embed": "@never"}
+          },
+          "state": {"@embed": "@never"}
+        }
+      }
+    }
+  }
+}
