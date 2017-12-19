@@ -7,10 +7,8 @@
     "otus": { "@embed": "@never"},
     "tree": {
       "@id": {},
-      "@default": {},
       "node": {
         "@id": {},
-        "@default": {},
         "otu": {
           "@default": {},
           "@embed": "@never"

@@ -1,0 +1,5 @@
+{
+  "@context": "https://raw.githubusercontent.com/cboettig/nexld/master/inst/context/nexml.json",
+  "@type": "nexml",
+  "@embed": "@always"
+}
