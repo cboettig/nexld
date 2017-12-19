@@ -30,7 +30,7 @@ json_to_xml.json <- function(x, file = NULL, ...){
 json_to_xml.list <- function(x, file = NULL, ...){
 
   ## Frame/compact into original context for a standardized structure
-  nexml_list <- frame.nexld(x)
+  nexml_list <- frame.list(x)
 
   ## Sort S3/list elements according to NeXML ordering requirements
   nexml <- sort_nexml(nexml_list)
@@ -39,7 +39,7 @@ json_to_xml.list <- function(x, file = NULL, ...){
   xml <- as_nexml_document(list(nexml = nexml))
 
   ## Step 4: Add namespaces from the original context as xmlns:prefix=""
-  context <- x[["@context"]]
+  context <- context_namespaces(nexml_list[["@context"]])
   root <- xml2::xml_root(xml)
   for(ns in names(context)){
     switch(ns,
@@ -54,6 +54,22 @@ json_to_xml.list <- function(x, file = NULL, ...){
   else
     xml
 }
+
+context_namespaces <- function(context){
+  ## unpack list-contexts
+  context <- unlist(lapply(context, function(y){
+    if(is.null(names(y)))
+      return(NULL)
+    else
+      y
+  }))
+  ## Drop terms that aren't namespaces (don't end in / or #); e.g. drop
+  ##     name: http://schema.org/name
+  ## but not:
+  ##     schema: http://schema.org/
+  as.list(context[grepl(".*(#$|/$)",context)])
+}
+
 
 
 ## use this instead
@@ -76,7 +92,32 @@ sort_nexml <- function(nexml_list){
         tree
     })
   })
- out <- c(nexml_list[attr], nexml_list[meta], nexml_list[otus], sort_trees, nexml_list[characters])
+
+  sort_characters <-
+  lapply(nexml_list[characters], function(characters){
+    lapply(characters, function(characters){
+
+      if("format" %in% names(characters)){
+        ## Sort format block
+        format <- characters$format
+        states <- grep("states", names(format))
+        char <- grep("char", names(format))
+        characters$format <- c(format[-c(states, char)], format[states], format[char])
+
+        if(length(states)>0){
+          states <- characters$format$states
+          state <- grep("^state$", names(states))
+          mult_state <- grep("\\w+_state_set", names(states))
+          characters$format$states <- c(states[-c(state, mult_state)], states[state], states[mult_state])
+        }
+      }
+      characters
+    })
+  })
+
+  ## states before polymorphic states
+
+ out <- c(nexml_list[attr], nexml_list[meta], nexml_list[otus], sort_trees, sort_characters)
  out
 }
 
@@ -151,14 +192,18 @@ add_node <- function(x, parent, tag = NULL) {
     for (i in seq_along(attr)) {
       ## Handle special attributes
       key <- gsub("^@(\\w+)", "\\1", names(attr)[[i]]) # drop json-ld `@`
+      if(length(key) > 0){
+
       ## assumes xsi: is the prefix, should be confirmed / set explicitly as such!
-      if(key == "type") key <- paste0("xsi:", key)
+      if(key == "type")
+        key <- paste0("xsi:", key)
 
       if(key %in% textTypeNodes){
         textType <- xml2::xml_add_child(parent, key)
         xml2::xml_set_text(textType, attr[[i]])
       } else {
         xml2::xml_set_attr(parent, key, attr[[i]])
+      }
       }
     }
   }

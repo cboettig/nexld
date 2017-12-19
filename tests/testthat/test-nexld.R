@@ -13,10 +13,13 @@ testthat::test_that("we can parse xml into a json-list", {
 testthat::test_that("@context is created", {
   json <- xml_to_json(ex)
   jl <- jsonlite::fromJSON(json)
-  expect_true('@context' %in% names(jl))
-  expect_is(jl$`@context`, 'list')
-  expect_is(jl$`@context`$`@base`, 'character')
-  expect_match(jl$`@context`$`@base`, 'http')
+
+  expect_true("@context" %in% names(jl))
+  context <- context_namespaces(jl$`@context`)
+
+  expect_is(context, 'list')
+  expect_is(context[["@base"]], 'character')
+  expect_match(context[["@base"]], 'http')
 })
 
 library(jsonld)
@@ -49,7 +52,7 @@ testthat::test_that("we can validate after roundtrip", {
   json <- xml_to_json(ex)
   json_to_xml(json, "ex.xml")
   testthat::expect_true(nexml_validate("ex.xml"))
-  unlink("ex.xml")
+  #unlink("ex.xml")
 })
 
 

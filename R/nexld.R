@@ -70,8 +70,19 @@ parse_nexml <- function(x){
   # order names so @context shows up first
   nexml <- nexml[order(names(nexml))]
 
+  ## Add context defining @id types
+  nexml <- add_context.list(nexml, context = NEXML)
   return(nexml)
 }
 
+
+NEXML <- "https://raw.githubusercontent.com/cboettig/nexld/master/inst/context/nexml.json"
+TREEBASE <- "https://raw.githubusercontent.com/cboettig/nexld/master/inst/context/treebase.json"
+
+## Add our prebuilt context onto an existing nexld object
+add_context.list <- function(x, context = NEXML){
+  x[["@context"]] <- list(context, x[["@context"]])
+  x
+}
 
 
