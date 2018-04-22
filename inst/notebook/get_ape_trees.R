@@ -75,6 +75,17 @@ plot(phy)
 
 
 
+
+
+
+
+
+
+
+
+
+## Not implemented
+
 get_trees <- function(nex){
   ## Frame fully nested?
 
@@ -90,6 +101,7 @@ get_taxa <- function(nex){
 
 }
 
+## use jsonld to nest otu definitions in otu references
 xml_to_json(f, "ex.json")
 nex <- getElement(jsonlite::fromJSON(
   jsonld::jsonld_frame("ex.json", "inst/frames/embed.json")),
