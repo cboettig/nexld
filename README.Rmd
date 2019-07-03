@@ -40,7 +40,14 @@ Let's convert a simple NeXML file into JSON-LD:
 ```{r example}
 library(nexld)
 ex <- system.file("extdata/example.xml", package = "nexld")
-xml_to_json(ex)
+json <- xml_to_json(ex)
+```
+
+
+```{r}
+tmp <- tempfile()
+json_to_xml(json, tmp)
+nexml_validate(tmp)
 ```
 
 Obviously this is just a preliminary mapping to start discussion.  The convention is relatively self-explanatory.  
