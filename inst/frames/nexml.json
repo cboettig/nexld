@@ -7,12 +7,10 @@
     "otus": { "@embed": "@never"},
     "tree": {
       "@id": {},
-      "node": {
-        "@id": {},
-        "otu": {
-          "@default": {},
-          "@embed": "@never"
-        }
+      "node": { "@embed": "@always" },
+      "edge": {
+        "source": {"@embed": "@never"},
+        "target": {"@embed": "@never"}
       }
     }
   },
@@ -20,10 +18,14 @@
     "@id": {},
     "otus": {"@embed": "@never"},
     "format": {
-      "@id": {},
+      "@embed": "@always",
+      "@default": {},
       "states": {
-        "@id": {},
         "@default": {},
+        "state":  {
+          "@embed": "@always",
+          "@default": {}
+        },
         "uncertain_state_set": {
           "@id": {},
           "@default": {},
